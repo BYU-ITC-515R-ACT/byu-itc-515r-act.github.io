@@ -1,8 +1,8 @@
-# byu-itc-515r-act.github.io
+# IT&C 515R - Applications of Cybersecurity
 
 This site is the central hub for all resources related to IT&C 515R - Applications of Cybersecurity. Here, you will find assignment criteria and detailed instructions.
 
-## Grading Critera 
+## Grading Criteria 
 
 Below is a list of assignments and activities for the course, each linked to the corresponding grading table.  
 
