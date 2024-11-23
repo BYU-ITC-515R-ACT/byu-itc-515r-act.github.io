@@ -50,7 +50,7 @@ Below is a list of assignments and activities for the course, each linked to the
 - [Team Lab 2 - Red Team Practice](labInstructions/teamLab2.md)  
 
 ## Exam Instructions
-- [Midterm 1](labInstructions/midterm1.md)  
-- [Midterm 2](labInstructions/midterm2.md)  
-- [Final](labInstructions/final.md)  
+- [Midterm 1](examInstructions/midterm1.md)  
+- [Midterm 2](examInstructions/midterm2.md)  
+- [Final](examInstructions/final.md)  
 
