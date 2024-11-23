@@ -45,7 +45,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 ## Lecture Slides, Resources & Readings
 
 - <a href="lectureSlides/lecture1.pptx" download>Lecture 1 – Class Introduction Slides</a><br>
-- [Lecture 2 – CLI Resouces & Readings](./resources/lecture2.md)
+- [Lecture 2 – CLI Resouces & Readings](resources/lecture2.md)
 - <a href="lectureSlides/lecture2.pptx" download>Lecture 2 – CLI Slides Slides</a><br>
 - [Lecture 3 – Networking Resouces & Readings](./resources/lecture3.md)
 - <a href="lectureSlides/lecture3.pptx" download>Lecture 3 – Networking Slides</a><br>
