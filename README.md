@@ -2,6 +2,12 @@
 
 This site is the central hub for all resources related to IT&C 515R - Applications of Cybersecurity. Here, you will find assignment criteria and detailed instructions.
 
+## Class Documents
+
+- [Syllabus](classDocs/syllabus.md) 
+- [Schedule](classDocs/schedule.md)  
+- <a href="classDocs/gradeCalculator.xlsx" download>Grade Calculator Download</a>
+
 ## Grading Criteria 
 
 Below is a list of assignments and activities for the course, each linked to the corresponding grading table.  
@@ -24,3 +30,27 @@ Below is a list of assignments and activities for the course, each linked to the
 - [Midterm 1 - This will be released when the exam opens](gradingTables/midterm1.md)  
 - [Midterm 2 - CTF](gradingTables/midterm2.md)  
 - [Final - Service Setup & CTF](gradingTables/final.md)  
+
+## Indiviudal Lab Instructions 
+
+- [Lab 1 – CLI](labInstructions/lab1.md)  
+- [Lab 2 – Basic Networking](labInstructions/lab2.md)  
+- [Lab 3 – SSH & FTP](labInstructions/lab3.md)  
+- [Lab 4 – DNS](labInstructions/lab4.md)  
+- [Lab 5 – Routers & Firewall](labInstructions/lab5.md)  
+- [Lab 6 – Backups](labInstructions/lab6.md)  
+- [Lab 7 – Database Servers](labInstructions/lab7.md)  
+- [Lab 8 – Web Servers](labInstructions/lab8.md)  
+- [Lab 9 – Hardening](labInstructions/lab9.md)  
+- [Lab 10 – Script Writing](labInstructions/lab10.md) 
+
+## Team Lab Instructions 
+
+- [Team Lab 1 - Set up Practice](labInstructions/teamLab1.md)  
+- [Team Lab 2 - Red Team Practice](labInstructions/teamLab2.md)  
+
+## Exam Instructions
+- [Midterm 1](labInstructions/midterm1.md)  
+- [Midterm 2](labInstructions/midterm2.md)  
+- [Final](labInstructions/final.md)  
+
