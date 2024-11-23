@@ -10,8 +10,6 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 ## Grading Criteria 
 
-Below is a list of assignments and activities for the course, each linked to the corresponding grading table.  
-
 - [Fortnightly Vulnerability Reports](gradingTables/reports.md)  
 - [Memes](gradingTables/memes.md)  
 - [Homework](gradingTables/homework.md)  
@@ -27,7 +25,7 @@ Below is a list of assignments and activities for the course, each linked to the
 - [Lab 10 – Script Writing](gradingTables/lab10.md)  
 - [Team Lab 1 - Set up Practice](gradingTables/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](gradingTables/teamLab2.md)  
-- [Midterm 1 - This will be released when the exam opens](gradingTables/midterm1.md)  
+<!-- - [Midterm 1 - This will be released when the exam opens](gradingTables/midterm1.md)   -->
 - [Midterm 2 - CTF](gradingTables/midterm2.md)  
 - [Final - Service Setup & CTF](gradingTables/final.md)  
 
@@ -44,6 +42,25 @@ Below is a list of assignments and activities for the course, each linked to the
 - [Lab 9 – Hardening](labInstructions/lab9.md)  
 - [Lab 10 – Script Writing](labInstructions/lab10.md) 
 
+## Lecture Slides 
+
+- <a href="lectureSlides/lecture1.pptx" download>Lecture 1 – Class Introduction</a><br>
+- <a href="lectureSlides/lecture2.pptx" download>Lecture 2 – CLI</a><br>
+- <a href="lectureSlides/lecture3.pptx" download>Lecture 3 – Networking</a><br>
+- <a href="lectureSlides/lecture4.pptx" download>Lecture 4 - OS Structure</a><br>
+- <a href="lectureSlides/lecture5.pptx" download>Lecture 5 – SSH</a><br>
+- <a href="lectureSlides/lecture6.pptx" download>Lecture 6 – FTP</a><br>
+- <a href="lectureSlides/lecture7.pptx" download>Lecture 7 – DNS</a><br>
+- <a href="lectureSlides/lecture8.pptx" download>Lecture 8 – Routers</a><br>
+- <a href="lectureSlides/lecture9.pptx" download>Lecture 9 – Firewall</a><br>
+- <a href="lectureSlides/lecture10.pptx" download>Lecture 10 – Database Servers</a><br>
+- <a href="lectureSlides/lecture11.pptx" download>Lecture 11 – Backups</a><br>
+- <a href="lectureSlides/lecture12.pptx" download>Lecture 12 – Web Servers</a><br>
+- <a href="lectureSlides/lecture13.pptx" download>Lecture 13 – Hardening Part 1</a><br>
+- <a href="lectureSlides/lecture14.pptx" download>Lecture 14 – CTF</a><br>
+- <a href="lectureSlides/lecture15.pptx" download>Lecture 15 – Hardening Part 2</a><br>
+- <a href="lectureSlides/lecture16.pptx" download>Lecture 16 – Script Writing</a>
+
 ## Team Lab Instructions 
 
 - [Team Lab 1 - Set up Practice](labInstructions/teamLab1.md)  
@@ -52,5 +69,4 @@ Below is a list of assignments and activities for the course, each linked to the
 ## Exam Instructions
 - [Midterm 1](examInstructions/midterm1.md)  
 - [Midterm 2](examInstructions/midterm2.md)  
-- [Final](examInstructions/final.md)  
-
+- [Final](examInstructions/final.md)
