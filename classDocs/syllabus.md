@@ -28,7 +28,7 @@ Students’ achievements in the course will be evaluated based on the following 
 <style>
     table {
         border-collapse: collapse;
-        display: contents;
+        display: contents !important;
         border: 4px solid; /* Thick border around the table */
     }
 
