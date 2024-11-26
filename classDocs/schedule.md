@@ -11,7 +11,7 @@
         <tr>
             <td rowspan="1">Week 1</td>
             <td>Friday 10 January</td>
-            <td>Introduction & Command Line Interfaces (CLI)</td>
+            <td>Lecture 1: Introduction & Lecture 2: Command Line Interfaces (CLI)</td>
             <td></td>
         </tr>
         <tr>
@@ -22,7 +22,7 @@
         </tr>
         <tr>
             <td>Friday 17 January</td>
-            <td>Basic Networking & Operating System (OS) Structure</td>
+            <td>Lecture 3: Basic Networking & Lecture 4: Operating System (OS) Structure</td>
             <td>Homework 1 – Basic Networking & Homework 2 – OS Structure</td>
         </tr>
         <tr>
@@ -33,7 +33,7 @@
         </tr>
         <tr>
             <td>Friday 24 January</td>
-            <td>Secure Shell (SSH) & File Transfer Protocol (FTP) Servers</td>
+            <td>Lecture 5: Secure Shell (SSH) & Lecture 6: File Transfer Protocol (FTP) Servers</td>
             <td>Homework 3 – SSH & Homework 4 – FTP</td>
         </tr>
         <tr>
@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td>Friday 31 January</td>
-            <td>Domain Name System (DNS) Servers, Routers & Firewalls</td>
+            <td>Lecture 7: Domain Name System (DNS) Servers, Lecture 8: Routers & Lecture 9: Firewalls</td>
             <td>Homework 5 – DNS & Homework 6 – Routers & Firewalls</td>
         </tr>
         <tr>
@@ -66,7 +66,7 @@
         </tr>
         <tr>
             <td>Friday 14 February</td>
-            <td>Database Servers & Backup</td>
+            <td>Lecture 10: Database Servers & Lecture 11: Backup</td>
             <td>Homework 7 – Database Servers</td>
         </tr>
         <tr>
@@ -77,7 +77,7 @@
         </tr>
         <tr>
             <td>Friday 21 February</td>
-            <td>Web Servers</td>
+            <td>Lecture 12: Web Servers</td>
             <td>Homework 8 – Web Servers</td>
         </tr>
         <tr>
@@ -93,7 +93,7 @@
         </tr>
         <tr>
             <td>Friday 28 February</td>
-            <td>Hardening</td>
+            <td>Lecture 13: Hardening Part 1</td>
             <td>Homework 9 – Hardening</td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@
         <tr>
          <td rowspan="2">Week 9</td>
             <td>Friday 7 March</td>
-            <td>CTF - Crypto, Web & Rev</td>
+            <td>Lecture 14: CTF - Crypto, Web & Rev</td>
             <td></td>
         </tr>
         <tr>
@@ -136,7 +136,7 @@
         </tr>
         <tr>
             <td>Friday 21 March</td>
-            <td>Hardening</td>
+            <td>Lecture 15: Hardening Part 2</td>
             <td></td>
         </tr>
         <tr>
@@ -152,7 +152,7 @@
         </tr>
         <tr>
             <td>Friday 28 March</td>
-            <td>Script Writing</td>
+            <td>Lecture 16: Script Writing</td>
             <td></td>
         </tr>
         <tr>
