@@ -1,10 +1,11 @@
 # CLI Training Resources
 
 ### Articles
-- [How to Use the Command Line Interface – for Beginners](https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/)
-- [Linux Commands Cheat Sheet](https://www.geeksforgeeks.org/linux-commands-cheat-sheet/)
-- [vim Cheat Sheet](https://phoenixnap.com/kb/vim-commands-cheat-sheet)
-- [nano Cheet Sheet](https://itsfoss.com/nano-editor-guide/)
+- <a href="https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/" target="_blank">How to Use the Command Line Interface – for Beginners</a>  
+- <a href="https://www.geeksforgeeks.org/linux-commands-cheat-sheet/" target="_blank">Linux Commands Cheat Sheet</a>  
+- <a href="https://phoenixnap.com/kb/vim-commands-cheat-sheet" target="_blank">vim Cheat Sheet</a>  
+- <a href="https://itsfoss.com/nano-editor-guide/" target="_blank">nano Cheat Sheet</a>
+
 
 ### Videos
 - <a href="https://www.youtube.com/watch?v=N9j--n-zGgc" target="_blank">Linux Commands and File Structure</a>  
