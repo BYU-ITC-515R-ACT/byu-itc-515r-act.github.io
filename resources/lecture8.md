@@ -11,3 +11,5 @@
 - <a href="https://www.youtube.com/watch?v=AdPaZOU-ngM" target="_blank">DNS Service Through The Router </a> 
 
 ### Downloads
+
+- <a href="./downloads/lecture8-CentOS7_RouterSetup.pdf" download>CentOS 7 Router Setup Guide</a>

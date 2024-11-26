@@ -8,8 +8,7 @@
 - <a href="https://www.youtube.com/watch?v=Bc6ykGMooiY" target="_blank">Cron Service Intro</a> 
 - <a href="https://www.youtube.com/watch?v=37-6lgYtGGw" target="_blank">Active Connection Defense</a> 
 
-
 ### Downloads
 
-
+- <a href="./downloads/lecture13-Hunting_Tips.pdf" download>Threat Hunting Tips</a>
 
