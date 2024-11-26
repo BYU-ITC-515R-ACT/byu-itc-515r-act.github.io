@@ -11,4 +11,4 @@
 
 
 ### Downloads
-- <a href="./downloads/lecture6-ftp-vsftpd-conf.pdf" download>SSH Config Quick Reference</a>
+- <a href="./downloads/lecture6-ftp-vsftpd-conf.pdf" download>VSFTPD Example Config</a>
