@@ -122,6 +122,54 @@ Students’ achievements in the course will be evaluated based on the following 
         <tr>
             <td rowspan="1">Homework 10 - CTF</td>
         </tr>
+        <tr>
+            <td rowspan="10">Individual Labs (40%)</td>
+            <td rowspan="1">Lab 1 – CLI</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 2 – Basic Networking</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 3 – SSH & FTP</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 4 – DNS</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 5 – Routers & Firewall</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 6 – Backups</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 7 – Database Servers</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 8 – Web Servers</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 9 – Hardening</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Lab 10 – Script Writing </td>
+        </tr> 
+        <tr>
+            <td rowspan="2">Team Labs (10%)</td>
+            <td rowspan="1">Team Lab 1: Setup Practice</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Team Lab 2: Red Team Practice</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Exams (20%)</td>
+            <td rowspan="1">Midterm 1: Service Setup</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Midterm 2: CTF</td>
+        </tr>
+         <tr>
+            <td rowspan="1">Final: Service Setup & CTF</td>
+        </tr>
     </tbody>
 </table>
 
