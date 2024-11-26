@@ -1,0 +1,8 @@
+network:
+  ethernets:
+    <interface name>:
+      addresses: [<ip address>/<CIDR subnet mask>]
+      gateway4: <gateway IP>
+      nameservers:
+        addresses: [<Primary DNS>, <Secondary DNS>]
+  version: 2

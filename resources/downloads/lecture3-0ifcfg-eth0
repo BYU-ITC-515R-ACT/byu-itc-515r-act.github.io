@@ -1,0 +1,17 @@
+# static IP address on CentOS 7
+HWADDR=<MAC Address>        # MAC address of the interface; ensures it binds to the correct physical NIC
+TYPE=Ethernet               # Specifies that this is an Ethernet connection
+BOOTPROTO=none              # Disables DHCP; static IP configuration is used
+IPADDR=<IP Address>         # Static IP address for the interface
+PREFIX=<CIDR Subnet mask>   # Subnet mask; equivalent to 255.255.255.0
+GATEWAY=<IP Address>        # Default gateway for network traffic
+DNS1=<IP Address>           # Primary DNS server for resolving domain names
+DNS2=<IP Address>           # Secondary DNS server (Google's public DNS)
+DNS3=<IP Address>           # Third DNS server (Google's secondary public DNS)
+DEFROUTE=yes                # Sets this connection as the default route for network traffic
+IPV4_FAILURE_FATAL=no       # Prevents the system from failing if IPv4 configuration errors occur
+IPV6INIT=no                 # Disables IPv6 for the interface
+NAME=<interface name>       # Logical name of the interface
+UUID=<UUID>                 # Unique identifier for the interface; can be generated with the 'uuidgen <interface>' command
+DEVICE=<interface name>     # Physical device name for the interface
+ONBOOT=yes                  # Ensures the interface is activated on boot
