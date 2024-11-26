@@ -11,4 +11,4 @@
 - <a href="https://www.youtube.com/watch?v=MBmWgXb73gE" target="_blank">SSH Service Passwordless Authentication</a>
 
 ### Downloads
-- <a href="./downloads/lecture5-OpenSSH_quickref.pdf" download>SSH config Quick Reference</a>
+- <a href="./downloads/lecture5-OpenSSH_quickref.pdf" download>SSH Config Quick Reference</a>
