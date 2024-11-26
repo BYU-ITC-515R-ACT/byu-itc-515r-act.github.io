@@ -4,6 +4,9 @@
 - <a href="https://www.geeksforgeeks.org/introduction-to-linux-operating-system/" target="_blank">What is Linux Operating System</a> 
 - <a href="https://www.geeksforgeeks.org/architecture-of-linux-operating-system/" target="_blank">Architecture of linux operating system</a> 
 - <a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained" target="_blank">Classic SysAdmin: The Linux Filesystem Explained</a> 
+- <a href="https://www.geeksforgeeks.org/process-schedulers-in-operating-system/" target="_blank">Process Schedulers in Operating System</a> 
+- <a href="https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/" target="_blank">Deadlock in Operating System</a> 
+- <a href="https://www.geeksforgeeks.org/what-is-selinux/" target="_blank">What is SELinux?</a> 
 
 
 ### Videos
