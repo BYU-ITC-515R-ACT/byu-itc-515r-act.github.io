@@ -28,3 +28,6 @@
 - <a href="./downloads/lecture2-cli-cheat-sheet.pdf" download>Linux CLI Cheat Sheet</a><br>
 - <a href="./downloads/lecture2-vim-cheat-sheet.pdf" download>vim Cheat Sheet</a><br>
 - <a href="./downloads/lecture2-nano-cheat-sheet.pdf" download>nanoCheat Sheet</a><br>
+
+### Additional CLI Practice
+- <a href="https://overthewire.org/wargames/" target="_blank">Over The Wire</a>
