@@ -26,148 +26,143 @@ There is no required textbook for this course. Reading assignments will be liste
 Students’ achievements in the course will be evaluated based on the following criteria:
 
 <style>
-    table {
-        border-collapse: collapse;
-        display: contents !important;
-        border: 4px solid; /* Thick border around the table */
+    /* Define shading styles */
+    .even-row {
+        background-color: #f2f2f2 !important;
     }
-
-    th, td {
-        border: 2px solid black; /* 2px border for each cell */
-        padding: 8px;
-        text-align: center;
+    .odd-row {
+        background-color: #ffffff !important;
     }
-
-
+    .no-wrap {
+        white-space: nowrap;
+    }
 </style>
-
-
-<table>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
     <thead>
-        <tr>
+        <tr class="even-row">
             <th>Category (Weight)</th>
             <th>Assignment</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="7">Fortnightly Vulnerability Reports (7%)</td>
             <td rowspan="1">Vulnerability Report 1</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Vulnerability Report 2</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Vulnerability Report 3</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Vulnerability Report 4</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Vulnerability Report 5</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Vulnerability Report 6</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Vulnerability Report 7</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="6">Memes (3%)</td>
             <td rowspan="1">Meme 1</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Meme 2</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Meme 3</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Meme 4</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Meme 5</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Meme 6</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="10">Homework (20%)</td>
             <td rowspan="1">Homework 1 - Basic Networking</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 2 - OS Structure</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 3 - SSH</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 4 - FTP</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 5 - DNS</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 6 - Routers & Firewalls</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 7 - Database Servers</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 8 - Web Servers</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 9 - Hardening</td>
         </tr>
-        <tr>
+         <tr class="odd-row">
             <td rowspan="1">Homework 10 - CTF</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="10">Individual Labs (40%)</td>
             <td rowspan="1">Lab 1 – CLI</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 2 – Basic Networking</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 3 – SSH & FTP</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 4 – DNS</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 5 – Routers & Firewall</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 6 – Backups</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 7 – Database Servers</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 8 – Web Servers</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 9 – Hardening</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Lab 10 – Script Writing </td>
         </tr> 
-        <tr>
+        <tr class="odd-row">
             <td rowspan="2">Team Labs (10%)</td>
             <td rowspan="1">Team Lab 1: Setup Practice</td>
         </tr>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Team Lab 2: Red Team Practice</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="3">Exams (20%)</td>
             <td rowspan="1">Midterm 1: Service Setup</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="1">Midterm 2: CTF</td>
         </tr>
-         <tr>
+         <tr class="even-row">
             <td rowspan="1">Final: Service Setup & CTF</td>
         </tr>
     </tbody>
