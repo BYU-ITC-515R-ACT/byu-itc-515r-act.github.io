@@ -1,4 +1,13 @@
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+<style>
+    /* Define shading styles */
+    .even-row {
+        background-color: #f2f2f2;
+    }
+    .odd-row {
+        background-color: #ffffff;
+    }
+</style>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;white-space: nowrap;">
     <thead>
         <tr>
             <th>Week</th>
@@ -8,19 +17,19 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="odd-row">
             <td rowspan="1">Week 1</td>
             <td>Friday 10 January</td>
             <td>Lecture 1: Introduction & Lecture 2: Command Line Interfaces (CLI)</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td rowspan="2">Week 2</td>
             <td>Thursday 16 January</td>
             <td></td>
             <td>Vulnerability Report 1 & Lab 1 - CLI</td>
         </tr>
-        <tr>
+        <tr class="even-row">
             <td>Friday 17 January</td>
             <td>Lecture 3: Basic Networking & Lecture 4: Operating System (OS) Structure</td>
             <td>Homework 1 – Basic Networking & Homework 2 – OS Structure</td>
