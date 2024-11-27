@@ -30,7 +30,7 @@
             <td rowspan="2" class="no-wrap">Week 2</td>
             <td>Thursday 16 January</td>
             <td></td>
-            <td>Vulnerability Report 1 & Lab 1 - CLI</td>
+            <td><li>Vulnerability Report 1</li><li>Lab 1 - CLI</li> </td>
         </tr>
         <tr class="even-row">
             <td>Friday 17 January</td>
@@ -121,8 +121,8 @@
         </tr>
         <tr class="odd-row">
             <td>Saturday 8 March</td>
-            <td>NCAE Cyber Games Regionals (9:00 to 17:00)</td>
             <td></td>
+            <td>NCAE Cyber Games Regionals (9:00 to 17:00)</td>
         </tr>
          <tr class="even-row">
             <td rowspan="3" class="no-wrap">Week 10</td>
@@ -135,25 +135,15 @@
             <td>Review of Regionals & Midterm 2</td>
             <td></td>
         </tr>
-         <tr class="even-row">
-            <td>Saturday 15 March</td>
-            <td></td>
-            <td></td>
-        </tr>
         <tr class="odd-row">
             <td rowspan="3" class="no-wrap">Week 11</td>
             <td>Thursday 20 March</td>
+             <td></td>
             <td>Midterm 2 Closes</td>
-            <td></td>
         </tr>
         <tr class="odd-row">
             <td>Friday 21 March</td>
             <td>Lecture 15: Hardening Part 2</td>
-            <td></td>
-        </tr>
-        <tr class="odd-row">
-            <td>Saturday 22 March</td>
-            <td></td>
             <td></td>
         </tr>
          <tr class="even-row">
@@ -170,8 +160,8 @@
         <tr class="odd-row">
             <td rowspan="2" class="no-wrap">Week 13</td>
             <td>Thursday 3 April</td>
-            <td>Lab 10 - Script Writing</td>
             <td></td>
+            <td>Lab 10 - Script Writing</td>
         </tr>
         <tr class="odd-row">
             <td>Friday 4 April</td>
@@ -181,8 +171,8 @@
          <tr class="even-row">
             <td rowspan="3" class="no-wrap">Week 14</td>
             <td>Thursday 10 April</td>
-            <td>Vulnerability Report 7</td>
             <td></td>
+            <td>Vulnerability Report 7</td>
         </tr>
          <tr class="even-row">
             <td>Friday 11 April</td>
@@ -191,8 +181,8 @@
         </tr>
          <tr class="even-row">
             <td>Saturday 12 April</td>
-            <td>NCAE Cyber Games Invitationals</td>
             <td></td>
+            <td>NCAE Cyber Games Invitationals</td>
         </tr>
         <tr class="odd-row">
             <td rowspan="2" class="no-wrap">Week 15</td>
