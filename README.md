@@ -9,7 +9,6 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - <a href="classDocs/gradeCalculator.xlsx" download>Grade Calculator Download</a>
 
 ## Grading Criteria 
-
 - [Fortnightly Vulnerability Reports](gradingTables/reports.md)  
 - [Memes](gradingTables/memes.md)  
 - [Homework](gradingTables/homework.md)  
@@ -25,15 +24,15 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Lab 10 – Script Writing](gradingTables/lab10.md)  
 - [Team Lab 1 - Set up Practice](gradingTables/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](gradingTables/teamLab2.md)  
-<!-- - [Midterm 1 - This will be released when the exam opens](gradingTables/midterm1.md)   -->
+- [Midterm 1](gradingTables/midterm1.md)  
 - [Midterm 2 - CTF](gradingTables/midterm2.md)  
 - [Final - Service Setup & CTF](gradingTables/final.md)  
 
 ## Indiviudal Lab Instructions 
 
-- [Lab 1 – CLI](labInstructions/lab1.md)  
-- [Lab 2 – Basic Networking](labInstructions/lab2.md)  
-- [Lab 3 – SSH & FTP](labInstructions/lab3.md)  
+- [Lab 1 – CLI](labInstructions/lab1.md) 
+- [Lab 2 – Basic Networking](labInstructions/lab2.md) 
+- [Lab 3 – SSH & FTP](labInstructions/lab3.md) 
 - [Lab 4 – DNS](labInstructions/lab4.md)  
 - [Lab 5 – Routers & Firewall](labInstructions/lab5.md)  
 - [Lab 6 – Backups](labInstructions/lab6.md)  
@@ -85,3 +84,16 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Midterm 1](examInstructions/midterm1.md)  
 - [Midterm 2](examInstructions/midterm2.md)  
 - [Final](examInstructions/final.md)
+
+## Homework Answer Keys
+
+- [Homework 1 – Basic Networking](homework/homework-1.md)  
+- [Homework 2 – OS Structure](homework/homework-2.md)  
+- [Homework 3 - SSH](homework/homework-3.md)  
+- [Homework 4 – FTP](homework/homework-4.md)  
+- [Homework 5 - DNS](homework/homework-5.md)  
+- [Homework 6 – Routers & Firewalls ](homework/homework-6.md)  
+- [Homework 7 – Database Server](homework/homework-7.md)  
+- [Homework 8 – Web Servers ](homework/homework-8.md)  
+- [Homework 9 – Hardening ](homework/homework-9.md)  
+- [Homework 10 – CTF ](homework/homework-10.md) 
