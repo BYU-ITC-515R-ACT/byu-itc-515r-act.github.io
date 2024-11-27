@@ -12,7 +12,7 @@
 </style>
 <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
     <thead>
-        <tr>
+         <tr class="even-row">
             <th>Week</th>
             <th>Day</th>
             <th>Class Lecture</th>
@@ -48,13 +48,13 @@
             <td>Lecture 5: Secure Shell (SSH) & Lecture 6: File Transfer Protocol (FTP) Servers</td>
             <td>Homework 3 – SSH & Homework 4 – FTP</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td rowspan="2" class="no-wrap">Week 4</td>
             <td>Thursday 30 January</td>
             <td></td>
             <td>Vulnerability Report 2 & Lab 3 – SSH & FTP</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Friday 31 January</td>
             <td>Lecture 7: Domain Name System (DNS) Servers, Lecture 8: Routers & Lecture 9: Firewalls</td>
             <td>Homework 5 – DNS & Homework 6 – Routers & Firewalls</td>
@@ -70,13 +70,13 @@
             <td>Midterm 1 (In Class)</td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td rowspan="2" class="no-wrap">Week 6</td>
             <td>Thursday 13 February</td>
             <td></td>
             <td>Vulnerability Report 3</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Friday 14 February</td>
             <td>Lecture 10: Database Servers & Lecture 11: Backup</td>
             <td>Homework 7 – Database Servers</td>
@@ -97,18 +97,18 @@
             <td></td>
             <td>Team Lab 1 9:00 am to 16:00</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td rowspan="3" class="no-wrap">Week 8</td>
             <td>Thursday 27 February</td>
             <td></td>
             <td>Vulnerability Report 4 & Lab 8 – Web Servers</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Friday 28 February</td>
             <td>Lecture 13: Hardening Part 1</td>
             <td>Homework 9 – Hardening</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Saturday 1 March</td>
             <td></td>
             <td>Team Lab 2 9:00 am to 16:00</td>
@@ -124,18 +124,18 @@
             <td>NCAE Cyber Games Regionals (9:00 to 17:00)</td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td rowspan="3" class="no-wrap">Week 10</td>
             <td>Thursday 13 March</td>
             <td></td>
             <td>Vulnerability Report 5 & Homework 10 – CTF</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Friday 14 March</td>
             <td>Review of Regionals & Midterm 2</td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Saturday 15 March</td>
             <td></td>
             <td></td>
@@ -156,13 +156,13 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td rowspan="2" class="no-wrap">Week 12</td>
             <td>Thursday 27 March</td>
             <td></td>
             <td>Vulnerability Report 6 & Lab 9 Hardening</td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Friday 28 March</td>
             <td>Lecture 16: Script Writing</td>
             <td></td>
@@ -178,18 +178,18 @@
             <td>Open Topic</td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td rowspan="3" class="no-wrap">Week 14</td>
             <td>Thursday 10 April</td>
             <td>Vulnerability Report 7</td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Friday 11 April</td>
             <td>Open Topic/ Final Review</td>
             <td></td>
         </tr>
-        <tr>
+         <tr class="even-row">
             <td>Saturday 12 April</td>
             <td>NCAE Cyber Games Invitationals</td>
             <td></td>
