@@ -1,13 +1,44 @@
-<style>
-    /* Define shading styles */
-    .even-row {
-        background-color: #f2f2f2 !important;
-    }
-    .odd-row {
-        background-color: #ffffff !important;
-    }
-</style>
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;white-space: nowrap;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        /* Define alternating row colors */
+        .even-row {
+            background-color: #f2f2f2;
+        }
+        .odd-row {
+            background-color: #ffffff;
+        }
+        /* Make the table responsive */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .table-container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container vw-100">
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;white-space: nowrap;">
     <thead>
         <tr class="even-row">
             <th>Week</th>
