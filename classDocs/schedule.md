@@ -1,10 +1,10 @@
 <style>
     /* Define shading styles */
     .even-row {
-        background-color: #f2f2f2;
+        background-color: #f2f2f2 !important;
     }
     .odd-row {
-        background-color: #ffffff;
+        background-color: #ffffff !important;
     }
 </style>
 <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;white-space: nowrap;">
