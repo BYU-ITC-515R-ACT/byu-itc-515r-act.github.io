@@ -181,13 +181,13 @@ These assignments will make up 7% of your grade. This assignment should be a sin
 
 1. New ways of defending a system or service  
 
-While not directly related to the class content, it will help encourage you to stay updated with the rapidly evolving changes in cybersecurity. It will also help you as you develop your research skills in identifying credible sources and analyzing the latest information.  
+While not directly related to the class content, it will help encourage you to stay updated with the rapidly evolving changes in cybersecurity. It will also help you as you develop your research skills in identifying credible sources and analyzing the latest information. If you do not achieve the desired grade on your first submission, you may resubmit the assignment **once**. All resubmissions are due within **7 days** of receiving your grade, by **11:59 PM**.
 
 ## Memes 
 
 Incorporating memes into this class may seem unconventional, but it effectively helps you engage, simplifies complex concepts, and fosters creativity and critical thinking and will make up 3% of your overall grade. By creating and sharing memes, you can distill and communicate cybersecurity issues humorously and concisely, making the material more relatable and memorable. This approach leverages popular culture to help enhance your learning and provides a refreshing break from traditional coursework.  
 
-The memes should be Cybersecurity or technology-related in some way. You can use existing memes or create your own. All memes should be in line with BYU standards and the honor code.  
+The memes should be Cybersecurity or technology-related in some way. You can use existing memes or create your own. All memes should be in line with BYU standards and the honor code. If you do not achieve the desired grade on your first submission, you may resubmit the assignment **once**. All resubmissions are due within **7 days** of receiving your grade, by **11:59 PM**.
 
 ## Homework 
 
