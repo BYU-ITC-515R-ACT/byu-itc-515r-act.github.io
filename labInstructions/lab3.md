@@ -28,7 +28,7 @@ You will be working with:
 ### Network Configuration
 Since your machines do not currently have internet access, you will need to configure the network as follows:  
 
-1. **`Lab-2-kali` Machine**:  
+1. **`Lab-3-ssh-ftp` Machine**:  
     - IP: `172.18.<ID>.3/16`  
     - Gateway: `172.18.0.1`
     - DNS: `172.18.0.1`
