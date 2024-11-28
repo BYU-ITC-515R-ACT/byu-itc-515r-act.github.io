@@ -1,5 +1,4 @@
 <style>
-    /* Define shading styles */
     .even-row {
         background-color: #f2f2f2 !important;
     }
@@ -13,7 +12,7 @@
         list-style-type: none;
     }
 </style>
-<table cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
     <thead>
          <tr class="even-row">
             <th>Week</th>
