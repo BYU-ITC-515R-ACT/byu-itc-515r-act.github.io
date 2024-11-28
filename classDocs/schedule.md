@@ -38,6 +38,7 @@
             <td>
                 <li>Vulnerability Report 1</li>
                 <li>Lab 1 - CLI</li> 
+                <li>Meme 1</li>
             </td>
         </tr>
         <tr class="even-row">
@@ -57,6 +58,7 @@
             <td></td>
             <td>
                 <li>Lab 2 – Basic Networking</li>
+                <li>Meme 2</li>
             </td>
         </tr>
         <tr class="odd-row">
@@ -77,6 +79,7 @@
             <td>
                 <li>Vulnerability Report 2</li>
                 <li>Lab 3 – SSH & FTP</li>
+                <li>Meme 3</li>
             </td>
         </tr>
          <tr class="even-row">
@@ -97,6 +100,7 @@
             <td>
                 <li>Lab 4 – DNS</li>
                 <li>Lab 5 - Routers & Firewalls</li>
+                <li>Meme 4</li>
             </td>
         </tr>
         <tr class="odd-row">
@@ -112,6 +116,7 @@
             <td></td>
             <td>
                 <li>Vulnerability Report 3</li>
+                <li>Meme 5</li>
             </td>
         </tr>
          <tr class="even-row">
@@ -131,6 +136,7 @@
             <td>
                 <li>Lab 6 – Back Ups</li>
                 <li>Lab 7 - Database Servers</li>
+                <li>Meme 6</li>
             </td>
         </tr>
         <tr class="odd-row">
