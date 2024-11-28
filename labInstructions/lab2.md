@@ -6,7 +6,7 @@ In this lab, you will configure network settings on three operating systems: Ubu
 
 Resources to assist with the lab:  
 1. Homework Questions  
-1. Class Resources Repository: [https://github.com/BYU-ITC-515R-ACT/Resources](https://github.com/BYU-ITC-515R-ACT/Resources)  
+1. Class Resources
 1. Classmates/Teammates  
 1. Internet Resources
 1. Teaching Assistants  
@@ -52,7 +52,8 @@ Since your machines do not currently have internet access, you will need to conf
 
 ### **Accessing the Virtual Machines**  
 - The VMs can be accessed through your **Proxmox** instance.  
-- To track your progress, visit the [scoreboard](http://172.18.0.3/lab2).
+- To track your progress, visit the <a href="http://172.18.0.3/lab/2" target="_blank">scoreboard</a>.
+- You need to be connected to the VPN to access the scoreboard and your Proxmox instance.
 
 ### Scoreboard Key
 - **Green arrows** indicate that everything is working as intended.
