@@ -1,8 +1,26 @@
 ## Lab 2: Basic Networking 
+
 | **Criteria** | **Pass** | **Merit** | **Distinction** |
 |------|--------------------------------------|--------------------------------------|--------------------------------------|
-| **IP Address Configuration** | **P1:** The IP address is correctly configured for all systems, and all machines can ping each other and the gateway. | |
+| **IP Address Configuration** | **P1:** The IP address is correctly configured for all systems, and all machines can ping each other and the gateway. | | |
 | **Subnet Mask Configuration** | **P2:** The subnet mask is correctly applied for all systems. | |
 | **Gateway Configuration** | | **M1:** The gateway is correctly configured for all systems and can ping a public IP of the TA choice. | |
 | **DNS Configuration** | | | **D1:**  A primary and backup DNS server has been correctly configured for all systems and can ping a domain of the TA choice. | |
 | **Verbal Pass off** | **P3:** Successfully answer two TA chosen pass off questions.| |
+
+
+
+## Lab 1: CLI (Command Line Interface)
+
+| **Criteria** | **Pass** | **Merit** | **Distinction** |
+|------|--------------------------------------|--------------------------------------|--------------------------------------|
+| **File and Directory Operations** | **P1:**  Create new directories. Navigate between directories using. Create and delete files. Move and rename files and directories. Copy files between directories. Display the current working directory. View the last and first 10 lines of a file. View the end of a file live and see changes as lines are added.| **M1:** Create a text file using redirection. Use `grep` to search for specific strings in files. Modify files using `sed`. Count words, lines, and characters in a file using. Combine commands using pipes. Create hard and symbolic links.| **D1:** Copy an entire directory recursively to another location. Remove all files and subdirectories inside a directory recursively. Count all the files inside a directory recursively. Find all files in a directory by name, type, last modified, and file size. Set special and extended file permissions. Find files and run commands on matching results.|
+| **Text Editor Basics** | **P2:** Open a new file in `nano`, write some text, and save/exit. Use `nano` to find and replace text within a file. | **M2:** Open and edit files using `vim`. Use `vim` commands to search for a word and delete a line. | |
+| **Permissions and Ownership** | **P3:** List the contents of directories using various flags. View file permissions and ownership. Modify file and folder permissions, owners, and groups. | **M3:** Change permissions and owners of all files and subdirectories in a directory | |
+| **User and Group Management** | **P4:** Add users with and without, login shells, home directories, and passwords. Modify groups a user is part of and view group information for a user. | | |
+| **Archiving and Compression** | **P5:** Create and extract compressed files. | | |
+| **Networking** | **P6:** Check the current network configuration. Test network connectivity with `ping`. Download a file from the internet. | **M4:** Display open, active and listening connections | **D2:** Trace a network connection to a running process |
+| **Process Management** | **P7:** List running processes. View CPU and memory usage. | **M5:** Create and manage cron jobs. Terminate a process with a given PID. | **D3:** List all open files, find the open files used by a specific user, and check which files a specific process is using |
+| **Disk Usage and Filesystem Management** | **P8:** Check available disk space. View directory size. | **M6:** Mount and unmount a file system. Create a new partition | |
+| **Package Management** | **P9:** Search for and install software. Remove a package. | **M7:** Update package repositories and upgrade the system. Verify the file integrity of all the bin files. |  |
+| **Verbal Pass off** | **P10:** Successfully answer two TA chosen pass off questions.|
