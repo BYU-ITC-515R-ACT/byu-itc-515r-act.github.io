@@ -27,8 +27,8 @@
             <td rowspan="1" class="no-wrap">Week 1</td>
             <td>Friday 10 January</td>
             <td>
-                <li>Lecture 1: Introduction</li>
-                <li>Lecture 2: Command Line Interfaces (CLI)</li>
+                Lecture 1: Introduction
+                Lecture 2: Command Line Interfaces (CLI)
             <td></td>
         </tr>
         <tr class="even-row">
@@ -36,19 +36,19 @@
             <td>Thursday 16 January</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 1</li>
-                <li>Lab 1 - CLI</li> 
+                Vulnerability Report 1
+                Lab 1 - CLI 
             </td>
         </tr>
         <tr class="even-row">
             <td>Friday 17 January</td>
             <td>
-                <li>Lecture 3: Basic Networking</li>
-                <li>Lecture 4: Operating System (OS) Structure</li>
+                Lecture 3: Basic Networking
+                Lecture 4: Operating System (OS) Structure
             </td>
             <td>
-                <li>Homework 1 – Basic Networking</li>
-                <li>Homework 2 – OS Structure</li>
+                Homework 1 – Basic Networking
+                Homework 2 – OS Structure
             </td>
         </tr>
         <tr class="odd-row">
@@ -56,18 +56,18 @@
             <td>Thursday 23 January</td>
             <td></td>
             <td>
-                <li>Lab 2 – Basic Networking</li>
+                Lab 2 – Basic Networking
             </td>
         </tr>
         <tr class="odd-row">
             <td>Friday 24 January</td>
             <td>
-                <li>Lecture 5: Secure Shell (SSH)</li>
-                <li>Lecture 6: File Transfer Protocol (FTP) Servers</li>
+                Lecture 5: Secure Shell (SSH)
+                Lecture 6: File Transfer Protocol (FTP) Servers
             </td>
             <td>
-                <li>Homework 3 – SSH</li>
-                <li>Homework 4 – FTP</li>
+                Homework 3 – SSH
+                Homework 4 – FTP
             </td>
         </tr>
          <tr class="even-row">
@@ -75,19 +75,19 @@
             <td>Thursday 30 January</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 2</li>
-                <li>Lab 3 – SSH & FTP</li>
+                Vulnerability Report 2
+                Lab 3 – SSH & FTP
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 31 January</td>
             <td>
-                <li>Lecture 7: Domain Name System (DNS) Servers</li>
-                <li>Lecture 8: Routers & Lecture 9: Firewalls</li>
+                Lecture 7: Domain Name System (DNS) Servers
+                Lecture 8: Routers & Lecture 9: Firewalls
             </td>
             <td>
-                <li>Homework 5 – DNS</li>
-                <li>Homework 6 – Routers & Firewalls</li>
+                Homework 5 – DNS
+                Homework 6 – Routers & Firewalls
             </td>
         </tr>
         <tr class="odd-row">
@@ -95,14 +95,14 @@
             <td>Thursday 6 February</td>
             <td></td>
             <td>
-                <li>Lab 4 – DNS</li>
-                <li>Lab 5 - Routers & Firewalls</li>
+                Lab 4 – DNS
+                Lab 5 - Routers & Firewalls
             </td>
         </tr>
         <tr class="odd-row">
             <td>Friday 7 February</td>
             <td>
-                <li>Midterm 1 (In Class)</li>
+                Midterm 1 (In Class)
             </td>
             <td></td>
         </tr>
@@ -111,17 +111,17 @@
             <td>Thursday 13 February</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 3</li>
+                Vulnerability Report 3
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 14 February</td>
             <td>
-                <li>Lecture 10: Database Servers</li>
-                <li>Lecture 11: Backup</li>
+                Lecture 10: Database Servers
+                Lecture 11: Backup
             </td>
             <td>
-                <li>Homework 7 – Database Servers</li>
+                Homework 7 – Database Servers
             </td>
         </tr>
         <tr class="odd-row">
@@ -129,24 +129,24 @@
             <td>Thursday 20 February</td>
             <td></td>
             <td>
-                <li>Lab 6 – Back Ups</li>
-                <li>Lab 7 - Database Servers</li>
+                Lab 6 – Back Ups
+                Lab 7 - Database Servers
             </td>
         </tr>
         <tr class="odd-row">
             <td>Friday 21 February</td>
             <td>
-                <li>Lecture 12: Web Servers</li>
+                Lecture 12: Web Servers
             </td>
             <td>
-                <li>Homework 8 – Web Servers</li>
+                Homework 8 – Web Servers
             </td>
         </tr>
         <tr class="odd-row">
             <td>Saturday 22 February</td>
             <td></td>
             <td>
-                <li>Team Lab 1 9:00 am to 16:00</li>
+                Team Lab 1 9:00 am to 16:00
             </td>
         </tr>
          <tr class="even-row">
@@ -154,31 +154,31 @@
             <td>Thursday 27 February</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 4</li>
-                <li>Lab 8 – Web Servers</li>
+                Vulnerability Report 4
+                Lab 8 – Web Servers
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 28 February</td>
             <td>
-                <li>Lecture 13: Hardening Part 1</li>
+                Lecture 13: Hardening Part 1
             </td>
             <td>
-                <li>Homework 9 – Hardening</li>
+                Homework 9 – Hardening
             </td>
         </tr>
          <tr class="even-row">
             <td>Saturday 1 March</td>
             <td></td>
             <td>
-                <li>Team Lab 2 9:00 am to 16:00</li>
+                Team Lab 2 9:00 am to 16:00
             </td>
         </tr>
         <tr class="odd-row">
          <td rowspan="2" class="no-wrap">Week 9</td>
             <td>Friday 7 March</td>
             <td>
-                <li>Lecture 14: CTF - Crypto, Web & Rev</li>
+                Lecture 14: CTF - Crypto, Web & Rev
             </td>
             <td></td>
         </tr>
@@ -186,7 +186,7 @@
             <td>Saturday 8 March</td>
             <td></td>
             <td>
-                <li>NCAE Cyber Games Regionals (9:00 to 17:00)</li>
+                NCAE Cyber Games Regionals (9:00 to 17:00)
             </td>
         </tr>
          <tr class="even-row">
@@ -194,14 +194,14 @@
             <td>Thursday 13 March</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 5</li>
-                <li>Homework 10 – CTF</li>
+                Vulnerability Report 5
+                Homework 10 – CTF
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 14 March</td>
             <td>
-                <li>Review of Regionals & Midterm 2</li>
+                Review of Regionals & Midterm 2
             </td>
             <td></td>
         </tr>
@@ -210,13 +210,13 @@
             <td>Thursday 20 March</td>
              <td></td>
             <td>
-                <li>Midterm 2 Closes</li>
+                Midterm 2 Closes
             </td>
         </tr>
         <tr class="odd-row">
             <td>Friday 21 March</td>
             <td>
-                <li>Lecture 15: Hardening Part 2</li>
+                Lecture 15: Hardening Part 2
             </td>
             <td></td>
         </tr>
@@ -225,14 +225,14 @@
             <td>Thursday 27 March</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 6</li>
-                <li>Lab 9 Hardening</li>
+                Vulnerability Report 6
+                Lab 9 Hardening
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 28 March</td>
             <td>
-                <li>Lecture 16: Script Writing</li>
+                Lecture 16: Script Writing
             </td>
             <td></td>
         </tr>
@@ -241,13 +241,13 @@
             <td>Thursday 3 April</td>
             <td></td>
             <td>
-                <li>Lab 10 - Script Writing</li>
+                Lab 10 - Script Writing
             </td>
         </tr>
         <tr class="odd-row">
             <td>Friday 4 April</td>
             <td>
-                <li>Open Topic</li>
+                Open Topic
             </td>
             <td></td>
         </tr>
@@ -256,13 +256,13 @@
             <td>Thursday 10 April</td>
             <td></td>
             <td>
-                <li>Vulnerability Report 7</li>
+                Vulnerability Report 7
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 11 April</td>
             <td>
-                <li>Open Topic/ Final Review</li>
+                Open Topic/ Final Review
             </td>
             <td></td>
         </tr>
@@ -270,14 +270,14 @@
             <td>Saturday 12 April</td>
             <td></td>
             <td>
-                <li>NCAE Cyber Games Invitationals</li>
+                NCAE Cyber Games Invitationals
             </td>
         </tr>
         <tr class="odd-row">
             <td rowspan="2" class="no-wrap">Week 15</td>
             <td>Wednesday 16 April</td>
             <td>
-                <li>Last Day of classes - All assignments due</li>
+                Last Day of classes - All assignments due
             </td>
             <td></td>
         </tr>
@@ -285,7 +285,7 @@
             <td>Friday 18 April</td>
             <td></td>
             <td>
-                <li>Final 09:00 to 16:00</li>
+                Final 09:00 to 16:00
             </td>
         </tr>
     </tbody>
