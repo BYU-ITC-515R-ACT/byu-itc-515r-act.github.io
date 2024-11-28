@@ -40,7 +40,7 @@ Since your machines do not currently have internet access, you will need to conf
 
 ### P1: Script Approval
 
-1. Before you begin creating your script the professor or TA must approve the idea to ensure it meets the minimum requirements. 
+1. Before you begin creating your script the professor or TA must approve the idea to ensure it meets the minimum requirements. Your script must work on both Ubuntu and CentOS7. 
 1. Here are some ideas that you could use:
     - Automated Firewall Configuration  
     - Checksum Integrity Verifier  
