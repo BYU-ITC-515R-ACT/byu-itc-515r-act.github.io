@@ -37,7 +37,7 @@ Students’ achievements in the course will be evaluated based on the following 
         white-space: nowrap;
     }
 </style>
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+<table cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
     <thead>
         <tr class="even-row">
             <th>Category (Weight)</th>
