@@ -5,7 +5,7 @@ In this lab assignment, you will explore the Linux CLI, which is essential for e
 
 Resources to assist with the lab:  
 1. Homework Questions  
-1. Class Resources Repository: [https://github.com/BYU-ITC-515R-ACT/Resources](https://github.com/BYU-ITC-515R-ACT/Resources)  
+1. Class Resources
 1. Classmates/Teammates  
 1. Internet Resources
 1. Teaching Assistants  
@@ -28,7 +28,8 @@ Your machine already has internet access set up and can be accessed through your
 
 ### **Accessing the Virtual Machines**  
 - The VMs can be accessed through your **Proxmox** instance.  
-- To track your progress, visit the [scoreboard](http://172.18.0.3/lab1).
+- To track your progress, visit the <a href="http://172.18.0.3/lab/1" target="_blank">scoreboard</a>.
+- You need to be connected to the VPN to access the scoreboard and your Proxmox instance.
 
 ### Scoreboard Key
 - **Green arrows** indicate that everything is working as intended.
