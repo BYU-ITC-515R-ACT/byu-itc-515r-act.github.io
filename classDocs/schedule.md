@@ -10,7 +10,7 @@
         white-space: nowrap;
     }
     li {
-        list-style-type: none ;
+        list-style-type: none;
     }
 </style>
 <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
@@ -283,10 +283,10 @@
         </tr>
         <tr class="odd-row">
             <td>Friday 18 April</td>
+            <td></td>
             <td>
                 <li>Final 09:00 to 16:00</li>
             </td>
-            <td></td>
         </tr>
     </tbody>
 </table>
