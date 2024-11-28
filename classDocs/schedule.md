@@ -28,7 +28,7 @@
             <td>Friday 10 January</td>
             <td>
                 <li>Lecture 1: Introduction</li>
-                <li>Lecture 2: Command Line Interfaces (CLI)</li>
+                <li>Lecture 2: CLI</li>
             <td></td>
         </tr>
         <tr class="even-row">
@@ -45,7 +45,7 @@
             <td>Friday 17 January</td>
             <td>
                 <li>Lecture 3: Basic Networking</li>
-                <li>Lecture 4: Operating System (OS) Structure</li>
+                <li>Lecture 4: OS Structure</li>
             </td>
             <td>
                 <li>Homework 1 – Basic Networking</li>
@@ -64,8 +64,8 @@
         <tr class="odd-row">
             <td>Friday 24 January</td>
             <td>
-                <li>Lecture 5: Secure Shell (SSH)</li>
-                <li>Lecture 6: File Transfer Protocol (FTP) Servers</li>
+                <li>Lecture 5: SSH</li>
+                <li>Lecture 6: FTP</li>
             </td>
             <td>
                 <li>Homework 3 – SSH</li>
@@ -85,8 +85,9 @@
          <tr class="even-row">
             <td>Friday 31 January</td>
             <td>
-                <li>Lecture 7: Domain Name System (DNS) Servers</li>
-                <li>Lecture 8: Routers & Lecture 9: Firewalls</li>
+                <li>Lecture 7: DNS</li>
+                <li>Lecture 8: Routers
+                Lecture 9: Firewalls</li>
             </td>
             <td>
                 <li>Homework 5 – DNS</li>
@@ -152,7 +153,7 @@
             <td>Saturday 22 February</td>
             <td></td>
             <td>
-                <li>Team Lab 1 9:00 am to 16:00</li>
+                <li>Team Lab 1 (9:00 am to 16:00)</li>
             </td>
         </tr>
          <tr class="even-row">
@@ -177,7 +178,7 @@
             <td>Saturday 1 March</td>
             <td></td>
             <td>
-                <li>Team Lab 2 9:00 am to 16:00</li>
+                <li>Team Lab 2 (9:00 am to 16:00)</li>
             </td>
         </tr>
         <tr class="odd-row">
@@ -207,7 +208,8 @@
          <tr class="even-row">
             <td>Friday 14 March</td>
             <td>
-                <li>Review of Regionals & Midterm 2</li>
+                <li>Review of Regionals</li>
+                <li>Midterm 2</li>
             </td>
             <td></td>
         </tr>
@@ -291,7 +293,7 @@
             <td>Friday 18 April</td>
             <td></td>
             <td>
-                <li>Final 09:00 to 16:00</li>
+                <li>Final (09:00 to 16:00)</li>
             </td>
         </tr>
     </tbody>
