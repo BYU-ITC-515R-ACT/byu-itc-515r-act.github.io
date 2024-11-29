@@ -86,8 +86,8 @@
             <td>Friday 31 January</td>
             <td>
                 <li>Lecture 7: DNS</li>
-                <li>Lecture 8: Routers
-                Lecture 9: Firewalls</li>
+                <li>Lecture 8: Routers</li>
+                <li>Lecture 9: Firewalls</li>
             </td>
             <td>
                 <li>Homework 5 – DNS</li>
