@@ -34,12 +34,12 @@ Since your machines do not currently have internet access, you will need to conf
         - Gateway: `172.18.0.1`
         - DNS: `172.18.0.1`
     - LAN (`ens19` interface):  
-        - IP: `192.168.x.10/16`  
+        - IP: `192.168.x.10/24`  
         - No gateway required  
 
 1. **`Lab-4-Internal` Machine**:  
     - LAN (`ens18` interface):  
-        - IP: `192.168.x.11`  
+        - IP: `192.168.x.11/24`  
         - No gateway required  
         - DNS: `192.168.x.10`  
 

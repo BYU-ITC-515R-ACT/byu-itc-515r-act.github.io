@@ -1,7 +1,8 @@
 # Routers Training Resources
 
 ### Articles
-
+- <a href="https://www.geeksforgeeks.org/introduction-of-a-router/" target="_blank">Introduction of a Router</a> 
+- <a href="https://www.karltarvas.com/centos-7-redirect-port-80-to-8080" target="_blank">CentOS 7: redirect port 80 to port 8080</a> 
 
 ### Videos
 

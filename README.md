@@ -71,14 +71,15 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - <a href="lectureSlides/lecture11.pptx" download>Lecture 11 – Backups Slides</a>
 - [Lecture 12 - Web Servers Resouces & Readings](resources/lecture12.md)
 - <a href="lectureSlides/lecture12.pptx" download>Lecture 12 – Web Servers Slides</a>
-- [Lecture 13 - Hardening Part 1 Resouces & Readings](resources/lecture13.md)
+- [Lecture 13 - Hardening Resouces & Readings](resources/lecture13.md)
 - <a href="lectureSlides/lecture13.pptx" download>Lecture 13 – Hardening Part 1 Slides</a>
 - [Lecture 14 - CTF Resouces & Readings](resources/lecture14.md)
 - <a href="lectureSlides/lecture14.pptx" download>Lecture 14 – CTF Slides</a>
-- [Lecture 15 - Hardening Part 2 Resouces & Readings](resources/lecture15.md)
+- [Lecture 15 - Hardening Resouces & Readings](resources/lecture13.md)
 - <a href="lectureSlides/lecture15.pptx" download>Lecture 15 – Hardening Part 2 Slides</a>
 - [Lecture 16 - Script Writing Resouces & Readings](resources/lecture16.md)
 - <a href="lectureSlides/lecture16.pptx" download>Lecture 16 – Script Writing Slides</a>
+- [Other Resouces & Readings](resources/other.md)
 
 ## Team Lab Instructions 
 
