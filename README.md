@@ -79,6 +79,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - <a href="lectureSlides/lecture15.pptx" download>Lecture 15 – Hardening Part 2 Slides</a>
 - [Lecture 16 - Script Writing Resouces & Readings](resources/lecture16.md)
 - <a href="lectureSlides/lecture16.pptx" download>Lecture 16 – Script Writing Slides</a>
+- [Other Resouces & Readings](resources/other.md)
 
 ## Team Lab Instructions 
 
