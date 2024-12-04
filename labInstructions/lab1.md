@@ -51,7 +51,7 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
    - Connect to the VPN.
 
 1. Access Proxmox:
-   - In your browser, navigate to the Proxmox URL from the email (e.g., `https://172.18.<ID>.1:8006`, where 'ID' is your user ID).
+   - In your browser, navigate to the Proxmox URL from the email (e.g., `https://172.18.<ID>.100:8006`, where 'ID' is your user ID).
    - You will see a warning when the page loads. This is expected due to Proxmox's self-signed TLS certificate. Click `Advanced`, then `Proceed to...`.
 
 1. Login to Proxmox:
