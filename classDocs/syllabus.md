@@ -229,7 +229,12 @@ Grace days and may not be used on:
 - Team labs 
 - Exams 
 
-If you run out of grace days or choose not to use them the late penalty will be 10% a day up to 50%. Late penalties only apply to the same assignments grace days can be used for. All other assignments will not be accepted late.  
+If you run out of grace days or choose not to use them, the following late penalties will apply: 
+
+- Assignments submitted up to **2 days late** will be capped at a **Merit** grade.  
+- Assignments submitted **more than 2 days late** will be capped at a **Pass** grade.  
+
+Late penalties apply only to assignments where grace days can be used. All other assignments will **not be accepted late**.
 
 ## Grading Scale  
 Grades will be assigned as on a three tier system that will convert to A,B,C or E. There will be no + or - grades.
