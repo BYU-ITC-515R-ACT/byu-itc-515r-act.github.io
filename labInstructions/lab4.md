@@ -7,7 +7,7 @@ In this lab, you’ll learn to set up, configure, and secure DNS. It is a critic
 
 Resources to assist with the lab:  
 1. Homework Questions  
-1. Class Resources Repository: [https://github.com/BYU-ITC-515R-ACT/Resources](https://github.com/BYU-ITC-515R-ACT/Resources)  
+1. Class Resources
 1. Classmates/Teammates  
 1. Internet Resources
 1. Teaching Assistants  
@@ -71,7 +71,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 | **Service**        | **Domain Name**                 | **Record Types** | **Resolving IP** |
 |--------------------|---------------------------------|------------------|-----------------|
-| **DNS**            | `ns.friedchicken.local`         | NS, PTR          | `192.168.1.29`  | 
+| **DNS**            | `ns.friedchicken.local`         | NS, PTR          | `192.168.1.10`  | 
 | **Intranet**       | `intranet.friedchicken.local`   | A, PTR           | `192.168.1.30`  | 
 | **HR System**      | `hr.friedchicken.local`         | A, PTR           | `192.168.1.31`  | 
 | **Finance**        | `finance.friedchicken.local`    | A, PTR           | `192.168.1.32`  | 
@@ -115,7 +115,6 @@ To complete `P2` `P1` must have a green arrow before starting
 
 ### M1: DNS Installation and Configuration
 
-1. Configure a forward lookup zone for all the domains with `NS` records in the `Internal Domains` table.
 1. Configure a forward lookup zone for all the domains in the `External Domains` table.
 1. Configure a reverse lookup zone for all the domains with `PTR` records in the `External Domains` table.
 
