@@ -85,14 +85,14 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 | **Service**        | **Domain Name**                 | **Record Types** | **Resolving IP** |
 |--------------------|---------------------------------|------------------|-----------------|
-| **DNS**            | `ns.friedchicken.com`           | NS, PTR          | `172.19.X.4`    | 
-| **Website**        | `friedchicken.com`              | A, PTR           | `172.19.X.4`    | 
-| **Website**        | `www.friedchicken.com`          | CNAME, PTR       | `172.19.X.4`    | 
-| **Mail Server**    | `mail.friedchicken.com`         | MX, PTR          | `172.19.X.5`    | 
-| **APIs**           | `api.friedchicken.com`          | A, PTR           | `172.19.X.6`    | 
-| **Status Page**    | `status.friedchicken.com`       | A, PTR           | `172.19.X.7`    | 
-| **E-commerce**     | `shop.friedchicken.com`         | A, PTR           | `172.19.X.8`    | 
-| **Blog**           | `blog.friedchicken.com`         | A, PTR           | `172.19.X.9`    | 
+| **DNS**            | `ns.friedchicken.com`           | NS, PTR          | `172.18.X.4`    | 
+| **Website**        | `friedchicken.com`              | A, PTR           | `172.18.X.4`    | 
+| **Website**        | `www.friedchicken.com`          | CNAME, PTR       | `172.18.X.4`    | 
+| **Mail Server**    | `mail.friedchicken.com`         | MX, PTR          | `172.18.X.5`    | 
+| **APIs**           | `api.friedchicken.com`          | A, PTR           | `172.18.X.6`    | 
+| **Status Page**    | `status.friedchicken.com`       | A, PTR           | `172.18.X.7`    | 
+| **E-commerce**     | `shop.friedchicken.com`         | A, PTR           | `172.18.X.8`    | 
+| **Blog**           | `blog.friedchicken.com`         | A, PTR           | `172.18.X.9`    | 
 
 For forward lookups, the A, NS or CNAME records must resolve and for a reverse lookup, the PTR record must resolve. Forward lookups resolve a domain to an IP address. A reverse lookup does the opposite and resolves an IP to a domain name.
 
@@ -110,7 +110,7 @@ For forward lookups, the A, NS or CNAME records must resolve and for a reverse l
 1. Configure a reverse lookup zone for all the domains with `PTR` records in the `Internal Domains` table
 
 ### P3: Troubleshooting
-To complete `P3` `P1-P2` must have a green arrow before starting
+To complete `P3` `P1-P2` must have a green arrow before starting.
 
 1. Check the status of the `bind9` service. Enter the line `status:<command>` into the file `/home/blueteam/P6/P6.txt`.
 1. Fix the errors in the DNS config files to allow the service to restart.
@@ -126,12 +126,14 @@ To complete `P3` `P1-P2` must have a green arrow before starting
 
 ### M2: DNS Security
 
+To complete `M2` `P1-3` and `M1` must have a green arrow before starting.
+
 1. Limit queries to any domain or IP in the `Internal Domains` table to `192.168.0.0/16`.
-1. Limit queries to any domain or IP in the `External Domains` table to `172.19.0.0/16`.
+1. Limit queries to any domain or IP in the `External Domains` table to `172.18.0.0/16`.
 
 ### M3: Troubleshooting 
 
-To complete `M3` `P1-2` and `M1-2` must have a green arrow before starting.
+To complete `M3` `P1-3` and `M1-2` must have a green arrow before starting.
 
 1. Some of the domains are having issues resolving. Fix the issues.
 
@@ -139,12 +141,11 @@ To complete `M3` `P1-2` and `M1-2` must have a green arrow before starting.
 
 ### D1: DNS Installation and Configuration*
 
-1. Resolve public domains using your `Lab-4-DNS` machine as the recursive resolver. You should be able to look up public domains from your `Lab-4-Internal` machine.
+1. Resolve public domains using your `Lab-4-DNS` machine as the recursive resolver for internal IPs only. You should be able to look up public domains from your `Lab-4-Internal` machine.
 
 ### D2: DNS Security
 
 1. Disable zone transfers. 
-1. Limit recursive queries to the internal network of `192.168.0.0/16`.
 
 ## Submission
 You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
