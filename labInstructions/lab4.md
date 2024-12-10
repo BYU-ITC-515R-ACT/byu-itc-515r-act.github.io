@@ -7,7 +7,7 @@ In this lab, you’ll learn to set up, configure, and secure DNS. It is a critic
 
 Resources to assist with the lab:  
 1. Homework Questions  
-1. Class Resources Repository: [https://github.com/BYU-ITC-515R-ACT/Resources](https://github.com/BYU-ITC-515R-ACT/Resources)  
+1. Class Resources
 1. Classmates/Teammates  
 1. Internet Resources
 1. Teaching Assistants  
@@ -34,12 +34,12 @@ Since your machines do not currently have internet access, you will need to conf
         - Gateway: `172.18.0.1`
         - DNS: `172.18.0.1`
     - LAN (`ens19` interface):  
-        - IP: `192.168.x.10/24`  
+        - IP: `192.168.x.10/16`  
         - No gateway required  
 
 1. **`Lab-4-Internal` Machine**:  
     - LAN (`ens18` interface):  
-        - IP: `192.168.x.11/24`  
+        - IP: `192.168.x.11/16`  
         - No gateway required  
         - DNS: `192.168.x.10`  
 
@@ -104,8 +104,14 @@ For forward lookups, the A, NS or CNAME records must resolve and for a reverse l
 1. Configure a forward lookup zone for all the domains with `A` records in the `Internal Domains` table
 1. Configure a reverse lookup zone for all the domains with `PTR` records in the `Internal Domains` table
 
-### P2: Troubleshooting
-To complete `P2` `P1` must have a green arrow before starting
+### P2: DNS Installation and Configuration
+
+1. Configure a forward lookup zone for all the domains with `A` records in the `Internal Domains` table
+1. Configure a reverse lookup zone for all the domains with `PTR` records in the `Internal Domains` table
+
+
+### P3: Troubleshooting
+To complete `P3` `P1-P2` must have a green arrow before starting
 
 1. Check the status of the `bind9` service. Enter the line `status:<command>` into the file `/home/blueteam/P6/P6.txt`.
 1. Fix the errors in the DNS config files to allow the service to restart.
