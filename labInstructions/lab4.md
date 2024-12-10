@@ -47,7 +47,7 @@ The internal machine will not have internet access even after the network has be
 
 #### **Accessing the Virtual Machines**  
 - The VMs can be accessed through your **Proxmox** instance.  
-- To monitor your progress, visit: [http://172.18.0.3/lab4](http://172.18.0.3/lab4). 
+- To monitor your progress, visit: [http://172.18.0.3/lab4](http://172.18.0.3/lab/4). 
 
 #### Scoreboard Key
 - **Green arrows** indicate that everything is working as intended.
@@ -71,15 +71,15 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 | **Service**        | **Domain Name**                 | **Record Types** | **Resolving IP** |
 |--------------------|---------------------------------|------------------|-----------------|
-| **DNS**            | `ns.friedchicken.local`         | NS, PTR          | `192.168.1.29`  | 
-| **Intranet**       | `intranet.friedchicken.local`   | A, PTR           | `192.168.1.30`  | 
-| **HR System**      | `hr.friedchicken.local`         | A, PTR           | `192.168.1.31`  | 
-| **Finance**        | `finance.friedchicken.local`    | A, PTR           | `192.168.1.32`  | 
-| **Development**    | `dev.friedchicken.local`        | A, PTR           | `192.168.1.33`  |
-| **QA/Test**        | `qa.friedchicken.local`         | A, PTR           | `192.168.1.34`  | 
-| **Helpdesk**       | `helpdesk.friedchicken.local`   | A, PTR           | `192.168.1.35`  | 
-| **Inventory**      | `inventory.friedchicken.local`  | A, PTR           | `192.168.1.36`  | 
-| **Wiki**           | `wiki.friedchicken.local`       | A, PTR           | `192.168.1.37`  | 
+| **DNS**            | `ns.friedchicken.local`         | NS, PTR          | `192.168.x.29`  | 
+| **Intranet**       | `intranet.friedchicken.local`   | A, PTR           | `192.168.x.30`  | 
+| **HR System**      | `hr.friedchicken.local`         | A, PTR           | `192.168.x.31`  | 
+| **Finance**        | `finance.friedchicken.local`    | A, PTR           | `192.168.x.32`  | 
+| **Development**    | `dev.friedchicken.local`        | A, PTR           | `192.168.x.33`  |
+| **QA/Test**        | `qa.friedchicken.local`         | A, PTR           | `192.168.x.34`  | 
+| **Helpdesk**       | `helpdesk.friedchicken.local`   | A, PTR           | `192.168.x.35`  | 
+| **Inventory**      | `inventory.friedchicken.local`  | A, PTR           | `192.168.x.36`  | 
+| **Wiki**           | `wiki.friedchicken.local`       | A, PTR           | `192.168.x.37`  | 
 
 ### External Domains
 
@@ -108,7 +108,6 @@ For forward lookups, the A, NS or CNAME records must resolve and for a reverse l
 
 1. Configure a forward lookup zone for all the domains with `A` records in the `Internal Domains` table
 1. Configure a reverse lookup zone for all the domains with `PTR` records in the `Internal Domains` table
-
 
 ### P3: Troubleshooting
 To complete `P3` `P1-P2` must have a green arrow before starting
