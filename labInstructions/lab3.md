@@ -8,7 +8,7 @@ The second half of this lab covers FTP, a protocol traditionally used for transf
 
 Resources to assist with the lab:  
 1. Homework Questions  
-1. Class Resources Repository 
+1. Class Resources 
 1. Classmates/Teammates  
 1. Internet Resources
 1. Teaching Assistants  
