@@ -47,7 +47,7 @@ The internal machine will not have internet access even after the network has be
 
 #### **Accessing the Virtual Machines**  
 - The VMs can be accessed through your **Proxmox** instance.  
-- To monitor your progress, visit: [http://172.18.0.3/lab4](http://172.18.0.3/lab/4). 
+- To monitor your progress, visit: [http://172.18.0.3/lab/4](http://172.18.0.3/lab/4). 
 
 #### Scoreboard Key
 - **Green arrows** indicate that everything is working as intended.
