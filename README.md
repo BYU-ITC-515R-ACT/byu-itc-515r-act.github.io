@@ -1,6 +1,6 @@
-# IT&C 515R - Applications of Cybersecurity
+	# IT&C 515R - Applications of Cybersecurity
 
-This site is the central hub for all resources related to IT&C 515R - Applications of Cybersecurity. Here, you will find assignment criteria and detailed instructions.
+This site is the central hub for all resources related to IT&C 515R - Applications of Cybersecurity. 
 
 ## Class Documents
 
@@ -33,7 +33,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Midterm 2 - CTF](gradingTables/midterm2.md)  
 - [Final - Service Setup & CTF](gradingTables/final.md)  
 
-## Indiviudal Lab Instructions 
+## Individual Lab Instructions 
 
 - [Lab 1 – CLI](labInstructions/lab1.md) 
 - [Lab 2 – Basic Networking](labInstructions/lab2.md) 
@@ -49,37 +49,37 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 ## Lecture Slides, Resources & Readings
 
 - <a href="lectureSlides/lecture1.pptx" download>Lecture 1 – Class Introduction Slides</a>
-- [Lecture 2 – CLI Resouces & Readings](resources/lecture2.md)
+- [Lecture 2 – CLI Resources & Readings](resources/lecture2.md)
 - <a href="lectureSlides/lecture2.pptx" download>Lecture 2 – CLI Slides Slides</a>
-- [Lecture 3 – Networking Resouces & Readings](resources/lecture3.md)
+- [Lecture 3 – Networking Resources & Readings](resources/lecture3.md)
 - <a href="lectureSlides/lecture3.pptx" download>Lecture 3 – Networking Slides</a>
-- [Lecture 4 - OS Structure Resouces & Readings](resources/lecture4.md)
+- [Lecture 4 - OS Structure Resources & Readings](resources/lecture4.md)
 - <a href="lectureSlides/lecture4.pptx" download>Lecture 4 - OS Structure Slides</a>
-- [Lecture 5 - SSH Resouces & Readings](resources/lecture5.md)
+- [Lecture 5 - SSH Resources & Readings](resources/lecture5.md)
 - <a href="lectureSlides/lecture5.pptx" download>Lecture 5 – SSH Slides</a>
-- [Lecture 6 - FTP Resouces & Readings](resources/lecture6.md)
+- [Lecture 6 - FTP Resources & Readings](resources/lecture6.md)
 - <a href="lectureSlides/lecture6.pptx" download>Lecture 6 – FTP Slides</a>
-- [Lecture 7 - DNS Resouces & Readings](resources/lecture7.md)
+- [Lecture 7 - DNS Resources & Readings](resources/lecture7.md)
 - <a href="lectureSlides/lecture7.pptx" download>Lecture 7 – DNS Slides</a>
-- [Lecture 8 - Routers Resouces & Readings](resources/lecture8.md)
+- [Lecture 8 - Routers Resources & Readings](resources/lecture8.md)
 - <a href="lectureSlides/lecture8.pptx" download>Lecture 8 – Routers Slides</a>
-- [Lecture 9 - Firewall Resouces & Readings](resources/lecture9.md)
+- [Lecture 9 - Firewall Resources & Readings](resources/lecture9.md)
 - <a href="lectureSlides/lecture9.pptx" download>Lecture 9 – Firewall Slides</a>
-- [Lecture 10 - Database Servers Resouces & Readings](resources/lecture10.md)
+- [Lecture 10 - Database Servers Resources & Readings](resources/lecture10.md)
 - <a href="lectureSlides/lecture10.pptx" download>Lecture 10 – Database Servers Slides</a>
-- [Lecture 11 - Backups Resouces & Readings](resources/lecture11.md)
+- [Lecture 11 - Backups Resources & Readings](resources/lecture11.md)
 - <a href="lectureSlides/lecture11.pptx" download>Lecture 11 – Backups Slides</a>
-- [Lecture 12 - Web Servers Resouces & Readings](resources/lecture12.md)
+- [Lecture 12 - Web Servers Resources & Readings](resources/lecture12.md)
 - <a href="lectureSlides/lecture12.pptx" download>Lecture 12 – Web Servers Slides</a>
-- [Lecture 13 - Hardening Resouces & Readings](resources/lecture13.md)
+- [Lecture 13 - Hardening Resources & Readings](resources/lecture13.md)
 - <a href="lectureSlides/lecture13.pptx" download>Lecture 13 – Hardening Part 1 Slides</a>
-- [Lecture 14 - CTF Resouces & Readings](resources/lecture14.md)
+- [Lecture 14 - CTF Resources & Readings](resources/lecture14.md)
 - <a href="lectureSlides/lecture14.pptx" download>Lecture 14 – CTF Slides</a>
-- [Lecture 15 - Hardening Resouces & Readings](resources/lecture13.md)
+- [Lecture 15 - Hardening Resources & Readings](resources/lecture13.md)
 - <a href="lectureSlides/lecture15.pptx" download>Lecture 15 – Hardening Part 2 Slides</a>
-- [Lecture 16 - Script Writing Resouces & Readings](resources/lecture16.md)
+- [Lecture 16 - Script Writing Resources & Readings](resources/lecture16.md)
 - <a href="lectureSlides/lecture16.pptx" download>Lecture 16 – Script Writing Slides</a>
-- [Other Resouces & Readings](resources/other.md)
+- [Other Resources & Readings](resources/other.md)
 
 ## Team Lab Instructions 
 
@@ -104,3 +104,4 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Homework 8 – Web Servers ](homework/homework-8.md)  
 - [Homework 9 – Hardening ](homework/homework-9.md)  
 - [Homework 10 – CTF ](homework/homework-10.md) 
+
