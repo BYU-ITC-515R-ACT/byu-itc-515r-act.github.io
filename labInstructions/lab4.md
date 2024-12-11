@@ -138,7 +138,7 @@ To complete `M3` `P1-3` and `M1-2` must have a green arrow before starting.
 
 ## Distinction Criteria
 
-### D1: DNS Installation and Configuration*
+### D1: DNS Installation and Configuration
 
 1. Resolve public domains using your `Lab-4-DNS` machine as the recursive resolver for internal IPs only. You should be able to look up public domains from your `Lab-4-Internal` machine.
 
