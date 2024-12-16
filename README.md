@@ -1,11 +1,11 @@
-	# IT&C 515R - Applications of Cybersecurity
+# IT&C 515R - Applications of Cybersecurity
 
 This site is the central hub for all resources related to IT&C 515R - Applications of Cybersecurity. 
 
 ## Class Documents
 
 - [Syllabus](classDocs/syllabus.md) 
-- [Schedule](classDocs/schedule.html)  
+- [Schedule](classDocs/schedule.md)  
 - <a href="classDocs/gradeCalculator.xlsx" download>Grade Calculator Download</a>
 - [TA appointment - Sebastian ](https://calendar.app.google/g3YA83Ph2EcwE17p7)  
     - Appointments are 15 minutes so please plan accordingly
@@ -85,12 +85,13 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 - [Team Lab 1 - Set up Practice](labInstructions/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](labInstructions/teamLab2.md)  
-- <a href="labInstructions/Team Member Evaluation.docx" download>/Team Member Evaluation Download</a>
+- <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
 
 ## Exam Instructions
 - [Midterm 1](examInstructions/midterm1.md)  
 - [Midterm 2](examInstructions/midterm2.md)  
 - [Final](examInstructions/final.md)
+- <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
 
 ## Homework Answer Keys
 
