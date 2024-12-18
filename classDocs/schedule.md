@@ -226,7 +226,7 @@
         <tr class="odd-row">
             <td>Friday 21 March</td>
             <td>
-                <li>Lecture 15: Hardening Part 2</li>
+                <li>No Class - Spring Day</li>
             </td>
             <td></td>
         </tr>
@@ -236,13 +236,12 @@
             <td></td>
             <td>
                 <li>Vulnerability Report 6</li>
-                <li>Lab 9 Hardening</li>
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 28 March</td>
             <td>
-                <li>Lecture 16: Script Writing</li>
+                <li>>Lecture 15: Hardening Part 2</li>
             </td>
             <td></td>
         </tr>
@@ -251,13 +250,13 @@
             <td>Thursday 3 April</td>
             <td></td>
             <td>
-                <li>Lab 10 - Script Writing</li>
+                <li>Lab 9 Hardening</li>
             </td>
         </tr>
         <tr class="odd-row">
             <td>Friday 4 April</td>
             <td>
-                <li>Open Topic</li>
+                <li>Lecture 16: Script Writing</li>
             </td>
             <td></td>
         </tr>
@@ -267,6 +266,7 @@
             <td></td>
             <td>
                 <li>Vulnerability Report 7</li>
+                <li>Lab 10 - Script Writing</li>
             </td>
         </tr>
          <tr class="even-row">
