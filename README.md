@@ -8,7 +8,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Schedule](classDocs/schedule.md)  
 - <a href="classDocs/gradeCalculator.xlsx"  download>Grade Calculator Download</a>
 - <a href="https://calendar.app.google/g3YA83Ph2EcwE17p7" target="_blank">TA Appointment - Sebastian</a> 
-- <a href="" target="_blank">TA Appointment - Macen</a> 
+- <a href="https://calendar.app.google/ThQoGMDDQoA7YqfdA" target="_blank">TA Appointment - Macen</a> 
     - Appointments are 15 minutes so please plan accordingly
 
 ## Homework
