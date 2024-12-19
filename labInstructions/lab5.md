@@ -22,12 +22,12 @@ Since your machines do not currently have internet access, you will need to conf
      - IP: `192.168.x.1/16`  
      - No gateway required  
 
-1. **`Lab-5-Internal-1` Machine**:  
-   - IP: `192.168.x.2`  
+1. **`Lab-5-website  ` Machine**:  
+   - IP: `192.168.x.2/24`  
    - Gateway: `192.168.x.1`  
-   - DNS: `192.168.x.1`  
+   - DNS: `192.168.x.3`  
 
-1. **`Lab-5-Internal-2` Machine**:  
+1. **`Lab-5-dns` Machine**:  
    - IP: `192.168.x.3`  
    - Gateway: `192.168.x.1`  
    - DNS: `192.168.x.1`  
@@ -61,35 +61,30 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. Enable the `firewalld` service
 1. Check the status of the `firewalld` service. Enter the line `firewalld:<command>` into the file `/home/blueteam/P1/P1.txt`.
 
-#### `Lab-5-Internal-1` Machine   
-1. Install `ufw`
+#### `Lab-5-website` Machine   
 1. Enable the `ufw` service
 1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P1/P1.txt`.
-
-#### `Lab-5-Internal-2` Machine  
-1. Install `iptables`
-1. Enable the `iptables` service
-1. Check the status of the `iptables` service. Enter the line `iptables:<command>` into the file `/home/blueteam/P1/P1.txt`.
 
 ### P2: Configuring Ports and Services
 
 #### `Lab-5-router` Machine  
 1. List all the current firewall rules for `firewalld`. Enter the line `firewalld:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
-#### `Lab-5-Internal-1` Machine   
+#### `Lab-5-website` Machine   
 1. List all the current firewall rules for `ufw`. Enter the line `ufw:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
-#### `Lab-5-Internal-2` Machine  
+#### `Lab-5-dns` Machine  
 1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
 ### P3: Securing Incoming and Outgoing Traffic
 1. Set all default policies to `deny` incoming and `allow` outgoing for all machines
 1. Allow `ICMP` in on the `WAN` address of `Lab-5-router`
-1. Allow `SSH` in on the `LAN` address of `Lab-5-router`
-1. Allow `SSH` in on `Lab-5-Internal-1`
-1. Allow `SSH` in on `Lab-5-Internal-2`
-1. Allow `FTP` in on `Lab-5-Internal-1`
-1. Allow `DNS` in on `Lab-5-Internal-2`
+1. Allow `SSH` traffic in on the `LAN` address of `Lab-5-router`
+1. Allow `SSH` traffic in on `Lab-5-website`
+1. Allow `SSH` traffic in on `Lab-5-dns`
+1. Allow `HTTP` traffic in on `Lab-5-website`
+1. Allow `HTTPS` traffic in on `Lab-5-website`
+1. Allow `DNS` traffic in on `Lab-5-dns`
 
 ### P4: Logging and Monitoring Firewall Activity 
 
@@ -98,13 +93,13 @@ By default, some firewalls may not log traffic.
 - To enable logging in ufw use `sudo ufw logging on`
 - To enable logging in `firewalld` use `sudo firewall-cmd --set-log-denied=all`
 
-1. On the `Lab-5-Internal-1` machine use the logs to see how many devices have attempted to access the machine using `SSH`. If you have attempted it, disregard your IP from the list. Enter the line `ssh:<number of IPs>` into the file `/home/blueteam/P4/P4.txt`.
+1. On the `Lab-5-website` machine use the logs to see how many devices have attempted to access the machine using `SSH`. If you have attempted it, disregard your IP from the list. Enter the line `ssh:<number of IPs>` into the file `/home/blueteam/P4/P4.txt`.
 1. On the `Lab-5-router` machine use the logs to see how many devices have attempted to resolve a `DNS` query through the router.  If you have attempted it, disregard your IP from the list. Enter the line `dns:<number of IPs>` into the file `/home/blueteam/P4/P4.txt`.
 
 ### P5: Troubleshooting
 To complete `P5` `P1-P4` must have a green arrow before starting.
 
-1. There seems to be an issue with the `Lab-5-Internal-1` firewall. Troubleshoot the errors and restore proper network connections to it.
+1. There seems to be an issue with the `Lab-5-website` firewall. Troubleshoot the errors and restore proper network connections to it.
 
 ### P6: Router Installation and Basic Configuration
 1. Using the `Lab-5-router` machine set it up as a router. When it is properly configured the internal machines should be able to access the internet. 
@@ -113,12 +108,12 @@ To complete `P5` `P1-P4` must have a green arrow before starting.
 ## Merit Criteria
 
 ### M1: Firewall Installation and Basic Configuration
-Implement your rules on the `Lab-5-Internal-1` machine. Consider the order the rules will need to be in to be effective.
-1. Allow all incoming traffic on the `192.168.0.0/16` network that has the destination ports for `SSH`, `FTP`, `HTTP`, and `HTTPS` traffic.
+Implement your rules on the `Lab-5-website` machine. Consider the order the rules will need to be in to be effective.
+1. Allow all incoming traffic on the `192.168.0.0/16` network that has the destination ports for `SSH`, `HTTP`, and `HTTPS` traffic.
 1. Ensure that the correct transport layer protocol is applied to the rules as well. If the service is only used over `TCP` then `UDP` should not be allowed and vice versa.
 1. Block traffic from `192.168.X.15` that is website traffic
 1. Block traffic from `192.168.100.0/24` that is SSH traffic
-1. Allow only `DNS` traffic from `Lab-5-Internal-1` to `Lab-5-Internal-2`
+1. Allow only `DNS` traffic from `Lab-5-website` to `Lab-5-dns`
 
 ### M2: Securing Incoming and Outgoing Traffic 
 
@@ -129,13 +124,13 @@ Implement your rules on the `Lab-5-Internal-1` machine. Consider the order the r
 1. Limit `DNS` requests to 10 per second
 
 ### M3: Routing and NAT Configuration
-1. Port forward TCP traffic on ports `80` and `443` from the `Lab-5-router` to `Lab-5-Internal-1`
-1. Port forward UDP traffic on ports `53` from the `Lab-5-router` to `Lab-5-Internal-2`
+1. Port forward TCP traffic on ports `80` and `443` from the `Lab-5-router` to `Lab-5-website`
+1. Port forward UDP traffic on ports `53` from the `Lab-5-router` to `Lab-5-dns`
 
 ## Distinction Criteria
 
 ### D1: Firewall Installation and Basic Configuration 
-1. Using the firewall logs on `Lab-5-router` and `Lab-5-Internal-1`. Identify malicious traffic and block the Protocol and/or IP address.
+1. Using the firewall logs on `Lab-5-router` and `Lab-5-website`. Identify malicious traffic and block the Protocol and/or IP address.
 
 ## Submission
 You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
