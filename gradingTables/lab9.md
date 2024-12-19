@@ -10,4 +10,5 @@
 | **SSH Security** | **P5:** Configure secure SSH settings, allowing legitimate users to use their SSH keys.  | **M6:** Remove malicious SSH settings and configurations.| **D4:** Terminate and block malicious SSH sessions. |
 | **Malicious Programs and Software** | **P6:** Remove any bind or reverse shells. | **M7:** Identify and remove password loggers.  | **D5:** Find the rest of the malicious threats. |
 | **Folder and File Permissions** | **P7:** Ensure critical files have correct permissions.  |  |  |
-| **Verbal Pass Off** | **P8:** Successfully answer two pass-off questions chosen by the TA. |  |  |
+| **FTP Security** | **P8:** Configure secure FTP settings and allow users to access the FTP server | **M8:** Restrict access to users or groups. | |
+| **Verbal Pass Off** | **P9:** Successfully answer two pass-off questions chosen by the TA. |  |  |

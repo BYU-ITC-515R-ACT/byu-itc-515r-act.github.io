@@ -241,7 +241,7 @@
          <tr class="even-row">
             <td>Friday 28 March</td>
             <td>
-                <li>>Lecture 15: Hardening Part 2</li>
+                <li>Lecture 15: Hardening Part 2</li>
             </td>
             <td></td>
         </tr>
