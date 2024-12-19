@@ -1,1 +1,121 @@
 # Lab 6: Backups
+
+## Introduction
+
+In this lab, you'll focus on creating and managing backups for essential network services and systems to ensure data integrity and quick recovery in case of failure or redteam activities. You'll practice configuring automated and secure backup strategies.
+
+### Configuration Instructions
+
+#### Virtual Machines and Operating Systems
+You will be working with:  
+- 2 Ubuntu 20.04 Machines 
+- 1 CentOS 7 Machine
+
+#### Network Configuration
+Since your machines do not currently have internet access, you will need to configure the network as follows:  
+
+1. **`Lab-6-SSH-FTP` Machine**:  
+    - WAN (`ens18` interface):  
+        - IP: `172.18.<ID>.6/16`  
+        - Gateway: `172.18.0.1`  
+        - DNS: `172.18.0.1`  
+
+1. **`Lab-6-DNS` Machine**:  
+    - LAN (`ens18` interface):  
+        - IP: `172.18.<ID>.7/16`    
+        - Gateway: `172.18.0.1`  
+        - DNS:  `172.18.0.1`  
+
+1. **`Lab-6-Backup` Machine**:  
+    - LAN (`ens18` interface):  
+        - IP: `172.18.<ID>.8/16`   
+        - Gateway: `172.18.0.1`  
+        - DNS: `172.18.0.1`  
+
+#### **Accessing the Virtual Machines**  
+- The VMs can be accessed through your **Proxmox** instance.  
+- To monitor your progress, visit: [http://172.18.0.3/lab/6](http://172.18.0.3/lab/6). 
+
+#### Scoreboard Key
+- **Green arrows** indicate that everything is working as intended.
+- **Orange exclamation marks** indicate that something is partially working.
+- **Red down arrows** indicate that something is not working.
+
+You can hover over each specific arrow, and a tooltip will appear with a hint on what is wrong or not working.
+
+#### **Credentials**  
+- All VMs have the same login credentials:  
+  - **Username**: `blueteam`  
+  - **Password**: `abc123`  
+
+#### **File Creation and Content**  
+- If a referenced file does not exist, you must create it.  
+- For any questions requiring files to contain specific content, use the `Lab-5-router` machine.  
+
+
+## Pass Criteria
+
+### P1: Backup Tool Installation and Configuration
+
+Install a backup tool. Verify installation by running a test backup. 
+1. Install `rsync` onto the backup server.
+1. Using rsync backup the file `/etc/ssh/sshd_config` on from `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
+
+### P2: Backup Verification
+1. Compare the file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P1/P1.txt`.
+1. The file hashes should be the same. If they are not the file has been changed.
+
+### P3: Backup Restoration
+To complete `P3` `P1-P2` must have a green arrow before starting.
+
+1. Check the hashes again. This time they should be different.
+1. Use rsync to restore the backup file from `Lab-6-Backup` to `Lab-6-SSH-FTP`.
+
+## Merit Criteria
+
+### M1: Backup Tool Installation and Configuration
+
+1. Automate the backup to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
+  - file permissions
+  - file owner(s)
+  - timestamps
+
+1. Back up the following files and directories:
+- Lab-6-SSH-FTP
+  - `/etc/ssh/`
+  - `/home/blueteam/`
+  - `/etc/vsftpd`
+  - `/etc/shadow`
+  - `/etc/passwd`
+
+- Lab-6-DNS
+  - `/etc/ssh/`
+  - `/etc/named/`
+  - `/home/blueteam/`
+  - `/etc/shadow`
+  - `/etc/passwd`
+
+- Place the backups in `/backups/ssh-ftp` and `/backups/dns` respectively on the `Lab-6-Backup` machine.
+
+### M2: Cloud Backups  
+1. Choose an offsite solution to back up the files outlined in `M1`. Some options include `Google Drive`, `Dropbox`, `OneDrive`, `GitHub` etc. We would advise against using your personal accounts for this, especially during the competition, as the redteam may compromise your real account credentials if you use them.
+
+1. This will need to be passed off manually with a TA.
+
+### M3: Backup Restoration
+To complete `M3` `P1-P3` must have a green arrow before starting.
+1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
+
+## Distinction Criteria
+
+### D1: Backup Verification
+1. Use `EncFS` to encrypt the backups on the `Lab-6-Backup` machine.
+1. Store your encrypted backups in the `/backups/encrypted` directory
+
+### D2: Cloud Backups 
+1. Automate the process to backup the encrypted files to your offsite cloud solution
+1. This will need to be passed off manually with a TA.
+
+### D3: Backup Restoration
+1. Automate the restoration process from your offsite cloud solution to your local backup server. 
+1. This will need to be passed off manually with a TA.
