@@ -38,6 +38,12 @@ Your machine already has internet access set up and can be accessed through your
 
 You can hover over your specific arrow and a tooltip will appear with a hint on what is wrong or not working.
 
+#### Lab Time Estimates
+
+- **Pass** : 1.5 hours
+- **Merit**: 2.5 hours
+- **Distinction**: 4 hours
+
 #### **Credentials**  
 - All VMs have the same login credentials:  
   - **Username**: `blueteam`  
@@ -61,6 +67,10 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
    - Click `Login`.
    - You should see the Lab1 VMs in the panel on the left-hand side. You may have to expand the node button (It has the green checkmark next to it) to see them.
 
+
+### Scoring Adivce
+There may be a way to achieve a criteria that we have not accounted for. If you believe your method meets the criteria but is not being scored please reach out to a TA.
+
 ## Pass Criteria
 
 ### P1: File and Directory Operations
@@ -69,23 +79,23 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
 1. Change the directory you're into the `P1` directory you just created.
 1. Use `touch` to create a file called `P1.txt`
 1. Display the full path of your current directory. Enter the line `path:<command>` into the file `/home/blueteam/P1/P1.txt`
-1. Use `tail` to view file changes in `/var/auth.log` in real-time. Enter the line `live-tail:<command>` into the file `/home/blueteam/P1/P1.txt`
-1. View the first 10 lines of a file using `head`. Enter the line `head:<command>` into the file `/home/blueteam/P1/P1.txt`
-1. View the last 10 lines of a file using `tail`. Enter the line `tail:<command>` into the file `/home/blueteam/P1/P1.txt`
+1. Use `tail` to view file changes in `/var/log/auth.log` in real-time. Enter the line `live-tail:<command>` into the file `/home/blueteam/P1/P1.txt`
+1. View the first 10 lines of `/var/log/auth.log` using `head`. Enter the line `head:<command>` into the file `/home/blueteam/P1/P1.txt`
+1. View the last 10 lines of `/var/log/auth.log` using `tail`. Enter the line `tail:<command>` into the file `/home/blueteam/P1/P1.txt`
 1. Delete the directory `/home/blueteam/P1-delete-me`
 1. Move and rename the file in a single command `/home/blueteam/P1-move-me.txt` to `/home/blueteam/P1/moved.txt`.
 1. Copy the file  `/home/blueteam/P1-copy-me.txt` to `/home/blueteam/P1/P1-copy-me.txt`
 
 ### P2: Text Editor Basics
 1. Create `/home/blueteam/P2/P2.txt` using nano and put the line `nano is too easy` as the first line
-1. Open the file `/home/blueteam/P2/P2-2.txt` and use the find and replace to change every instance of `VIM` to `Nano`
+1. Open the file `/home/blueteam/P2/P2-2.txt` and use the find and replace to change every instance of `Vim` to `Nano`
 
 ### P3: Permissions and Ownership
 1. View file permissions and ownership using `ls`.
     - List all files (including hidden ones) contained in `/home/blueteam/P3/`. Enter the line `hidden:<command>` into the file `/home/blueteam/P3.txt`. Run the command from inside of the `P3` directory.
     - List all files (including hidden ones) and use the long list format on the file in `/home/blueteam/P3/`. Enter the line `hidden-long:<command>` into the file `/home/blueteam/P3.txt`. Run the command using the absolute file path.
 1. Modify file and folder permissions using `chmod`.
-    - Change the permissions on the hidden file to be read only by the file owner and no permissions to anyone else
+    - Change the permissions on the hidden file in `/home/blueteam/P3` to be read only by the file owner and no permissions to anyone else
     - Change the permissions on the file `/home/blueteam/P3/P3-3.txt` to be read and write by the owner and read only by others in the group and all others
 1. Change file owners and groups using `chown`.
     - Change the owner of the hidden file to `blueteam` and the group to `sudo`
@@ -95,8 +105,8 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
 ### P4: User and Group Management
 1. Add users with/without login shells, home directories, and passwords using `useradd` or `adduser`
     - Create a user called `no-shell` that does not have a shell or password they can log in with but does have a home directory. It should say `/usr/sbin/nologin` or `/bin/false` for the user in `/etc/passwd` after the user has been created
-    - Create a user called `shell` that has a shell and password they can use to log in but no home directory
-    - Create a user called `no-password` that has a shell but no password they can log in with and no home directory
+    - Create a user called `shell` that has a shell and password they can use to log in, but no home directory
+    - Create a user called `no-password` that has a shell, but no password they can log in with, and no home directory
     - Create a user called `login` with a login shell, home directory, and a password they can log in with
 1. Modify groups that a user belongs to using `usermod` and view group info using `groups`
     - Add the `login` user to the `sudo` group
@@ -116,7 +126,7 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
 1. View CPU and memory usage using `top` that displays only the processes for the `blueteam` user. Enter the line `top:<command>`into the file `/home/blueteam/P7.txt`
 
 ### P8: Disk Usage and Filesystem Management
-1. Check how much space is left on the disk using the `dh` command and a flag to make the data human readable. Enter the line `df:<command>`into the file `/home/blueteam/P8.txt`
+1. Check how much space is left on the disk using the `df` command and a flag to make the data human readable. Enter the line `df:<command>`into the file `/home/blueteam/P8.txt`
 1. Check how large the `/opt/` directory is using the `du` command and display the size in `K`. Enter the line `du:<command>` into the file `/home/blueteam/P8.txt`
 
 ### P9: Package Management
@@ -126,16 +136,15 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
 ### Merit Criteria:
 
 ### M1: File and Directory Operations
-1. Count words, lines, and characters. Use the file `/home/blueteam/M1/Never-Gonna-Give-You-Up.txt` and put your answers in `/home/blueteam/M1/M1.txt`=
+1. Count words, lines, and characters. Use the file `/home/blueteam/M1/Never-Gonna-Give-You-Up.txt` and put your answers in `/home/blueteam/M1/M1.txt`
     - Count the number of words in the file and enter the line `word-count:<command>,<number of words>` into the `/home/blueteam/M1/M1.txt` file. Ensure that the only number your command returns is the word count.
     - Count the number of lines in the file and enter the line `lines:<command>,<number of lines>` into the `/home/blueteam/M1/M1.txt` file
     - Count the number of characters in the file and enter the line `char:<command>,<number of characters>` into the `/home/blueteam/M1/M1.txt` file
     - Count the number of times `Never` appears in the file and enter the line `never:<number of times>` into the `/home/blueteam/M1/M1.txt` file
-1. Use `grep` to find occurrences in all the files that contain the word `malware` and get a count. Enter the line `grep:<command>,<number of times>` into the `/home/blueteam/lab-1/M1.txt` file
-1. Use `sed` to replace the word "Always" with "Never" in the file `/home/blueteam/M1/Never Gonna Give You Up sed.txt`. Enter the line `sed:<command>`into the `/home/blueteam/lab-1/M1.txt` file
+1. Use `sed` to replace the word "Always" with "Never" in the file `/home/blueteam/M1/Never-Gonna-Give-You-Up-sed.txt`. Enter the line `sed:<command>`into the `/home/blueteam/lab-1/M1.txt` file
 1. Combine the commands `cowsay` and `fortune` to make the cow say a fortune. Enter the line `cowsay:<command>`into the `/home/blueteam/lab-1/M1.txt` file
-1. Create a hard link to `/home/blueteam/M1/link1.txt` called `M1-hard.txt` in `/home/blueteam/lab-1/`:
-1. Create a symbolic link to `/home/blueteam/M1/link2.txt` called `M1-sym.txt` in `/home/blueteam/lab-1/`:
+1. Create a hard link to `/home/blueteam/M1-hardlink.txt` called `M1-hardlink.txt` in `/home/blueteam/M1/`:
+1. Create a symbolic link to `/home/blueteam/M1-symlink.txt` called `M1-symlink.txt` in `/home/blueteam/M1/`:
 
 ### M2: Text Editor Basics
 1. Open the file `/home/blueteam/M2/WeLoveVim.md` using `VIM` and add the line `I <3 VIM` as the last line of the file
@@ -153,7 +162,7 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
 
 ### M5: Process Management
 1. Create a cronjob for the `blueteam` account that will execute `/home/blueteam/M5/cronScript.py` every `5 minutes`. The cronjob should be placed in your user's `crontab`
-1. Terminate the process that is running `pleasekillme.py` and remove the cronjob that is enabling it to be persistent
+1. Terminate the process that is running `pleasekillme.py` and remove the cronjob that is enabling it to be persistent but do not remove the script.
 
 ### M6: Disk Usage and Filesystem Management
 1. Partition the drive `sdb` to use `xfs` and mount the directory `/mnt/M6-mount` to `sdb`
@@ -167,9 +176,9 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
 
 ### D1: File and Directory Operations
 
-1. Copy the directory `/home/blueteam/D1` and all of its contents to `/home/blueteam/D1-copy` using recursion. Enter the line `copy:<command>` into the `/home/blueteam/D1/D1.txt` file.
-1. Count the number of files in the directory `/home/blueteam/D1` using recursion. Enter the line `count:<command>,count` into the `/home/blueteam/D1/D1.txt` file.
-1. Remove all files and subdirectories from `/home/blueteam/D1-copy` using recursion. Enter the line `remove:<command>` into the `/home/blueteam/D1/D1.txt` file.
+1. Copy the directory `/home/blueteam/D1` and all of its contents to `/home/blueteam/D1-copy` using recursion. Enter the line `copy:<command>` into the `/home/blueteam/D1/D1.txt` file.Use the full filepath in the command.
+1. Count the number of files in the directory `/home/blueteam/D1` using recursion. Enter the line `count:<count>` into the `/home/blueteam/D1/D1.txt` file.
+1. Remove all files and subdirectories from `/home/blueteam/D1-copy` using recursion. Enter the line `remove:<command>` into the `/home/blueteam/D1/D1.txt` file. Use the full filepath in the command.
 1. Locate files by name, type, modification date, and file size.
     - Locate all files with `game` in the name. Enter the line `game:<command>` into the `/home/blueteam/D1.txt` file
     - Locate all `python` files on the system. Enter the line `python:<command>` into the `/home/blueteam/D1.txt` file
