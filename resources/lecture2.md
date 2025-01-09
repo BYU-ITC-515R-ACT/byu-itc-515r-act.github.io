@@ -2,9 +2,14 @@
 
 ### Articles
 - <a href="https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/" target="_blank">How to Use the Command Line Interface – for Beginners</a>  
+- <a href="https://www.freecodecamp.org/news/the-linux-commands-handbook/" target="_blank">Linux Commands Handbook</a>
+- <a href="https://ubuntu.com/tutorials/command-line-for-beginners#1-overview" target="_blank">Ubuntu Command Line for Beginners</a>
 - <a href="https://www.geeksforgeeks.org/linux-commands-cheat-sheet/" target="_blank">Linux Commands Cheat Sheet</a>  
-- <a href="https://phoenixnap.com/kb/vim-commands-cheat-sheet" target="_blank">vim Cheat Sheet</a>  
-- <a href="https://itsfoss.com/nano-editor-guide/" target="_blank">nano Cheat Sheet</a>
+- <a href="https://phoenixnap.com/kb/vim-commands-cheat-sheet" target="_blank">vim Cheat Sheet</a> (VIM is a command line text editor that is really powerful)
+- <a href="https://itsfoss.com/nano-editor-guide/" target="_blank">nano Cheat Sheet</a> (NANO is a GUI-based text editor that is pretty standard in Linux)
+- <a href="https://www.howtogeek.com/websites-to-learn-linux/" target="_blank">More websites to learn Linux</a>
+- <a href="https://phoenixnap.com/kb/start-stop-restart-linux-services" target="_blank">Working with Linux Services</a>
+- <a href="https://www.geeksforgeeks.org/start-stop-restart-services-using-systemctl-in-linux/" target="_blank">More on working with Linux Services</a>
 
 
 ### Videos
