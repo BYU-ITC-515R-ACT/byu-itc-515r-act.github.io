@@ -33,6 +33,11 @@ Since your machines do not currently have internet access, you will need to conf
     - Gateway: `172.18.0.1`
     - DNS: `172.18.0.1`
 
+1. **`Lab-3-kali` Machine**:  
+    - IP: `172.18.<ID>.4/16`  
+    - Gateway: `172.18.0.1`
+    - DNS: `172.18.0.1`
+
 ### **Accessing the Virtual Machines**  
 - The VMs can be accessed through your **Proxmox** instance.  
 - To track your progress, visit the <a href="http://172.18.0.3/lab/3" target="_blank">scoreboard</a>.
@@ -43,6 +48,12 @@ Since your machines do not currently have internet access, you will need to conf
 - **Orange Exclamation** indicates that something is partially working. 
 - **Red down arrows** indicate that something is not working.
 
+#### Lab Time Estimates
+
+- **Pass** :
+- **Merit**:
+- **Distinction**:
+
 #### **Credentials**  
 - All VMs have the same login credentials:  
   - **Username**: `blueteam`  
@@ -52,14 +63,11 @@ Since your machines do not currently have internet access, you will need to conf
 
 ### P1: SSH Installation and Configuration
 
-1. Install `SSH` on the server by installing the `openssh-server` package:
-1. Connect to your VM using SSH from your computer:
-   - **Windows**: Use `PowerShell` or `WSL`.
-   - **Mac**: Use the `Terminal` app.
+1. Install `SSH` on the server by installing the `openssh-server` package
 
 ### P2: SSH Key Generation and Management
 
-1. Generate an SSH key on your computer.
+1. Generate an SSH key on your `lab-3-kali` machine.
 1. Copy the public key over to your server to the `blueteam` account.
 1. Connect to the server using the key instead of the password.
 
@@ -70,7 +78,7 @@ Since your machines do not currently have internet access, you will need to conf
 1. Set the maximum number of concurrent sessions to be `5`
 
 ### P4: SSH File Transfers 
-1. Copy the file `ssh-file.txt` from your local machine to your server. Place it in `/home/blueteam/P4/`.
+1. Copy the file `ssh-file.txt` from your `lab-3-kali` machine `Documents` directory to your server. Place it in `/home/blueteam/P4/`.
 
 ### P5: Logging and Monitoring SSH Activity
 
