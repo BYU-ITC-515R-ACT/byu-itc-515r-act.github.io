@@ -1,7 +1,7 @@
 # IT&C 515R – Applications of Cybersecurity Training
 
 
-This syllabus is a comprehensive guide for this course, outlining what is expected of you as a student during the semester and what is expected of me as the instructor. It outlines the course objectives, materials, schedule, and policies, providing you with a clear understanding of what to expect throughout the term.
+This syllabus is a comprehensive guide for this course, outlining what is expected of you as a student during the semester and what is expected of me as the instructor. It outlines the course objectives, materials, schedule, and policies, providing you with a clear understanding of what to expect throughout the term. This syllabus is subject to change at any time at the discretion of the instructor.
 
 
 
