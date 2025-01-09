@@ -98,8 +98,7 @@ To complete `P6` `P1-5` must have a green arrow before starting
 1. Install an FTP server by installing `vsftpd`
 1. Create a user called `ftpuser` and make sure it has a home directory
 1. Restrict `ftp` users to their home directories
-1. Connect to the FTP server from your computer using `ftpuser`
-    - You can use the CLI or an FTP client
+1. Connect to the FTP server from your `lab-3-kali` machine using`ftpuser`
 
 ### P8: FTP Security
 1. Disable anonymous login to the FTP server. 
