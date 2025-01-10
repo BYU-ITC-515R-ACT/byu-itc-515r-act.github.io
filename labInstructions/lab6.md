@@ -62,7 +62,7 @@ Install a backup tool. Verify installation by running a test backup.
 1. Using rsync backup the file `/etc/ssh/sshd_config` on from `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
 
 ### P2: Backup Verification
-1. Compare the file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P1/P1.txt`.
+1. Compare the file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P2/P2.txt` on the `Lab-6-Backup` machine.
 1. The file hashes should be the same. If they are not the file has been changed.
 
 ### P3: Backup Restoration
@@ -75,7 +75,7 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 ### M1: Backup Tool Installation and Configuration
 
-1. Automate the backup to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
+1. Automate the backup (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
   - file permissions
   - file owner(s)
   - timestamps
@@ -98,12 +98,14 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 - Place the backups in `/backups/ssh-ftp` and `/backups/dns` respectively on the `Lab-6-Backup` machine.
 
 ### M2: Cloud Backups  
-1. Choose an offsite solution to back up the files outlined in `M1`. Some options include `Google Drive`, `Dropbox`, `OneDrive`, `GitHub` etc. We would advise against using your personal accounts for this, especially during the competition, as the redteam may compromise your real account credentials if you use them.
+1. Choose an offsite solution to back up 3 of the files outlined in `M1`. Some options include `Google Drive`, `Dropbox`, `OneDrive`, `GitHub` etc. We would advise against using your personal accounts for this, especially during the competition, as the redteam may compromise your real account credentials if you use them.
+
+   **Note:** If you back up valid and secure configuration files of various places to a public github repo, you can use those during the NCAE competition either to reset your service configuration or to reference as you secure it :)
 
 1. This will need to be passed off manually with a TA.
 
 ### M3: Backup Restoration
-To complete `M3` `P1-P3` must have a green arrow before starting.
+To complete `M3` `P1-P3` and `M1` must have a green arrow before starting.
 1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
 
 ## Distinction Criteria
@@ -113,7 +115,7 @@ To complete `M3` `P1-P3` must have a green arrow before starting.
 1. Store your encrypted backups in the `/backups/encrypted` directory
 
 ### D2: Cloud Backups 
-1. Automate the process to backup the encrypted files to your offsite cloud solution
+1. Automate the process to backup the 3 files from `M2` to your offsite cloud solution
 1. This will need to be passed off manually with a TA.
 
 ### D3: Backup Restoration
