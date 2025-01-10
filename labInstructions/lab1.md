@@ -204,7 +204,7 @@ You will be asked two of these questions at random during your verbal pass-off.
 
 1. What is the purpose of creating directories and files in Linux, and how does it help in organizing system resources?
 1. Why might it be important to view the full path of your current directory, especially when working with scripts or configuration files?
-1. What are some reasons you might want to monitor log files like `/var/auth.log` in real-time, and how could this benefit system security?
+1. What are some reasons you might want to monitor log files like `/var/log/auth.log` in real-time, and how could this benefit system security?
 1. In what scenarios would it be useful to view the first or last few lines of a file with commands like `head` and `tail`?
 1. How can the `find and replace` feature be useful in text editors when updating configuration files or scripts?
 1. What does listing hidden files and viewing permissions reveal about the security and access control of a directory?
