@@ -162,7 +162,9 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 
 ### M5: Process Management
 1. Create a cronjob for the `blueteam` account that will execute `/home/blueteam/M5/cronScript.py` every `5 minutes`. The cronjob should be placed in your user's `crontab`
-1. Terminate the process that is running `pleasekillme.py` and remove the cronjob that is enabling it to be persistent but do not remove the script.
+1. Terminate the process that is running `pleasekillme.py` and remove the cronjob that is enabling it to be persistent but do not remove the script. 
+
+You can remove scripts that point to blackteam but do not remove the scripts themselves. Note that the redteam may use accounts that seem to be out of scope to maintain persistence in your system.
 
 ### M6: Disk Usage and Filesystem Management
 1. Partition the drive `sdb` to use `xfs` and mount the directory `/mnt/M6-mount` to `sdb`
