@@ -76,7 +76,7 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 ### P1: File and Directory Operations
 
 1. Create a directory called `P1` in `/home/blueteam/`.
-1. Change the directory you're into the `P1` directory you just created.
+1. Change the directory you're in to the `P1` directory you just created.
 1. Use `touch` to create a file called `P1.txt`
 1. Display the full path of your current directory. Enter the line `path:<command>` into the file `/home/blueteam/P1/P1.txt`
 1. Use `tail` to view file changes in `/var/log/auth.log` in real-time. Enter the line `live-tail:<command>` into the file `/home/blueteam/P1/P1.txt`
