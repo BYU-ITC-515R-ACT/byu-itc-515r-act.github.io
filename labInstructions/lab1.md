@@ -68,7 +68,7 @@ You can hover over your specific arrow and a tooltip will appear with a hint on 
    - You should see the Lab1 VMs in the panel on the left-hand side. You may have to expand the node button (It has the green checkmark next to it) to see them.
 
 
-### Scoring Adivce
+### Scoring Advice
 There may be a way to achieve a criteria that we have not accounted for. If you believe your method meets the criteria but is not being scored please reach out to a TA.
 
 ## Pass Criteria
