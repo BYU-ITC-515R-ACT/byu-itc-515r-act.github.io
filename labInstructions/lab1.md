@@ -117,9 +117,9 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 1. Extract compressed files using `zip`. Extract the zip `/home/blueteam/P5-unzip.zip`. Make sure the directory that contains all the extracted files is located at `/home/blueteam/P5-unzip/`
 
 ### P6: Networking
-1. Check network configuration. Enter the line `network:<command>` into the file `/home/blueteam/P6.txt`
-1. Test connectivity to `google.com` using an ICMP-based check. Enter the line `ping:<command>` into the file `/home/blueteam/P6.txt`
-1. Download the `google.com` homepage from the internet. Enter the line `download:<command>` into the file `/home/blueteam/P6.txt`. Make sure you get the homepage and not a redirect page.
+1. Check network configuration. Enter the line `network:<command>` into the file `/home/blueteam/P6/P6.txt`
+1. Test connectivity to `google.com` using an ICMP-based check. Enter the line `ping:<command>` into the file `/home/blueteam/P6/P6.txt`
+1. Download the `google.com` homepage from the internet. Enter the line `download:<command>` into the file `/home/blueteam/P6/P6.txt`. Make sure you get the homepage and not a redirect page.
 
 ### P7: Process Management
 1. List running processes using `ps` that displays processes for all users in a user-oriented format that includes processes without a terminal. Enter the line `ps:<command>` into the file `/home/blueteam/P7.txt` and enter the flags in alphabetical order
