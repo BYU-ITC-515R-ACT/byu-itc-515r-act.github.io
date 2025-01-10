@@ -93,7 +93,7 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 ### P3: Permissions and Ownership
 1. View file permissions and ownership using `ls`.
     - List all files (including hidden ones) contained in `/home/blueteam/P3/`. Enter the line `hidden:<command>` into the file `/home/blueteam/P3.txt`. Run the command from inside of the `P3` directory.
-    - List all files (including hidden ones) and use the long list format on the file in `/home/blueteam/P3/`. Enter the line `hidden-long:<command>` into the file `/home/blueteam/P3.txt`. Run the command using the absolute file path.
+    - List all files (including hidden ones) and use the long list format on the file in `/home/blueteam/P3/`. Enter the line `hidden-long:<command>` into the file `/home/blueteam/P3/P3.txt`. Run the command using the absolute file path.
 1. Modify file and folder permissions using `chmod`.
     - Change the permissions on the hidden file in `/home/blueteam/P3` to be read only by the file owner and no permissions to anyone else
     - Change the permissions on the file `/home/blueteam/P3/P3-3.txt` to be read and write by the owner and read only by others in the group and all others
