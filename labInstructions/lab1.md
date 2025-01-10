@@ -122,12 +122,12 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 1. Download the `google.com` homepage from the internet. Enter the line `download:<command>` into the file `/home/blueteam/P6/P6.txt`. Make sure you get the homepage and not a redirect page.
 
 ### P7: Process Management
-1. List running processes using `ps` that displays processes for all users in a user-oriented format that includes processes without a terminal. Enter the line `ps:<command>` into the file `/home/blueteam/P7.txt` and enter the flags in alphabetical order
-1. View CPU and memory usage using `top` that displays only the processes for the `blueteam` user. Enter the line `top:<command>`into the file `/home/blueteam/P7.txt`
+1. List running processes using `ps` that displays processes for all users in a user-oriented format that includes processes without a terminal. Enter the line `ps:<command>` into the file `/home/blueteam/P7/P7.txt` and enter the flags in alphabetical order
+1. View CPU and memory usage using `top` that displays only the processes for the `blueteam` user. Enter the line `top:<command>`into the file `/home/blueteam/P7/P7.txt`
 
 ### P8: Disk Usage and Filesystem Management
-1. Check how much space is left on the disk using the `df` command and a flag to make the data human readable. Enter the line `df:<command>`into the file `/home/blueteam/P8.txt`
-1. Check how large the `/opt/` directory is using the `du` command and display the size in `K`. Enter the line `du:<command>` into the file `/home/blueteam/P8.txt`
+1. Check how much space is left on the disk using the `df` command and a flag to make the data human readable. Enter the line `df:<command>`into the file `/home/blueteam/P8/P8.txt`
+1. Check how large the `/opt/` directory is using the `du` command and display the size in `K`. Enter the line `du:<command>` into the file `/home/blueteam/P8/P8.txt`
 
 ### P9: Package Management
 1. Install the package `net-tools` using `apt`
@@ -141,7 +141,7 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
     - Count the number of lines in the file and enter the line `lines:<command>,<number of lines>` into the `/home/blueteam/M1/M1.txt` file
     - Count the number of characters in the file and enter the line `char:<command>,<number of characters>` into the `/home/blueteam/M1/M1.txt` file
     - Count the number of times `Never` appears in the file and enter the line `never:<number of times>` into the `/home/blueteam/M1/M1.txt` file
-1. Use `sed` to replace the word "Always" with "Never" in the file `/home/blueteam/M1/Never-Gonna-Give-You-Up-sed.txt`. Enter the line `sed:<command>`into the `/home/blueteam/lab-1/M1.txt` file
+1. Use `sed` to replace the word "Always" with "Never" in the file `/home/blueteam/M1/Never-Gonna-Give-You-Up-sed.txt`. Enter the line `sed:<command>`into the `/home/blueteam/M1/M1.txt` file
 1. Combine the commands `cowsay` and `fortune` to make the cow say a fortune. Enter the line `cowsay:<command>`into the `/home/blueteam/lab-1/M1.txt` file
 1. Create a hard link to `/home/blueteam/M1-hardlink.txt` called `M1-hardlink.txt` in `/home/blueteam/M1/`:
 1. Create a symbolic link to `/home/blueteam/M1-symlink.txt` called `M1-symlink.txt` in `/home/blueteam/M1/`:
