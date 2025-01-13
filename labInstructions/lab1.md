@@ -142,7 +142,7 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
     - Count the number of characters in the file and enter the line `char:<command>,<number of characters>` into the `/home/blueteam/M1/M1.txt` file
     - Count the number of times `Never` appears in the file and enter the line `never:<number of times>` into the `/home/blueteam/M1/M1.txt` file
 1. Use `sed` to replace the word "Always" with "Never" in the file `/home/blueteam/M1/Never-Gonna-Give-You-Up-sed.txt`. Enter the line `sed:<command>`into the `/home/blueteam/M1/M1.txt` file
-1. Combine the commands `cowsay` and `fortune` to make the cow say a fortune. Enter the line `cowsay:<command>`into the `/home/blueteam/lab-1/M1.txt` file
+1. Combine the commands `cowsay` and `fortune` to make the cow say a fortune. Enter the line `cowsay:<command>`into the `/home/blueteam/M1/M1.txt` file
 1. Create a hard link to `/home/blueteam/M1-hardlink.txt` called `M1-hardlink.txt` in `/home/blueteam/M1/`:
 1. Create a symbolic link to `/home/blueteam/M1-symlink.txt` called `M1-symlink.txt` in `/home/blueteam/M1/`:
 
