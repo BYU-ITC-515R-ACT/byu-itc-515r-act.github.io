@@ -189,13 +189,13 @@ You can remove scripts that point to blackteam but do not remove the scripts the
 1. Add the `Set User ID` permission to the file `/home/blueteam/D1/script.py`
 
 ### D2: Networking
-1. Something is listening on port 1337. Find the PID of the process. Enter the line `sus:<filepath>` into the `/home/blueteam/D2.txt` file
+1. Something is listening on port 1337. Find the PID of the process. Enter the line `sus:<filepath>` into the `/home/blueteam/D2/D2.txt` file
 1. Kill the process you identified and stop it from respawning.
 
 ### D3: Process Management
-1. List all open files. Enter the line `all-files:<command>` into the `/home/blueteam/D3.txt` file
-1. List all open files for the root user. Enter the line `root-files:<command>` into the `/home/blueteam/D3.txt` file
-1. List all open files for SSH for your current `SSH` session. Enter the line `ssh-files:<command>` into the `/home/blueteam/D3.txt` file
+1. List all open files. Enter the line `all-files:<command>` into the `/home/blueteam/D3/D3.txt` file
+1. List all open files for the root user. Enter the line `root-files:<command>` into the `/home/blueteam/D3/D3.txt` file
+1. List all open files for SSH for your current `SSH` session. Enter the line `ssh-files:<command>` into the `/home/blueteam/D3/D3.txt` file
 
 ## Submission
 You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
