@@ -182,10 +182,10 @@ You can remove scripts that point to blackteam but do not remove the scripts the
 1. Count the number of files in the directory `/home/blueteam/D1` using recursion. Enter the line `count:<count>` into the `/home/blueteam/D1/D1.txt` file.
 1. Remove all files and subdirectories from `/home/blueteam/D1-copy` using recursion. Enter the line `remove:<command>` into the `/home/blueteam/D1/D1.txt` file. Use the full filepath in the command.
 1. Locate files by name, type, modification date, and file size.
-    - Locate all files with `game` in the name. Enter the line `game:<command>` into the `/home/blueteam/D1.txt` file
-    - Locate all `python` files on the system. Enter the line `python:<command>` into the `/home/blueteam/D1.txt` file
-    - Locate all files that are larger than `1GB`. Enter the line `1GB:<command>` into the `/home/blueteam/D1.txt` file
-    - Locate all files with the `Set User ID` permissions set. Enter the line `SUID:<command>` into the `/home/blueteam/D1.txt` file
+    - Locate all files with `game` in the name. Enter the line `game:<command>` into the `/home/blueteam/D1/D1.txt` file
+    - Locate all `python` files on the system. Enter the line `python:<command>` into the `/home/blueteam/D1/D1.txt` file
+    - Locate all files that are larger than `1GB`. Enter the line `1GB:<command>` into the `/home/blueteam/D1/D1.txt` file
+    - Locate all files with the `Set User ID` permissions set. Enter the line `SUID:<command>` into the `/home/blueteam/D1/D1.txt` file
 1. Add the `Set User ID` permission to the file `/home/blueteam/D1/script.py`
 
 ### D2: Networking
