@@ -189,7 +189,7 @@ You can remove scripts that point to blackteam but do not remove the scripts the
 1. Add the `Set User ID` permission to the file `/home/blueteam/D1/script.py`
 
 ### D2: Networking
-1. Something is listening on port 1337. Find the PID of the process. Enter the line `sus:<filepath>` into the `/home/blueteam/D2/D2.txt` file
+1. Something is listening on port 1337. Find the PID of the process. Enter the line `sus:<filepath>` (with the filepath of the file that is running in the process) into the `/home/blueteam/D2/D2.txt` file
 1. Kill the process you identified and stop it from respawning.
 
 ### D3: Process Management
