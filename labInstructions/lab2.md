@@ -75,7 +75,7 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 
 ### P1: IP Address and Subnet Mask Configuration
 
-1. Assign a static IP address to each system in the range of IP addresses assigned to you.
+1. Assign a static IP address to each system in the range of IP addresses assigned to you (it must be the one listed in the specifications above to receive points)
 1. Verify that all systems can ping each other and the gateway.  
 
 ### P2: Subnet Mask Configuration
