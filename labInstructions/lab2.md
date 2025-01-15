@@ -99,37 +99,6 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 ## Submission
 You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
 
-![](./Topology.png)
-
-## Pass Criteria
-
-### P1: IP Address and Subnet Mask Configuration
-
-1. Assign a static IP address to each system in the range of IP addresses assigned to you.
-1. Verify that all systems can ping each other and the gateway.  
-
-### P2: Subnet Mask Configuration
-
-1. Ensure that the subnet mask is correctly applied to each system using a /16 network.
-
-## Merit Criteria
-
-### M1: Gateway Configuration
-
-1. Set the default gateway on each system to 172.18.0.1.
-1. Verify that each system can ping a public IP address.
-
-## Distinction Criteria
-
-### D1: DNS Configuration
-
-1. Set a primary and backup DNS server on each system.
-1. Verify that the systems can resolve a domain name and successfully ping it.
-
-## Submission
-
-You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
-
 ## Pass Off Questions
 
 You will be asked two of these questions at random during your verbal pass off. 
