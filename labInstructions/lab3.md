@@ -81,6 +81,7 @@ Since your machines do not currently have internet access, you will need to conf
 1. Copy the file `ssh-file.txt` from your `lab-3-kali` machine `Documents` directory to your server. Place it in `/home/blueteam/P4/`.
 
 ### P5: Logging and Monitoring SSH Activity
+Use the file `/root/secure` for the questions in `P5`
 
 1. View the SSH logs and answer the following questions
     - How many failed login attempts are there for the user `bob`? Enter the line `bob-failed:<count>` into the file `/home/blueteam/P5/P5.txt`.
@@ -96,7 +97,6 @@ To complete `P6` `P1-5` must have a green arrow before starting
 
 ### P7: FTP Installation, Configuration, and User Management
 1. Install an FTP server by installing `vsftpd`
-1. Create a user called `ftpuser` and make sure it has a home directory
 1. Restrict `ftp` users to their home directories
 1. Connect to the FTP server from your `lab-3-kali` machine using`ftpuser`
 
@@ -118,7 +118,9 @@ To complete `P9` `P1-8` must have a green arrow before starting
 1. Disable `password` authentication and only allow `key` authentication 
 
 ### M2: SSH Key Generation and Management
-1. Use the given public SSH keys and configure the user to use their specific key.
+
+1. Generate an ssh key for the users `ssh1`, `ssh2`, `ftpuser`, `bob`  and use their key to login to each of their accounts.
+
 
 ### M3: Logging and Monitoring SSH Activity
 
@@ -150,7 +152,6 @@ To complete `M7` `P1-9 and M1-6` must have a green arrow before starting.
 ### D1: SSH Installation and Configuration
 
 1. Allow the users `ssh1`, `blueteam` and `blackteam` to ssh into the server
-1. Allow the group `wheel` to ssh into the server
 1. Allow the user `ssh2` to ssh into the server but only from `172.18.0.3`
 1. Deny the user `redteam` using ssh
 
