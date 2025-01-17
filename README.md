@@ -97,15 +97,15 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 ## Homework Answer Keys
 
-- [Homework 1 – Basic Networking](homework/homework-1.md)  
-- [Homework 2 – OS Structure](homework/homework-2.md)  
-- [Homework 3 - SSH](homework/homework-3.md)  
-- [Homework 4 – FTP](homework/homework-4.md)  
+- [Homework 1 – Basic Networking](homework/Homework-1.md)  
+- [Homework 2 – OS Structure](homework/Homework-2.md)  
+- [Homework 3 - SSH](homework/Homework-3.md)  
+- [Homework 4 – FTP](homework/Homework-4.md)  
 - [Homework 5 - DNS](homework/homework-5.md)  
-- [Homework 6 – Routers & Firewalls ](homework/homework-6.md)  
-- [Homework 7 – Database Server](homework/homework-7.md)  
-- [Homework 8 – Web Servers ](homework/homework-8.md)  
-- [Homework 9 – Hardening ](homework/homework-9.md)  
-- [Homework 10 – CTF ](homework/homework-10.md) 
+- [Homework 6 – Routers & Firewalls ](homework/Homework-6.md)  
+- [Homework 7 – Database Server](homework/Homework-7.md)  
+- [Homework 8 – Web Servers ](homework/Homework-8.md)  
+- [Homework 9 – Hardening ](homework/Homework-9.md)  
+- [Homework 10 – CTF ](homework/Homework-10.md) 
 
 
