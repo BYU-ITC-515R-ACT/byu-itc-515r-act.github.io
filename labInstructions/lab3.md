@@ -24,6 +24,7 @@ BYU’s focus on lifelong learning and service reminds us that the ability to in
 ### Virtual Machines and Operating Systems
 You will be working with:  
   - 1 CentOS 7 Machine
+  - 1 Kali Linux Machine
 
 ### Network Configuration
 Since your machines do not currently have internet access, you will need to configure the network as follows:  
@@ -98,7 +99,6 @@ To complete `P6` `P1-5` must have a green arrow before starting
 ### P7: FTP Installation, Configuration, and User Management
 1. Install an FTP server by installing `vsftpd`
 1. Restrict `ftp` users to their home directories
-1. Connect to the FTP server from your `lab-3-kali` machine using`ftpuser`
 
 ### P8: FTP Security
 1. Disable anonymous login to the FTP server. 
@@ -116,31 +116,35 @@ To complete `P9` `P1-8` must have a green arrow before starting
 1. Modify the ssh port to also use port `2222`. Make sure it is still also running on port `22`.
 1. Disable `root` account login via ssh
 1. Disable `password` authentication and only allow `key` authentication 
+1. Disable empty passwords from being used for ssh
 
 ### M2: SSH Key Generation and Management
 
-1. Generate an ssh key for the users `ssh1`, `ssh2`, `ftpuser`, `bob`  and use their key to login to each of their accounts.
-
+1. On the `lab-3-kali` machine generate ssh keys for the users `ssh1`, `ssh2`, `ftpuser`, `bob` and use their key to login to each of their accounts.
 
 ### M3: Logging and Monitoring SSH Activity
 
-1. Install the package `auditd`
-1. Using `auditd`. What was the last file the `readteam` account viewed?  Enter the line `filepath:<full filepath>` into the file `/home/blueteam/M4/M4.txt`.
+Using logs answer the following questions:
+
+1. What IP address is the `redteam` account using to access your machine? Enter the line `ip:<ip>` into the file `/home/blueteam/M3/M3.txt`.
+1. What file did the redteam account attempt to view? Enter the line `filepath:<filepath>` into the file `/home/blueteam/M3/M3.txt`.
 
 ### M4: Troubleshooting
-To complete `M5` `P1-9 and M1-3` must have a green arrow before starting.
 
-1. Some of the users are having issues connecting with their keys. Fix the issues.
+To complete `M4` `P1-P9` and `M1-M3` must have a green arrow before starting
+
+The users `ssh3` and `ssh4` are having issues using their ssh keys. Troubleshoot the problems and allow them to access their accounts again.
 
 ### M5: FTP Installation, Configuration, and User Management
 1. Create the directory `/shared-ftp`
-1. Allow `read` and `write` access to the ftp `user` and any member of the `ftp` group to `/shared-ftp`
+1. Allow `read`, `write` and `execute` access to `/shared-ftp` for the `owner` and `group` 
+1. Set the owner of `/shared-ftp` to `ftp-user` and set the `group` to `ftp` 
 1. Place all users in the `/shared-ftp` directory when they log in and do not allow them to exit the directory.
 
 ### M6: FTP Security
-1. Block the user `ssh1` from accessing the FTP server only
+1. Block the user `ssh3` from accessing the `ftp` server but still allow `ssh` access
 1. Set the default file upload permissions to be `644`
-1. The `ftpuser` can read and write files to the system
+1. Ensure that users in the `ftp` group and `read` and `write` over `ftp` to the `/shared-ftp` directory and that users not in the `ftp` group cannot read or write over `ftp` to the `/shared-ftp` directory
 
 ### M7: Troubleshooting
 To complete `M7` `P1-9 and M1-6` must have a green arrow before starting.
@@ -151,9 +155,8 @@ To complete `M7` `P1-9 and M1-6` must have a green arrow before starting.
 
 ### D1: SSH Installation and Configuration
 
-1. Allow the users `ssh1`, `blueteam` and `blackteam` to ssh into the server
-1. Allow the user `ssh2` to ssh into the server but only from `172.18.0.3`
-1. Deny the user `redteam` using ssh
+1. Allow the users `ssh3`, `blueteam` and `blackteam` to ssh into the server
+1. Allow the user `ssh4` to ssh into the server but only from `172.18.0.3`
 
 ### D2: Logging and Monitoring SSH Activity
 
@@ -188,3 +191,5 @@ You will be asked two of these questions at random during your verbal pass-off.
 - **Pass**: All Pass criteria and verbal pass-off has been completed.
 - **Merit:** All **Pass** and **Merit** criteria completed.
 - **Distinction:** All **Pass**, **Merit**, and **Distinction** criteria completed.
+
+
