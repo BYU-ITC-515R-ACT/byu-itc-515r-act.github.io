@@ -6,7 +6,7 @@
 | **SSH Key Generation and Management** | **P2:**  Generate SSH key pairs using `ssh-keygen`. Copy the public key to a remote server and connect using key-based authentication. | **M2:** Manage multiple SSH keys for different users. | |
 | **SSH Hardening** | **P3:** Limit the number of failed login attempts, set timeout restrictions and max sessions. | | **D2:** Use a tool to automatically block IPs after several failed login attempts. |
 | **SSH File Transfers** | **P4:**  Securely copy files between local and remote systems. | | |
-| **Logging and Monitoring SSH Activity** | **P5:**  View basic SSH logs and identify failed login attempts and successful connections. | **M3:** Configure SSH to log more detailed activity, including the commands run by authenticated users. |  |
+| **Logging and Monitoring SSH Activity** | **P5:**  View basic SSH logs and identify failed login attempts and successful connections. | **M3:** Search commands run by authenticated users. |  |
 | **Troubleshooting** | **P6:**  Verify SSH service status. Check config files for syntax errors and/or misconfigurations. | **M4:** Investigate key-based authentication issues. |  |
 | **FTP Installation, Configuration, and User Management** | **P7:** Install an FTP server. Connect to the FTP server from a client using an FTP client or command-line tool. Create FTP-specific users on the server. Assign home directories for FTP users. Limit FTP users to their home directories. | **M5:** Set up default directories for users. Set different permissions for different users. | |
 | **FTP Security** | **P8:** Disable anonymous login to the FTP server. | **M6:** Modify the FTP configuration to restrict access to users or groups. |  |
