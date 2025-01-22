@@ -120,6 +120,8 @@ To complete `P9` `P1-8` must have a green arrow before starting
 
 ### M2: SSH Key Generation and Management
 
+Note: Do not change the passwords of any users.
+
 1. On the `lab-3-kali` machine generate ssh keys for the users `ssh1`, `ssh2`, `ftpuser`, `bob` and use their key to login to each of their accounts.
 
 ### M3: Logging and Monitoring SSH Activity
