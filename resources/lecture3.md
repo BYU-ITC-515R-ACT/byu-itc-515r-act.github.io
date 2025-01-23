@@ -26,5 +26,5 @@
 
 
 ### Downloads
-- <a href="./downloads/lecture3-0ifcfg-eth0" download>Linux CLI Cheat Sheet</a><br>
-- <a href="./downloads/lecture3-00-installer-config.yaml" download>vim Cheat Sheet</a><br>
+- <a href="./downloads/lecture3-0ifcfg-eth0" download>Centos Config Example</a><br>
+- <a href="./downloads/lecture3-00-installer-config.yaml" download>Ubuntu Config Example</a><br>
