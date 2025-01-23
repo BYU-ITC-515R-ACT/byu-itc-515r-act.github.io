@@ -30,7 +30,7 @@ Since your machines do not currently have internet access, you will need to conf
 
 1. **`Lab-4-DNS` Machine**:  
     - WAN (`ens18` interface):  
-        - IP: `172.18.x.4/16`  
+        - IP: `172.18.x.5/16`  
         - Gateway: `172.18.0.1`
         - DNS: `172.18.0.1`
     - LAN (`ens19` interface):  
@@ -71,24 +71,23 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 | **Service**        | **Domain Name**                 | **Record Types** | **Resolving IP** |
 |--------------------|---------------------------------|------------------|-----------------|
-| **DNS**            | `ns.friedchicken.local`         | NS, PTR          | `192.168.1.29`  | 
-| **Intranet**       | `intranet.friedchicken.local`   | A, PTR           | `192.168.1.30`  | 
-| **HR System**      | `hr.friedchicken.local`         | A, PTR           | `192.168.1.31`  | 
-| **Finance**        | `finance.friedchicken.local`    | A, PTR           | `192.168.1.32`  | 
-| **Development**    | `dev.friedchicken.local`        | A, PTR           | `192.168.1.33`  |
-| **QA/Test**        | `qa.friedchicken.local`         | A, PTR           | `192.168.1.34`  | 
-| **Helpdesk**       | `helpdesk.friedchicken.local`   | A, PTR           | `192.168.1.35`  | 
-| **Inventory**      | `inventory.friedchicken.local`  | A, PTR           | `192.168.1.36`  | 
-| **Wiki**           | `wiki.friedchicken.local`       | A, PTR           | `192.168.1.37`  | 
+| **DNS**            | `ns.friedchicken.local`         | NS, A, PTR       | `192.168.X.10`  | 
+| **Intranet**       | `intranet.friedchicken.local`   | A, PTR           | `192.168.X.30`  | 
+| **HR System**      | `hr.friedchicken.local`         | A, PTR           | `192.168.X.31`  | 
+| **Finance**        | `finance.friedchicken.local`    | A, PTR           | `192.168.X.32`  | 
+| **Development**    | `dev.friedchicken.local`        | A, PTR           | `192.168.X.33`  |
+| **QA/Test**        | `qa.friedchicken.local`         | A, PTR           | `192.168.X.34`  | 
+| **Helpdesk**       | `helpdesk.friedchicken.local`   | A, PTR           | `192.168.X.35`  | 
+| **Inventory**      | `inventory.friedchicken.local`  | A, PTR           | `192.168.X.36`  | 
+| **Wiki**           | `wiki.friedchicken.local`       | A, PTR           | `192.168.X.37`  | 
 
 ### External Domains
 
 | **Service**        | **Domain Name**                 | **Record Types** | **Resolving IP** |
 |--------------------|---------------------------------|------------------|-----------------|
-| **DNS**            | `ns.friedchicken.com`           | NS, PTR          | `172.18.X.4`    | 
-| **Website**        | `friedchicken.com`              | A, PTR           | `172.18.X.4`    | 
-| **Website**        | `www.friedchicken.com`          | CNAME, PTR       | `172.18.X.4`    | 
-| **Mail Server**    | `mail.friedchicken.com`         | MX, PTR          | `172.18.X.5`    | 
+| **DNS**            | `ns.friedchicken.com`           | NS, PTR          | `172.18.X.5`    | 
+| **Website**        | `friedchicken.com`              | A, PTR           | `172.18.X.6`    | 
+| **Website**        | `www.friedchicken.com`          | CNAME, PTR       | `172.18.X.6`    | 
 | **APIs**           | `api.friedchicken.com`          | A, PTR           | `172.18.X.6`    | 
 | **Status Page**    | `status.friedchicken.com`       | A, PTR           | `172.18.X.7`    | 
 | **E-commerce**     | `shop.friedchicken.com`         | A, PTR           | `172.18.X.8`    | 
@@ -101,13 +100,13 @@ For forward lookups, the A, NS or CNAME records must resolve and for a reverse l
 ### P1: DNS Installation and Configuration
 
 1. Install `DNS` on the server by installing the `bind9` package
-1. Configure a forward lookup zone for all the domains with `A` records in the `Internal Domains` table
-1. Configure a reverse lookup zone for all the domains with `PTR` records in the `Internal Domains` table
 
 ### P2: DNS Installation and Configuration
 
 1. Configure a forward lookup zone for all the domains with `A` records in the `Internal Domains` table
 1. Configure a reverse lookup zone for all the domains with `PTR` records in the `Internal Domains` table
+- You should be able to resolve the domain names from your `Lab-4-Internal` machine when the records have been created.
+
 
 ### P3: Troubleshooting
 To complete `P3` `P1-P2` must have a green arrow before starting.
