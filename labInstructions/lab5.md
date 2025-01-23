@@ -79,12 +79,12 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 ### P3: Securing Incoming and Outgoing Traffic
 1. Set all default policies to `deny` incoming and `allow` outgoing for all machines
 1. Allow `ICMP` in on the `WAN` address of `Lab-5-router`
-1. Allow `SSH` traffic in on the `LAN` address of `Lab-5-router`
-1. Allow `SSH` traffic in on `Lab-5-website`
-1. Allow `SSH` traffic in on `Lab-5-dns`
-1. Allow `HTTP` traffic in on `Lab-5-website`
-1. Allow `HTTPS` traffic in on `Lab-5-website`
-1. Allow `DNS` traffic in on `Lab-5-dns`
+1. Allow `SSH` traffic over `TCP` `IN` on the `LAN` address of `Lab-5-router`
+1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-website`
+1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-dns`
+1. Allow `HTTP` traffic over `TCP` `IN` on `Lab-5-website`
+1. Allow `HTTPS` traffic over `TCP` `IN` on `Lab-5-website`
+1. Allow `DNS` traffic over `UDP` `IN` on `Lab-5-dns`
 
 ### P4: Logging and Monitoring Firewall Activity 
 
@@ -111,12 +111,12 @@ To complete `P5` `P1-P4` must have a green arrow before starting.
 Implement your rules on the `Lab-5-website` machine. Consider the order the rules will need to be in to be effective.
 1. Allow all incoming traffic on the `192.168.0.0/16` network that has the destination ports for `SSH`, `HTTP`, and `HTTPS` traffic.
 1. Ensure that the correct transport layer protocol is applied to the rules as well. If the service is only used over `TCP` then `UDP` should not be allowed and vice versa.
-1. Block traffic from `192.168.X.15` that is website traffic
-1. Block traffic from `192.168.100.0/24` that is SSH traffic
+1. Block traffic from `192.168.X.15` for `HTTP` and `HTTPS` traffic
+1. Block traffic from `192.168.100.0/24` for `SSH` traffic
 1. Allow only `DNS` traffic from `Lab-5-website` to `Lab-5-dns`
 
 ### M2: Securing Incoming and Outgoing Traffic 
-
+Implement your rules on the `Lab-5-dns` machine. Consider the order the rules will need to be in to be effective.
 1. Configure `iptables` for stateful inspection
 1. Prevent a `SYN` flood attack
 1. Limit SSH brute force attempts to 5 in 60 seconds
@@ -124,6 +124,7 @@ Implement your rules on the `Lab-5-website` machine. Consider the order the rule
 1. Limit `DNS` requests to 10 per second
 
 ### M3: Routing and NAT Configuration
+Implement your rules on the`Lab-5-router` machine. Consider the order the rules will need to be in to be effective.
 1. Port forward TCP traffic on ports `80` and `443` from the `Lab-5-router` to `Lab-5-website`
 1. Port forward UDP traffic on ports `53` from the `Lab-5-router` to `Lab-5-dns`
 
