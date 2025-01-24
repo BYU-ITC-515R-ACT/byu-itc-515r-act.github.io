@@ -16,19 +16,20 @@ Since your machines do not currently have internet access, you will need to conf
 
 1. **`Lab-5-router` Machine**:  
    - WAN (`ens18` interface):  
-     - IP: `172.18.x.5/16`  
-     - Gateway: `172.18.0.1`  
+     - IP: `172.18.x.6/16`  
+     - Gateway: `172.18.0.1`
+     - DNS: `172.18.0.1`  
    - LAN (`ens19` interface):  
      - IP: `192.168.x.1/16`  
      - No gateway required  
 
 1. **`Lab-5-website  ` Machine**:  
-   - IP: `192.168.x.2/24`  
+   - IP: `192.168.x.2/16`  
    - Gateway: `192.168.x.1`  
    - DNS: `192.168.x.3`  
 
 1. **`Lab-5-dns` Machine**:  
-   - IP: `192.168.x.3`  
+   - IP: `192.168.x.3/16`  
    - Gateway: `192.168.x.1`  
    - DNS: `192.168.x.1`  
 
@@ -54,6 +55,8 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 ## Pass Criteria
 
+Make sure the `VM Scoring` Arrow is green before continuing past this point.
+
 ### P1: Firewall Installation and Basic Configuration
 
 #### `Lab-5-router` Machine  
@@ -61,11 +64,25 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. Enable the `firewalld` service
 1. Check the status of the `firewalld` service. Enter the line `firewalld:<command>` into the file `/home/blueteam/P1/P1.txt`.
 
-#### `Lab-5-website` Machine   
+#### `Lab-5-website` Machine  
 1. Enable the `ufw` service
 1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P1/P1.txt`.
 
-### P2: Configuring Ports and Services
+### P2: Securing Incoming and Outgoing Traffic
+
+Note: The dashboard will mark you VMs as note scoring until the `ssh` rules have been added.
+
+1. Set all default policies to `deny` incoming and `allow` outgoing for all machines
+1. Allow `ICMP` in on the `WAN` address of `Lab-5-router`
+1. Allow `SSH` traffic over `TCP` `IN` on the `LAN` address of `Lab-5-router`
+1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-website`
+1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-dns`
+1. Allow `HTTP` traffic over `TCP` `IN` on `Lab-5-website`
+1. Allow `HTTPS` traffic over `TCP` `IN` on `Lab-5-website`
+1. Allow `DNS` traffic over `UDP` `IN` on `Lab-5-dns`
+
+
+### P3: Configuring Ports and Services
 
 #### `Lab-5-router` Machine  
 1. List all the current firewall rules for `firewalld`. Enter the line `firewalld:<command>` into the file `/home/blueteam/P2/P2.txt`.
@@ -76,15 +93,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 #### `Lab-5-dns` Machine  
 1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
-### P3: Securing Incoming and Outgoing Traffic
-1. Set all default policies to `deny` incoming and `allow` outgoing for all machines
-1. Allow `ICMP` in on the `WAN` address of `Lab-5-router`
-1. Allow `SSH` traffic over `TCP` `IN` on the `LAN` address of `Lab-5-router`
-1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-website`
-1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-dns`
-1. Allow `HTTP` traffic over `TCP` `IN` on `Lab-5-website`
-1. Allow `HTTPS` traffic over `TCP` `IN` on `Lab-5-website`
-1. Allow `DNS` traffic over `UDP` `IN` on `Lab-5-dns`
+
 
 ### P4: Logging and Monitoring Firewall Activity 
 
