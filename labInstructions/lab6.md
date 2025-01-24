@@ -58,7 +58,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 ### P1: Backup Tool Installation and Configuration
 
 Install a backup tool. Verify installation by running a test backup. 
-1. Install `rsync` onto the backup server.
+1. Install `rsync` onto each machine.
 1. Using rsync backup the file `/etc/ssh/sshd_config` on from `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
 
 ### P2: Backup Verification
