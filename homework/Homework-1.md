@@ -1,11 +1,5 @@
 # Homework 1 – Basic Networking
 
-## Part 1 - Try Hack Me
-
-Part 1 is completing the Try Hack Me Room [Introductory Networking](https://tryhackme.com/r/room/introtonetworking)
- 
-## Part 2 - CTFD Questions
-
 1. **Question:** Which command can you use to check the current IP configuration of your machine in Linux?
    - **Answer:** `ifconfig` or `ip a`
 
