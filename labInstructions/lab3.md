@@ -140,7 +140,7 @@ The users `ssh3` and `ssh4` are having issues using their ssh keys. Troubleshoot
 ### M5: FTP Installation, Configuration, and User Management
 1. Create the directory `/shared-ftp`
 1. Allow `read`, `write` and `execute` access to `/shared-ftp` for the `owner` and `group` 
-1. Set the owner of `/shared-ftp` to `ftp-user` and set the `group` to `ftp` 
+1. Set the owner of `/shared-ftp` to `ftpuser` and set the `group` to `ftp` 
 1. Place all users in the `/shared-ftp` directory when they log in and do not allow them to exit the directory.
 
 ### M6: FTP Security
