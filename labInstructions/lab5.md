@@ -19,19 +19,26 @@ Since your machines do not currently have internet access, you will need to conf
      - IP: `172.18.x.6/16`  
      - Gateway: `172.18.0.1`
      - DNS: `172.18.0.1`  
+     - Zone : `External`
    - LAN (`ens19` interface):  
      - IP: `192.168.x.1/16`  
      - No gateway required  
+    - DNS: `192.168.x.3` 
+    - Zone : `Internal`
+
+Note the addition of `Zone` for the router machine. These will place the interfaces into preset zones within firewalld.
 
 1. **`Lab-5-website  ` Machine**:  
    - IP: `192.168.x.2/16`  
    - Gateway: `192.168.x.1`  
-   - DNS: `192.168.x.3`  
+   - DNS1: `192.168.x.3` 
+   - DNS2: `172.18.0.1` 
 
 1. **`Lab-5-dns` Machine**:  
    - IP: `192.168.x.3/16`  
    - Gateway: `192.168.x.1`  
-   - DNS: `192.168.x.1`  
+   - DNS1: `172.18.0.1`
+   - DNS2: `8.8.8.8`  
 
 #### **Accessing the Virtual Machines**  
 - The VMs can be accessed through your **Proxmox** instance.  
@@ -57,7 +64,11 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 Make sure the `VM Scoring` Arrow is green before continuing past this point.
 
-### P1: Firewall Installation and Basic Configuration
+### P1: Router Installation and Basic Configuration
+1. Using the `Lab-5-router` machine set it up as a router. When it is properly configured the internal machines should be able to access the internet. 
+1. Use the `CentOS 7 Router Setup Guide` in `Lecture 8 - Routers Resources & Readings` to help you with the setup.
+
+### P2: Firewall Installation and Basic Configuration
 
 #### `Lab-5-router` Machine  
 1. Install `firewalld`
@@ -68,24 +79,22 @@ Make sure the `VM Scoring` Arrow is green before continuing past this point.
 1. Enable the `ufw` service
 1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P1/P1.txt`.
 
-### P2: Securing Incoming and Outgoing Traffic
+Note: The dashboard will mark your VMs as not scoring until the `ssh` rules have been added in P3.
 
-Note: The dashboard will mark you VMs as note scoring until the `ssh` rules have been added.
+### P3: Securing Incoming and Outgoing Traffic
 
-1. Set all default policies to `deny` incoming and `allow` outgoing for all machines
+1. Set all default policies to `deny` incoming and `allow` outgoing for all machines and applicable zones
 1. Allow `ICMP` in on the `WAN` address of `Lab-5-router`
-1. Allow `SSH` traffic over `TCP` `IN` on the `LAN` address of `Lab-5-router`
+1. Remove any other inbound rules for the `WAN` interface
+1. Set the default policy to `allow` for the `LAN` address of `Lab-5-router`
 1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-website`
-1. Allow `SSH` traffic over `TCP` `IN` on `Lab-5-dns`
 1. Allow `HTTP` traffic over `TCP` `IN` on `Lab-5-website`
 1. Allow `HTTPS` traffic over `TCP` `IN` on `Lab-5-website`
-1. Allow `DNS` traffic over `UDP` `IN` on `Lab-5-dns`
 
-
-### P3: Configuring Ports and Services
+### P4: Configuring Ports and Services
 
 #### `Lab-5-router` Machine  
-1. List all the current firewall rules for `firewalld`. Enter the line `firewalld:<command>` into the file `/home/blueteam/P2/P2.txt`.
+1. List all the current firewall rules for all zones in `firewalld`. Enter the line `firewalld:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
 #### `Lab-5-website` Machine   
 1. List all the current firewall rules for `ufw`. Enter the line `ufw:<command>` into the file `/home/blueteam/P2/P2.txt`.
@@ -93,44 +102,53 @@ Note: The dashboard will mark you VMs as note scoring until the `ssh` rules have
 #### `Lab-5-dns` Machine  
 1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
-
-
-### P4: Logging and Monitoring Firewall Activity 
+### P5: Logging and Monitoring Firewall Activity 
 
 By default, some firewalls may not log traffic. 
 
-- To enable logging in ufw use `sudo ufw logging on`
-- To enable logging in `firewalld` use `sudo firewall-cmd --set-log-denied=all`
+UFW has 5 options for log levels
 
-1. On the `Lab-5-website` machine use the logs to see how many devices have attempted to access the machine using `SSH`. If you have attempted it, disregard your IP from the list. Enter the line `ssh:<number of IPs>` into the file `/home/blueteam/P4/P4.txt`.
-1. On the `Lab-5-router` machine use the logs to see how many devices have attempted to resolve a `DNS` query through the router.  If you have attempted it, disregard your IP from the list. Enter the line `dns:<number of IPs>` into the file `/home/blueteam/P4/P4.txt`.
+- No logs
+- All blocked packets (default).
+- All blocked packets and some allowed connections.
+- All blocked and allowed packets, including detailed packet headers.
+- All possible logging for detailed debugging.
 
-### P5: Troubleshooting
+Firewalld also has 5 options:
+
+- Disable logging for denied packets (default).
+- Log all denied packets.
+- Log denied unicast packets.
+- Log denied broadcast packets.
+- Log denied multicast packets.
+
+1. On the `Lab-5-website` machine enable logging for all blocked packets and some allowed connections.
+1. Locate the `UFW` traffic logs on the machine. Enter the line `ufw-filepath:<Full Absolute Filepath>` into the file `/home/blueteam/P5/P5.txt`. 
+
+1. On the `Lab-5-router` machine enable logging for all denied packets. 
+1. Locate the `firewalld` traffic logs on the machine. Enter the line `firewalld-filepath:<Full Absolute Filepath>` into the file `/home/blueteam/P5/P5.txt`. 
+
+### P6: Troubleshooting
 To complete `P5` `P1-P4` must have a green arrow before starting.
 
-1. There seems to be an issue with the `Lab-5-website` firewall. Troubleshoot the errors and restore proper network connections to it.
-
-### P6: Router Installation and Basic Configuration
-1. Using the `Lab-5-router` machine set it up as a router. When it is properly configured the internal machines should be able to access the internet. 
-1. Use the `CentOS 7 Router Setup Guide` in `Lecture 8 - Routers Resources & Readings` to help you with the setup.
+1. There seems to be some problems with the firewalls and router. Troubleshoot the errors and restore proper network connections to the network.
 
 ## Merit Criteria
 
 ### M1: Firewall Installation and Basic Configuration
-Implement your rules on the `Lab-5-website` machine. Consider the order the rules will need to be in to be effective.
+Implement your rules on the `Lab-5-website` machine. Consider the order the rules will need to be in to be effective. You may have to alter or remove existing rules.
+
 1. Allow all incoming traffic on the `192.168.0.0/16` network that has the destination ports for `SSH`, `HTTP`, and `HTTPS` traffic.
 1. Ensure that the correct transport layer protocol is applied to the rules as well. If the service is only used over `TCP` then `UDP` should not be allowed and vice versa.
-1. Block traffic from `192.168.X.15` for `HTTP` and `HTTPS` traffic
-1. Block traffic from `192.168.100.0/24` for `SSH` traffic
-1. Allow only `DNS` traffic from `Lab-5-website` to `Lab-5-dns`
+1. Block traffic from `192.168.0.15` for `HTTP` and `HTTPS` traffic
+1. Block traffic from `172.18.0.16` for `HTTP` and `HTTPS` traffic
+1. Block traffic from `192.168.99.0/24` for `SSH` traffic
+1. Allow all incoming traffic on the `172.18.0.0/16` network that has the destination ports for, `HTTP`, and `HTTPS` traffic.
+1. Deny all other incoming traffic
 
 ### M2: Securing Incoming and Outgoing Traffic 
-Implement your rules on the `Lab-5-dns` machine. Consider the order the rules will need to be in to be effective.
-1. Configure `iptables` for stateful inspection
-1. Prevent a `SYN` flood attack
-1. Limit SSH brute force attempts to 5 in 60 seconds
-1. Drop invalid packets
-1. Limit `DNS` requests to 10 per second
+
+1. Using the logs on `Lab-5-router` and `Lab-5-website`. Identify the IP of the scoring engine. Enter the line `scoring:<IP>` into the file `/home/blueteam/M2/M2.txt`.
 
 ### M3: Routing and NAT Configuration
 Implement your rules on the`Lab-5-router` machine. Consider the order the rules will need to be in to be effective.
@@ -139,8 +157,13 @@ Implement your rules on the`Lab-5-router` machine. Consider the order the rules 
 
 ## Distinction Criteria
 
-### D1: Firewall Installation and Basic Configuration 
-1. Using the firewall logs on `Lab-5-router` and `Lab-5-website`. Identify malicious traffic and block the Protocol and/or IP address.
+### D1: Firewall Installation and Basic Configuration
+
+1. Someone has removed the firewall from the `Lab-5-dns` machine. Install `iptables` and configure it.
+1. Set all default policies to `deny` incoming and `allow` outgoing for the `Lab-5-dns` machine.
+1. Allow `SSH` traffic over `TCP` `IN` from anywhere  on `Lab-5-dns`
+1. Allow `DNS` traffic over `UDP` `IN` from anywhere on `Lab-5-dns`
+1. Ensure that you can still access the internet
 
 ## Submission
 You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
@@ -173,4 +196,3 @@ You will be asked two of these questions at random during your verbal pass-off.
 - **Pass**: All Pass criteria and verbal pass-off has been completed.
 - **Merit:** All **Pass** and **Merit** criteria completed.
 - **Distinction:** All **Pass**, **Merit**, and **Distinction** criteria completed.
-
