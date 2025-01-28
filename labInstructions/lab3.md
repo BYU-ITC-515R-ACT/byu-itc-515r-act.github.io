@@ -126,7 +126,7 @@ Note: Do not change the passwords of any users.
 
 ### M3: Logging and Monitoring SSH Activity
 
-Using logs answer the following questions:
+Using logs (use the logs with postfixes of `-date` rather than the normal ones) answer the following questions:
 
 1. What IP address is the `redteam` account using to access your machine? Enter the line `ip:<ip>` into the file `/home/blueteam/M3/M3.txt`.
 1. What file did the redteam account attempt to view? Enter the line `filepath:<filepath>` into the file `/home/blueteam/M3/M3.txt`.
