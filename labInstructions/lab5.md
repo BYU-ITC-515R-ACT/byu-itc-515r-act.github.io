@@ -73,11 +73,11 @@ Make sure the `VM Scoring` Arrow is green before continuing past this point.
 #### `Lab-5-router` Machine  
 1. Install `firewalld`
 1. Enable the `firewalld` service
-1. Check the status of the `firewalld` service. Enter the line `firewalld:<command>` into the file `/home/blueteam/P1/P1.txt`.
+1. Check the status of the `firewalld` service. Enter the line `firewalld:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
 #### `Lab-5-website` Machine  
 1. Enable the `ufw` service
-1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P1/P1.txt`.
+1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P2/P2.txt`.
 
 Note: The dashboard will mark your VMs as not scoring until the `ssh` rules have been added in P3.
 
