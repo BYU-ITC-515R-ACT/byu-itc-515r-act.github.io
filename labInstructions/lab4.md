@@ -111,7 +111,6 @@ For forward lookups, the A, NS or CNAME records must resolve and for a reverse l
 ### P3: Troubleshooting
 To complete `P3` `P1-P2` must have a green arrow before starting.
 
-1. Check the status of the `bind9` service. Enter the line `status:<command>` into the file `/home/blueteam/P6/P6.txt`.
 1. Fix the errors in the DNS config files to allow the service to restart.
 1. Restart the service.
 
