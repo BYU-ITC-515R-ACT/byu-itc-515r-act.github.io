@@ -94,13 +94,13 @@ Note: The dashboard will mark your VMs as not scoring until the `ssh` rules have
 ### P4: Configuring Ports and Services
 
 #### `Lab-5-router` Machine  
-1. List all the current firewall rules for all zones in `firewalld`. Enter the line `firewalld:<command>` into the file `/home/blueteam/P2/P2.txt`.
+1. List all the current firewall rules for all zones in `firewalld`. Enter the line `firewalld:<command>` into the file `/home/blueteam/P4/P4.txt`.
 
 #### `Lab-5-website` Machine   
-1. List all the current firewall rules for `ufw`. Enter the line `ufw:<command>` into the file `/home/blueteam/P2/P2.txt`.
+1. List all the current firewall rules for `ufw`. Enter the line `ufw:<command>` into the file `/home/blueteam/P4/P4.txt`.
 
 #### `Lab-5-dns` Machine  
-1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P2/P2.txt`.
+1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P4/P4.txt`.
 
 ### P5: Logging and Monitoring Firewall Activity 
 
