@@ -76,7 +76,7 @@ Since your machines do not currently have internet access, you will need to conf
 
 1. Limit the number of failed login attempts to `3`.
 1. Set the timeout to be `1 minute`.
-1. Set the maximum number of concurrent sessions to be `5`
+1. Set the maximum number of concurrent sessions to be `10`
 
 ### P4: SSH File Transfers 
 1. Copy the file `ssh-file.txt` from your `lab-3-kali` machine `Documents` directory to your server. Place it in `/home/blueteam/P4/`.
