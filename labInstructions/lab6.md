@@ -16,19 +16,19 @@ Since your machines do not currently have internet access, you will need to conf
 
 1. **`Lab-6-SSH-FTP` Machine**:  
     - WAN (`ens18` interface):  
-        - IP: `172.18.<ID>.6/16`  
+        - IP: `172.18.<ID>.7/16`  
         - Gateway: `172.18.0.1`  
         - DNS: `172.18.0.1`  
 
 1. **`Lab-6-DNS` Machine**:  
     - LAN (`ens18` interface):  
-        - IP: `172.18.<ID>.7/16`    
+        - IP: `172.18.<ID>.8/16`    
         - Gateway: `172.18.0.1`  
         - DNS:  `172.18.0.1`  
 
 1. **`Lab-6-Backup` Machine**:  
     - LAN (`ens18` interface):  
-        - IP: `172.18.<ID>.8/16`   
+        - IP: `172.18.<ID>.9/16`   
         - Gateway: `172.18.0.1`  
         - DNS: `172.18.0.1`  
 
@@ -59,7 +59,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 Install a backup tool. Verify installation by running a test backup. 
 1. Install `rsync` onto each machine.
-1. Using rsync backup the file `/etc/ssh/sshd_config` on from `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
+1. Using rsync backup the file `/etc/ssh/sshd_config` from the `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
 
 ### P2: Backup Verification
 1. Compare the file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P2/P2.txt` on the `Lab-6-Backup` machine.
