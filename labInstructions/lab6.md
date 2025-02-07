@@ -82,16 +82,14 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 1. Back up the following files and directories:
 - Lab-6-SSH-FTP
-  - `/etc/ssh/`
-  - `/home/blueteam/`
-  - `/etc/vsftpd`
+  - `/etc/ssh/sshd_config`
+  - `/etc/vsftpd.conf`
   - `/etc/shadow`
   - `/etc/passwd`
 
 - Lab-6-DNS
-  - `/etc/ssh/`
-  - `/etc/named/`
-  - `/home/blueteam/`
+  - `/etc/ssh/sshd_config`
+  - `/etc/named.conf`
   - `/etc/shadow`
   - `/etc/passwd`
 
