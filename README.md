@@ -89,12 +89,6 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Team Lab 2 - Red Team Practice](labInstructions/teamLab2.md)  
 - <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
 
-## Exam Instructions
-- [Midterm 1](examInstructions/midterm1.md)  
-- [Midterm 2](examInstructions/midterm2.md)  
-- [Final](examInstructions/final.md)
-- <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
-
 ## Homework Answer Keys
 
 - [Homework 1 – Basic Networking](homework/Homework-1.md)  
