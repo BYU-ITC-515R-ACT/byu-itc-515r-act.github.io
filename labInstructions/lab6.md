@@ -75,23 +75,21 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 ### M1: Backup Tool Installation and Configuration
 
-1. Automate the backup (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
+1. Automate the backup of sshd_config (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
   - file permissions
   - file owner(s)
   - timestamps
 
 1. Back up the following files and directories:
 - Lab-6-SSH-FTP
-  - `/etc/ssh/`
-  - `/home/blueteam/`
-  - `/etc/vsftpd`
+  - `/etc/ssh/sshd_config`
+  - `/etc/vsftpd.conf`
   - `/etc/shadow`
   - `/etc/passwd`
 
 - Lab-6-DNS
-  - `/etc/ssh/`
-  - `/etc/named/`
-  - `/home/blueteam/`
+  - `/etc/ssh/sshd_config`
+  - `/etc/named.conf`
   - `/etc/shadow`
   - `/etc/passwd`
 
