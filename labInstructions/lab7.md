@@ -103,9 +103,15 @@ To complete `M1` `P1-P4` must have a green arrow before starting.
   - Log all SQL queries that take more than 200ms
 
 ### M4 Troubleshooting
-To complete `M4` `P1-P4`and `M1-M3` must have a green arrow before starting.
+To complete `M4` `P1-P4` and `M1-M3` must have a green arrow before starting.
  
 - The database is having issues, find and fix them.
+- The criteria for a working database are:
+  - The Postgres service is running
+  - You can connect locally with DB users and remotely with any users that need it
+  - The database should maintain its integrity
+  - Database users have the correct permissions
+
 
 ### Distinction Criteria
 
