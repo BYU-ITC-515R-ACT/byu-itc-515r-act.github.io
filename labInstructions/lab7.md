@@ -43,8 +43,6 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 ### P1: Database Installation and Setup
 
-1. Install PostgreSQL onto the machine
-1. Start the service
 1. Log in using the `postgres` account. Enter the line `login:<command>` into `/home/blueteam/P1/P1.txt`
 1. Set the password for the `postgres` user to be `unwell-easter-broadly`.
 1. Create a database called `etechacademy`
