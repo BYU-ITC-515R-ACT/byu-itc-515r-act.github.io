@@ -110,7 +110,8 @@ To complete `M3` `P1-P3` and `M1` must have a green arrow before starting.
 
 ### D1: Backup Verification
 1. Use `EncFS` to encrypt the backups on the `Lab-6-Backup` machine.
-1. Store your encrypted backups in the `/backups/encrypted` directory
+    - You'll need to install `EncFS`, which we've made easy for you. To install this from scratch on a RHEL machine, you would need to install `epel-release` and `tinyxml2`, which we've already taken care of for you.
+1. Store your encrypted backups in the `/backups/encrypted` directory in the `Lab-6-Backup` machine (you'll go from this machine to this machine). Thus, the `/backups/dns` directory should be backed up to `/backups/encrypted/dns` and `ssh-ftp` to `/backups/encrypted/ssh-ftp`.
 
 ### D2: Cloud Backups 
 1. Automate the process to backup the 3 files from `M2` to your offsite cloud solution
