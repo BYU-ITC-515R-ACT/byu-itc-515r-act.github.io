@@ -54,6 +54,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 1. Create a backup user with the `superuser` role, name the user `admin` and set the password to `stream-regroup-childhood`.
 1. Create another user called `website` with the password `labored-contend-probation` and allow it to only `SELECT`, `UPDATE`, `DELETE` and `INSERT` permissions on the `etechacademy` database.
+ - In order for this step to score, these users must be able to log in to the database
 
 ### P3: Database Security
 
