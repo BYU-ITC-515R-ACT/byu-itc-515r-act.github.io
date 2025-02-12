@@ -43,8 +43,8 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 ### P1: Database Installation and Setup
 
-1. Log in using the `postgres` account. Enter the line `login:<command>` into `/home/blueteam/P1/P1.txt`
-1. Set the password for the `postgres` user to be `unwell-easter-broadly`.
+1. Log into postgres using the `postgres` account. Enter the line `login:<command>` into `/home/blueteam/P1/P1.txt`
+1. Set the password for the `postgres` user to be `unwell-easter-broadly` in the db.
 1. Create a database called `etechacademy`
 1. Switch to use the `etechacademy` database
 1. Import the file `/home/blueteam/database.sql` into the `etechacademy` database.
