@@ -108,3 +108,18 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 To complete `D1` `P1-P3` and `M1` must have a green arrow before starting.
 1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
 
+## Pass Off Questions
+
+You will be asked two of these questions at random during your verbal pass-off. 
+
+1. Why would you want to back up files?
+2. What strengths does rsync have to other backup solutions?
+3. What are some risks of automating backups / restores?
+4. What would YOU do in a competition setting for backups?
+
+### Grading
+
+- **Pass**: All Pass criteria and verbal pass-off has been completed.
+- **Merit:** All **Pass** and **Merit** criteria completed.
+- **Distinction:** All **Pass**, **Merit**, and **Distinction** criteria completed.
+
