@@ -102,20 +102,24 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 1. This will need to be passed off manually with a TA.
 
-### M3: Backup Restoration
-To complete `M3` `P1-P3` and `M1` must have a green arrow before starting.
-1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
-
 ## Distinction Criteria
 
-### D1: Backup Verification
-1. Use `EncFS` to encrypt the backups on the `Lab-6-Backup` machine.
-1. Store your encrypted backups in the `/backups/encrypted` directory
+### D1: Backup Restoration
+To complete `D1` `P1-P3` and `M1` must have a green arrow before starting.
+1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
 
-### D2: Cloud Backups 
-1. Automate the process to backup the 3 files from `M2` to your offsite cloud solution
-1. This will need to be passed off manually with a TA.
+## Pass Off Questions
 
-### D3: Backup Restoration
-1. Automate the restoration process from your offsite cloud solution to your local backup server. 
-1. This will need to be passed off manually with a TA.
+You will be asked two of these questions at random during your verbal pass-off. 
+
+1. Why would you want to back up files?
+2. What strengths does rsync have to other backup solutions?
+3. What are some risks of automating backups / restores?
+4. What would YOU do in a competition setting for backups?
+
+### Grading
+
+- **Pass**: All Pass criteria and verbal pass-off has been completed.
+- **Merit:** All **Pass** and **Merit** criteria completed.
+- **Distinction:** All **Pass**, **Merit**, and **Distinction** criteria completed.
+

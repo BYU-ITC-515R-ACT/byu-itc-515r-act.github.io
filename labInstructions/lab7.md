@@ -43,8 +43,8 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 ### P1: Database Installation and Setup
 
-1. Log in using the `postgres` account. Enter the line `login:<command>` into `/home/blueteam/P1/P1.txt`
-1. Set the password for the `postgres` user to be `unwell-easter-broadly`.
+1. Log into postgres using the `postgres` account. Enter the line `login:<command>` into `/home/blueteam/P1/P1.txt`
+1. Set the password for the `postgres` user to be `unwell-easter-broadly` in the db.
 1. Create a database called `etechacademy`
 1. Switch to use the `etechacademy` database
 1. Import the file `/home/blueteam/database.sql` into the `etechacademy` database.
@@ -54,6 +54,8 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 1. Create a backup user with the `superuser` role, name the user `admin` and set the password to `stream-regroup-childhood`.
 1. Create another user called `website` with the password `labored-contend-probation` and allow it to only `SELECT`, `UPDATE`, `DELETE` and `INSERT` permissions on the `etechacademy` database.
+ - In order for this step to score, these users must be able to log in to the database
+ - *Additional Note*: you don't need this to score this step, but you will need to grant usage and insert on sequences to score on P4 (you can test it with and without in trying to insert into the table and you'll see why). We'll leave the implementation of this to you.
 
 ### P3: Database Security
 
