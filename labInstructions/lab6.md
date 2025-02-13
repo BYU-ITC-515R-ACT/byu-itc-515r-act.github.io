@@ -50,7 +50,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 #### **File Creation and Content**  
 - If a referenced file does not exist, you must create it.  
-- For any questions requiring files to contain specific content, use the `Lab-5-router` machine.  
+- For any questions requiring files to contain specific content, use the `Lab-6-backup` machine.  
 
 
 ## Pass Criteria
@@ -62,7 +62,7 @@ Install a backup tool. Verify installation by running a test backup.
 1. Using rsync backup the file `/etc/ssh/sshd_config` from the `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
 
 ### P2: Backup Verification
-1. Compare the file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P2/P2.txt` on the `Lab-6-Backup` machine.
+1. Compare the MD5 file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P2/P2.txt` on the `Lab-6-Backup` machine.
 1. The file hashes should be the same. If they are not the file has been changed.
 
 ### P3: Backup Restoration
@@ -75,7 +75,7 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 ### M1: Backup Tool Installation and Configuration
 
-1. Automate the backup of sshd_config (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
+1. Automate the backup of sshd_config from `Lab-6-SSH-FTP` to `Lab-6-Backup` (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
   - file permissions
   - file owner(s)
   - timestamps
