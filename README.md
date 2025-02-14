@@ -31,9 +31,6 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Lab 10 – Script Writing](gradingTables/lab10.md)  
 - [Team Lab 1 - Set up Practice](gradingTables/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](gradingTables/teamLab2.md)  
-- [Midterm 1](gradingTables/midterm1.md)  
-- [Midterm 2 - CTF](gradingTables/midterm2.md)  
-- [Final - Service Setup & CTF](gradingTables/final.md)  
 
 ## Individual Lab Instructions 
 
@@ -87,12 +84,6 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 - [Team Lab 1 - Set up Practice](labInstructions/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](labInstructions/teamLab2.md)  
-- <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
-
-## Exam Instructions
-- [Midterm 1](examInstructions/midterm1.md)  
-- [Midterm 2](examInstructions/midterm2.md)  
-- [Final](examInstructions/final.md)
 - <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
 
 ## Homework Answer Keys
