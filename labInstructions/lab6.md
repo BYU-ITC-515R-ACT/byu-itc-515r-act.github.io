@@ -108,6 +108,10 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 To complete `D1` `P1-P3` and `M1` must have a green arrow before starting.
 1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
 
+
+## Submission
+You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+
 ## Pass Off Questions
 
 You will be asked two of these questions at random during your verbal pass-off. 
