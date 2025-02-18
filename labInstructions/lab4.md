@@ -145,7 +145,7 @@ To complete `M3` `P1-3` and `M1-2` must have a green arrow before starting.
 1. Disable zone transfers. 
 
 ## Submission
-You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA.
 
 ## Pass Off Questions
 

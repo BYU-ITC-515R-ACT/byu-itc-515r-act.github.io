@@ -198,7 +198,7 @@ You can remove scripts that point to blackteam but do not remove the scripts the
 1. List all open files for SSH for your current `SSH` session. Enter the line `ssh-files:<command>` into the `/home/blueteam/D3/D3.txt` file
 
 ## Submission
-You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA.
 
 ## Pass Off Questions
 

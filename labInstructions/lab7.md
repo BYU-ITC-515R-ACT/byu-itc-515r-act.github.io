@@ -124,7 +124,7 @@ To complete `M4` `P1-P4` and `M1-M3` must have a green arrow before starting.
 
 ## Submission
 
-You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA.
 
 ## Pass Off Questions
 

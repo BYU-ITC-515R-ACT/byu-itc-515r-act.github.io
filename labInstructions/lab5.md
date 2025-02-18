@@ -166,7 +166,7 @@ Implement your rules on the`Lab-5-router` machine. Consider the order the rules 
 1. Ensure that you can still access the internet
 
 ## Submission
-You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA.
 
 ## Pass Off Questions
 

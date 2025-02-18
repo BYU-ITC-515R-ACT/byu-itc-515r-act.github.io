@@ -97,7 +97,7 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 1. Verify that the systems can resolve a domain name and successfully ping it.
 
 ## Submission
-You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA.
 
 ## Pass Off Questions
 
