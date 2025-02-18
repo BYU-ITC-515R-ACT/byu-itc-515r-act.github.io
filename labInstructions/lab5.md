@@ -23,8 +23,8 @@ Since your machines do not currently have internet access, you will need to conf
    - LAN (`ens19` interface):  
      - IP: `192.168.x.1/16`  
      - No gateway required  
-    - DNS: `192.168.x.3` 
-    - Zone : `Internal`
+     - DNS: `192.168.x.3` 
+     - Zone : `Internal`
 
 Note the addition of `Zone` for the router machine. These will place the interfaces into preset zones within firewalld.
 

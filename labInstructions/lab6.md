@@ -8,27 +8,28 @@ In this lab, you'll focus on creating and managing backups for essential network
 
 #### Virtual Machines and Operating Systems
 You will be working with:  
-- 2 Ubuntu 20.04 Machines 
+- 1 Ubuntu 20.04 Machine
 - 1 CentOS 7 Machine
+- 1 Rocky 7
 
 #### Network Configuration
 Since your machines do not currently have internet access, you will need to configure the network as follows:  
 
 1. **`Lab-6-SSH-FTP` Machine**:  
     - WAN (`ens18` interface):  
-        - IP: `172.18.<ID>.6/16`  
+        - IP: `172.18.<ID>.7/16`  
         - Gateway: `172.18.0.1`  
         - DNS: `172.18.0.1`  
 
 1. **`Lab-6-DNS` Machine**:  
     - LAN (`ens18` interface):  
-        - IP: `172.18.<ID>.7/16`    
+        - IP: `172.18.<ID>.8/16`    
         - Gateway: `172.18.0.1`  
         - DNS:  `172.18.0.1`  
 
 1. **`Lab-6-Backup` Machine**:  
     - LAN (`ens18` interface):  
-        - IP: `172.18.<ID>.8/16`   
+        - IP: `172.18.<ID>.9/16`   
         - Gateway: `172.18.0.1`  
         - DNS: `172.18.0.1`  
 
@@ -50,7 +51,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 #### **File Creation and Content**  
 - If a referenced file does not exist, you must create it.  
-- For any questions requiring files to contain specific content, use the `Lab-5-router` machine.  
+- For any questions requiring files to contain specific content, use the `Lab-6-backup` machine.  
 
 
 ## Pass Criteria
@@ -59,10 +60,10 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 Install a backup tool. Verify installation by running a test backup. 
 1. Install `rsync` onto each machine.
-1. Using rsync backup the file `/etc/ssh/sshd_config` on from `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
+1. Using rsync backup the file `/etc/ssh/sshd_config` from the `Lab-6-SSH-FTP` machine to the `Lab-6-Backup` machine. Place the backup file in the `/backups/ssh-ftp` directory.
 
 ### P2: Backup Verification
-1. Compare the file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P2/P2.txt` on the `Lab-6-Backup` machine.
+1. Compare the MD5 file hash of the original file and the backup. Enter the lines `original:<filehash>` and `backup:<filehash>` into the file `/home/blueteam/P2/P2.txt` on the `Lab-6-Backup` machine.
 1. The file hashes should be the same. If they are not the file has been changed.
 
 ### P3: Backup Restoration
@@ -75,23 +76,21 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 ### M1: Backup Tool Installation and Configuration
 
-1. Automate the backup (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
+1. Automate the backup of sshd_config from `Lab-6-SSH-FTP` to `Lab-6-Backup` (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
   - file permissions
   - file owner(s)
   - timestamps
 
 1. Back up the following files and directories:
 - Lab-6-SSH-FTP
-  - `/etc/ssh/`
-  - `/home/blueteam/`
-  - `/etc/vsftpd`
+  - `/etc/ssh/sshd_config`
+  - `/etc/vsftpd.conf`
   - `/etc/shadow`
   - `/etc/passwd`
 
 - Lab-6-DNS
-  - `/etc/ssh/`
-  - `/etc/named/`
-  - `/home/blueteam/`
+  - `/etc/ssh/sshd_config`
+  - `/etc/named.conf`
   - `/etc/shadow`
   - `/etc/passwd`
 
@@ -104,20 +103,28 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 1. This will need to be passed off manually with a TA.
 
-### M3: Backup Restoration
-To complete `M3` `P1-P3` and `M1` must have a green arrow before starting.
-1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
-
 ## Distinction Criteria
 
-### D1: Backup Verification
-1. Use `EncFS` to encrypt the backups on the `Lab-6-Backup` machine.
-1. Store your encrypted backups in the `/backups/encrypted` directory
+### D1: Backup Restoration
+To complete `D1` `P1-P3` and `M1` must have a green arrow before starting.
+1. It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the `Lab-6-Backup` machine to their original machine, only if the file has changed.
 
-### D2: Cloud Backups 
-1. Automate the process to backup the 3 files from `M2` to your offsite cloud solution
-1. This will need to be passed off manually with a TA.
 
-### D3: Backup Restoration
-1. Automate the restoration process from your offsite cloud solution to your local backup server. 
-1. This will need to be passed off manually with a TA.
+## Submission
+You don't need to submit anything for this lab. All of the above criteria will auto-graded. Once you have finished the lab you will have to do a verbal pass off with a TA.
+
+## Pass Off Questions
+
+You will be asked two of these questions at random during your verbal pass-off. 
+
+1. Why would you want to back up files?
+2. What strengths does rsync have to other backup solutions?
+3. What are some risks of automating backups / restores?
+4. What would YOU do in a competition setting for backups?
+
+### Grading
+
+- **Pass**: All Pass criteria and verbal pass-off has been completed.
+- **Merit:** All **Pass** and **Merit** criteria completed.
+- **Distinction:** All **Pass**, **Merit**, and **Distinction** criteria completed.
+
