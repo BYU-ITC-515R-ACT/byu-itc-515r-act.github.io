@@ -53,7 +53,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. The `.env` file should only be readable and writable by the owner.
 
 ### P3: Logging and Monitoring Web Activity
-1. Find where the `http` access and error logs are stored. Enter the file location into `/home/blueteam/P3.txt` as `access:<filepath to access log file>` and `error:<filepath to error log file>`
+1. Find where the `http` access and error logs are stored. Enter the file location into `/home/blueteam/P3/P3.txt` as `access:<filepath to access log file>` and `error:<filepath to error log file>`
 
 ### P4: Firewall and Access Controls
 1. Allow `ssh` from only `172.18.0.3` over `TCP`
