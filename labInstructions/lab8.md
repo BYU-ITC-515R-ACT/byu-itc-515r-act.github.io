@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will install and configure Nginx as a web server, set up a reverse proxy to route traffic to a Flask application, and implement security hardening measures. You will also learn how to manage firewall rules, monitor server activity through logs, and mitigate common web application vulnerabilities.
+In this lab, you will install and configure Nginx as a web server, set up a reverse proxy to route traffic to a Flask application and implement security hardening measures. You will also learn how to manage firewall rules, monitor server activity through logs, and mitigate common web application vulnerabilities.
 
 ### Configuration Instructions
 
@@ -48,7 +48,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 ### P2: Security Hardening 
 1. Set the correct file and directory permissions for the website located in `/var/lib/etechacademy`
 1. All files should be owned by the user and group `www-data`.
-1. Directories should allow the owner full permissions, the group and all others read and execute.
+1. Directories should allow the owner full permissions, the group, and all others read and execute.
 1. Files should allow the owner to read and write and be read only for the group and all others.
 1. The `.env` file should only be readable and writable by the owner.
 
@@ -64,19 +64,21 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 ## Merit Criteria
 
 ### M1: Web Server Installation and Configuration
-1. Set up the website located in `/var/lib/etechacademy`
-1. Install any needed packages and dependencies
-1. Use the database server you set up in lab 7 as the database for the website. The website user should already have the correct permissions for the website, but you will need to add the IP of the lab-8-webserver machine to the allowed list of IPs on your lab 7 database machine .
+
+1. Set up a reverse proxy to forward traffic from port `80` to port `5000`
 
 ### M2: Web Server Installation and Configuration
-1. Set up a reverse proxy to forward traffic from port `80` to port `5000`
+1. Set up the website located in `/var/lib/etechacademy`
+1. Install any needed packages and dependencies
+1. Use the database server you set up in lab 7 as the database for the website. The website user should already have the correct permissions for the website, but you will need to add the IP of the `lab-8-webserver` machine to the allowed list of IPs on your `lab-7-database` machine.
+1. The website should function without any errors and be available on the `172.18.<ID>.15`.
+
 
 ### Distinction Criteria
 
 ### D1: Security Hardening 
 1. Find and fix the vulnerabilities in the code. This will need to be passed off with a TA.
 1. Use the lecture slides and other common web vulnerabilities to get you started.
-
 
 ### D2: Firewall and Access Controls
 1. Using the system logs, locate any malicious traffic and block the offending IP address.
@@ -86,7 +88,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 ## Submission
 
-You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA.
+You don't need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab, you will have to do a verbal pass-off with a TA.
 
 ## Pass Off Questions
 
