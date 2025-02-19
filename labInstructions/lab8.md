@@ -46,16 +46,19 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. Verify that it is running
 
 ### P2: Security Hardening 
-1. Disable directory listing 
-1. Set the correct file and directory permissions for the website.
+1. Set the correct file and directory permissions for the website located in `/var/lib/etechacademy`
+1. All files should be owned by the user and group `www-data`.
+1. Directories should allow the owner full permissions, the group and all others read and execute.
+1. Files should allow the owner to read and write and be read only for the group and all others.
+1. The `.env` file should only be readable and writable by the owner.
 
 ### P3: Logging and Monitoring Web Activity
 1. Find where the `http` access and error logs are stored. Enter the file location into `/home/blueteam/P3.txt` as `access:<filepath to access log file>` and `error:<filepath to error log file>`
 
 ### P4: Firewall and Access Controls
 1. Allow `ssh` from only `172.18.0.3`
-1. Allow `http` traffic from `172.18.0.3/16`
-1. Allow `https` traffic from `172.18.0.3/16`
+1. Allow `http` traffic from `172.18.0.0/16`
+1. Allow `https` traffic from `172.18.0.0/16`
 1. Ensure that the default rules are to `DENY` incoming and `ALLOW` outgoing.
 
 ## Merit Criteria
@@ -63,7 +66,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 ### M1: Web Server Installation and Configuration
 1. Set up the website located in `/var/lib/etechacademy`
 1. Install any needed packages and dependencies
-1. Use the database server you set up in lab 7 as the database for the website. The website user should already have the correct permissions for the website, but you will need to add the IP of the lab-8-webserver machine to the allowed list of IPs.
+1. Use the database server you set up in lab 7 as the database for the website. The website user should already have the correct permissions for the website, but you will need to add the IP of the lab-8-webserver machine to the allowed list of IPs on your lab 7 database machine .
 
 ### M2: Web Server Installation and Configuration
 1. Set up a reverse proxy to forward traffic from port `80` to port `5000`
