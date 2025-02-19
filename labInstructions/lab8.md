@@ -15,7 +15,7 @@ Since your machines do not currently have internet access, you will need to conf
 
 1. **`Lab-8-webserver` Machine**:  
     - WAN (`ens18` interface):  
-        - IP: `172.18.<ID>.12/16`  
+        - IP: `172.18.<ID>.15/16`  
         - Gateway: `172.18.0.1`  
         - DNS: `172.18.0.1`  
 
