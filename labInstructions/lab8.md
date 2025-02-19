@@ -71,7 +71,8 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. Set up the website located in `/var/lib/etechacademy`
 1. Install any needed packages and dependencies
 1. Use the database server you set up in lab 7 as the database for the website. The website user should already have the correct permissions for the website, but you will need to add the IP of the `lab-8-webserver` machine to the allowed list of IPs on your `lab-7-database` machine.
-1. The website should function without any errors and be available on the `172.18.<ID>.15`.
+1. The website should function without any errors and be available on the `172.18.<ID>.15`. 
+1. You will also need to find a way to run the application in the background as a system process.
 
 
 ## Distinction Criteria
