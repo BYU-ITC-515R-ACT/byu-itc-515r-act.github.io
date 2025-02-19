@@ -56,9 +56,9 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. Find where the `http` access and error logs are stored. Enter the file location into `/home/blueteam/P3.txt` as `access:<filepath to access log file>` and `error:<filepath to error log file>`
 
 ### P4: Firewall and Access Controls
-1. Allow `ssh` from only `172.18.0.3`
-1. Allow `http` traffic from `172.18.0.0/16`
-1. Allow `https` traffic from `172.18.0.0/16`
+1. Allow `ssh` from only `172.18.0.3` over `TCP`
+1. Allow `http` traffic from `172.18.0.0/16` over `TCP`
+1. Allow `https` traffic from `172.18.0.0/16` over `TCP`
 1. Ensure that the default rules are to `DENY` incoming and `ALLOW` outgoing.
 
 ## Merit Criteria
@@ -74,7 +74,7 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 1. The website should function without any errors and be available on the `172.18.<ID>.15`.
 
 
-### Distinction Criteria
+## Distinction Criteria
 
 ### D1: Security Hardening 
 1. Find and fix the vulnerabilities in the code. This will need to be passed off with a TA.
