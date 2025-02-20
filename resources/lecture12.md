@@ -9,7 +9,9 @@
 - <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top Ten</a>  
 - <a href="https://owasp.org/www-project-vulnerable-flask-app/" target="_blank">OWASP Vulnerable Flask App</a>  
 - <a href="https://escape.tech/blog/best-practices-protect-flask-applications/" target="_blank">Best practices to protect your Flask applications</a>  
-- <a href="https://virtubox.github.io/advanced-nginx-cheatsheet/" target="_blank">Advanced Nginx Cheatsheet</a>  
+- <a href="https://virtubox.github.io/advanced-nginx-cheatsheet/" target="_blank">Advanced Nginx Cheatsheet</a>
+- <a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04" target="_blank">Configuring Flask on Nginx</a> (this one might reallllllyyyyy come in handy, guys)
+- <a href="https://tryhackme.com/room/webapplicationbasics" target="_blank">Intro to Web TryHackMe</a>
 
 ### Videos
 
