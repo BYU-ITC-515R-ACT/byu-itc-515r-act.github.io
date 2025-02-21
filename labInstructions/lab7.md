@@ -15,7 +15,7 @@ Since your machines do not currently have internet access, you will need to conf
 
 1. **`Lab-7-database` Machine**:  
     - WAN (`ens18` interface):  
-        - IP: `172.18.<ID>.11/16`  
+        - IP: `172.18.<ID>.14/16`  
         - Gateway: `172.18.0.1`  
         - DNS: `172.18.0.1`  
 
