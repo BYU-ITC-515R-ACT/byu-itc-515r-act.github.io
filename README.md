@@ -69,7 +69,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Lecture 11 - Backups Resources & Readings](resources/lecture11.md)
 - <a href="lectureSlides/lecture11.pptx" download>Lecture 11 – Backups Slides</a>
 - [Lecture 12 - Web Servers Resources & Readings](resources/lecture12.md)
-- <a href="lectureSlides/lecture12.pptx" download>Lecture 12 – Web Servers Slides</a>
+- <a href="lectureSlides/lecture12.pdf" download>Lecture 12 – Web Servers Slides</a>
 - [Lecture 13 - Hardening Resources & Readings](resources/lecture13.md)
 - <a href="lectureSlides/lecture13.pptx" download>Lecture 13 – Hardening Part 1 Slides</a>
 - [Lecture 14 - CTF Resources & Readings](resources/lecture14.md)
