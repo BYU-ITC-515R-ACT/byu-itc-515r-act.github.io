@@ -188,6 +188,7 @@
             <td>Friday 7 March</td>
             <td>
                 <li>Lecture 14: CTF - Crypto, Web & Rev</li>
+                <li>Lecture 15: Hardening Part 2</li>
             </td>
             <td></td>
         </tr>
