@@ -208,5 +208,5 @@ The PostgreSQL services are scored from the internal team network, using the int
 
 - PostgreSQL scoring user: `bill_kaplan`
 - PostgreSQL scoring password: `b1ackjack!`
-- PostgreSQL Scoring user can login, read, and write to the database db
+- PostgreSQL Scoring user can login, read, and write to the database `db`
 - PostgreSQL Scoring user can log, read, and write to the table users
