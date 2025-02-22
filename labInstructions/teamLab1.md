@@ -63,7 +63,7 @@ The router should return an ICMP request on the external WAN IP of `172.18.10<T>
 
 Note that all Web checks are scored through the router.
 
-WWW will be regarded as functioning if a request can be made to your router and return the webpage with a `200` status code from your web server.
+WWW will be regarded as functioning if a request can be made to your router and return the webpage with a `200` status code from your web server. The website files are located in  `/var/lib/etechacademy`.
 
 ### WWW Content
 
