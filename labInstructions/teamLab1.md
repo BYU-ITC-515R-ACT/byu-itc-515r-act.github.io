@@ -141,7 +141,7 @@ The above addresses containing `.team\<T>.net` will be scored from inside the in
 All FTP scoring users must be able to log in, read, and write files. The files must keep the same file hash to be considered correct. 
 
 FTP Login - Users must be able to log in using their password.
-FTP Write - Users must be able to write/upload files to the FTP server in the `/FTP` directory.
+FTP Write - Users must be able to write/upload files to the FTP server.
 FTP Read - The user must be able to read/download files from the server with the correct content.
 
 #### Users 
