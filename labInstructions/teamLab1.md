@@ -48,7 +48,7 @@ You will not receive any help to debug your systems or set up any of your servic
 
 ## Service Requirements
 
-NOTE: Any instance of <T> represents your team number. For example, if you're on Team 1, 172.18.100.<T> translates to 172.18.100.1
+NOTE: Any instance of `<T>` represents your team number. For example, if you're on Team 1, `172.18.100.<T>` translates to `172.18.100.1`
 
 ## Network Diagram
 
