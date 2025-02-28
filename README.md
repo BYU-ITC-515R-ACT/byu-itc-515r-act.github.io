@@ -14,7 +14,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 ## Homework
 - <a href="https://itc515r-act.ctfd.cyberjousting.com/" target="_blank">Class CTFd Instance</a>
-- [Homework 10 - CTF](homework/Homework 10.pdf)
+- <a href="homework/Homework 10.pdf" download>Homework 10 - CTF</a>
 
 ## Grading Criteria 
 - [Fortnightly Vulnerability Reports](gradingTables/reports.md)  
