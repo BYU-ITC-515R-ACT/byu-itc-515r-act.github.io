@@ -187,7 +187,6 @@
          <td rowspan="2" class="no-wrap">Week 9</td>
             <td>Friday 7 March</td>
             <td>
-                <li>Lecture 14: CTF - Crypto, Web & Rev</li>
                 <li>Lecture 15: Hardening Part 2</li>
             </td>
             <td></td>
@@ -205,14 +204,15 @@
             <td></td>
             <td>
                 <li>Vulnerability Report 5</li>
-                <li>Homework 10 – CTF</li>
             </td>
         </tr>
          <tr class="even-row">
             <td>Friday 14 March</td>
             <td>
+                <li>Lecture 14: CTF - Crypto, Web & Rev</li>
                 <li>Review of Regionals</li>
                 <li>Midterm 2</li>
+                <li>Homework 10 – CTF</li>
             </td>
             <td></td>
         </tr>
@@ -242,7 +242,7 @@
          <tr class="even-row">
             <td>Friday 28 March</td>
             <td>
-                <li>Lecture 15: Hardening Part 2</li>
+                <li>Lecture 16: Script Writing</li>
             </td>
             <td></td>
         </tr>
@@ -257,7 +257,7 @@
         <tr class="odd-row">
             <td>Friday 4 April</td>
             <td>
-                <li>Lecture 16: Script Writing</li>
+                <li>Open Topic/ Final Review</li>
             </td>
             <td></td>
         </tr>
@@ -282,6 +282,7 @@
             <td></td>
             <td>
                 <li>NCAE Cyber Games Invitationals</li>
+                <li>Final Exam (09:00 to 16:00)</li>
             </td>
         </tr>
         <tr class="odd-row">
@@ -291,13 +292,6 @@
                 <li>Last Day of classes - All assignments due</li>
             </td>
             <td></td>
-        </tr>
-        <tr class="odd-row">
-            <td>Friday 18 April</td>
-            <td></td>
-            <td>
-                <li>Final (09:00 to 16:00)</li>
-            </td>
         </tr>
     </tbody>
 </table>
