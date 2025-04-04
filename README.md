@@ -35,6 +35,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Lab 10 – Script Writing](gradingTables/lab10.md)  
 - [Team Lab 1 - Set up Practice](gradingTables/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](gradingTables/teamLab2.md)  
+- [Final](gradingTables/final.md) 
 
 ## Individual Lab Instructions 
 
