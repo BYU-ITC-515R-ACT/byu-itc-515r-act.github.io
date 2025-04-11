@@ -18,6 +18,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 ## Exams
 - [Midterm 2](exams/midterm2.md)  
+- [Final](exams/final.md)
 
 ## Grading Criteria 
 - [Fortnightly Vulnerability Reports](gradingTables/reports.md)  
