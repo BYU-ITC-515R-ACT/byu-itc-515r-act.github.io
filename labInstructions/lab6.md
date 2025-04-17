@@ -9,8 +9,7 @@ In this lab, you'll focus on creating and managing backups for essential network
 #### Virtual Machines and Operating Systems
 You will be working with:  
 - 1 Ubuntu 20.04 Machine
-- 1 CentOS 7 Machine
-- 1 Rocky 7
+- 2 Rocky 7 Machines
 
 #### Network Configuration
 Since your machines do not currently have internet access, you will need to configure the network as follows:  

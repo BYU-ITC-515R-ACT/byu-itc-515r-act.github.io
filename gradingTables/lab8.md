@@ -1,9 +1,14 @@
-## Lab 8: Web Servers
+## Lab 8: Hardening & Threat Hunting
 
 | **Criteria** | **Pass** | **Merit** | **Distinction** |
 |------|--------------------------------------|--------------------------------------|--------------------------------------|
-| **Web Server Installation and Configuration** | **P1:** Install a web server and verify the web service is running. | **M1:** Set up a website from the provided code and host it on the server. Set up and manage server modules. **M2:** Configure a reverse proxy |  |
-| **Security Hardening** | **P2:** Disable directory browsing and prevent access to sensitive files. Set proper file and directory permissions for the web root. | | **D1:** Find and fix the vulnerabilities in the website code. |
-| **Logging and Monitoring Web Activity** | **P3:** View basic access and error logs |  **M2:** Enable logging of HTTP requests and responses for auditing purposes. |
-| **Firewall and Access Controls** | **P4:** Set up firewall rules to restrict access to the web server. | | **D2:** Block malicious source IPs using log files. |
-| **Verbal Pass off** | **P5:** Successfully answer two TA chosen pass off questions.|
+| **System Commands** | **P1:** Restore basic user-level system commands to correct functionality. | **M1:** Restore system-level binaries to correct functionality.    | **D1:** Fully restore all command functions. |
+| **Scheduled Tasks** | **P2:** Review and remove obvious malicious scheduled tasks. | **M2:** Identify and remove condition-based automated tasks. | **D2:** Review and remove deeply embedded malicious system tasks. |
+| **Update and Package Management** | **P3:** Update and upgrade packages. |  **M3:** Remove restrictions on firewall installation. | |
+| **Firewall and Network Security** | | **M4:** Install a firewall and configure it to block malicious traffic.   |  |
+| **User and Group Management** | **P4:** Remove obvious malicious users and secure legitimate users.  | **M5:** Identify and remove hidden malicious users.  | **D3:** Implement secure user password and hashing policies. |
+| **SSH Security** | **P5:** Configure secure SSH settings, allowing legitimate users to use their SSH keys.  | **M6:** Remove malicious SSH settings and configurations.| **D4:** Terminate and block malicious SSH sessions. |
+| **Malicious Programs and Software** | **P6:** Remove any bind or reverse shells. | **M7:** Identify and remove password loggers.  | **D5:** Find the rest of the malicious threats. |
+| **Folder and File Permissions** | **P7:** Ensure critical files have correct permissions.  |  |  |
+| **FTP Security** | **P8:** Configure secure FTP settings and allow users to access the FTP server | **M8:** Restrict access to users or groups. | |
+| **Verbal Pass Off** | **P9:** Successfully answer two pass-off questions chosen by the TA. |  |  |
