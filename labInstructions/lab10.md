@@ -20,7 +20,7 @@ BYU’s focus on lifelong learning and service reminds us that the ability to in
 
 ### Virtual Machines and Operating Systems
 You will be working with:  
-  - 1 CentOS 7 Machine
+  - 1 Rocky 7 Machine
   - 1 Ubuntu 20.04
 
 ### Network Configuration
@@ -40,7 +40,7 @@ Since your machines do not currently have internet access, you will need to conf
 
 ### P1: Script Approval
 
-1. Before you begin creating your script the professor or TA must approve the idea to ensure it meets the minimum requirements. Your script must work on both Ubuntu 20.04 and CentOS 7. 
+1. Before you begin creating your script the professor or TA must approve the idea to ensure it meets the minimum requirements. Your script must work on both Ubuntu 20.04 and Rocky 8. 
 1. Here are some ideas that you could use:
     - Automated Firewall Configuration  
     - Checksum Integrity Verifier  
@@ -66,11 +66,7 @@ Since your machines do not currently have internet access, you will need to conf
     - Ruby
 1. Include detailed code comments
 
-### P3: Scheduling and Automation
-
-1. Schedule the script to run at a specific time using a method that ensures it runs consistently and persists across reboots.
-
-### P4: Security and Permissions
+### P3: Security and Permissions
 
 1. Ensure the script has the correct file permissions and runs with the appropriate user privileges to execute all functionality properly.  
 
@@ -114,24 +110,9 @@ You will be asked two of these questions at random during your verbal pass-off.
 1. How does your script accept user input, and how does it handle different types of input?
 1. Can you explain the conditional statements used in your script and how they determine the flow of execution?
 1. What is the purpose of the loop in your script, and how does it iterate over files or data?
-1. Can you explain how you ensured your script handles edge cases or unexpected inputs?
 1. How does your script behave when the user provides invalid input or when an error occurs?
-1. Could you describe the different components or functions you used in your script to modularize tasks?
 1. How does your script handle the case where a required file or resource is missing?
-1. Could you walk me through how the script would behave if it encountered an unexpected system failure?
-1. How did you test your script to ensure it works correctly before scheduling it for automation?
-1. What steps did you take to ensure the script runs with the correct user privileges and permissions?
-1. How does your script ensure it has the appropriate permissions to perform its tasks on sensitive files or services?
-1. Can you explain how you set the file permissions for your script and why that was necessary?
 1. How does your script check and validate that it is being run by the correct user or group?
-1. What actions does your script take to prevent unauthorized access or potential security risks during execution?
-1. How did you schedule your script to run at a specific time, and how did you ensure it persists across reboots?
-1. What scheduling tool did you use (e.g., cron, systemd), and why did you choose that method for your script?
-1. Can you explain the process of making your script run automatically without manual intervention after reboot?
-1. What happens if your script fails to execute during the scheduled time? How does it handle that situation?
-1. Can you describe how the script maintains functionality even if the system is rebooted during execution?
-
-
 
 ### Grading:
 - **Pass**: All Pass criteria and verbal pass-off has been completed.
