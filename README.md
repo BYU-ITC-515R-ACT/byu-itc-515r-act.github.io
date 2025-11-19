@@ -5,11 +5,10 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 ## Class Documents
 
 - [Syllabus](classDocs/syllabus.md) 
-- [Schedule](classDocs/schedule.md)  
 - <a href="classDocs/gradeCalculator.xlsx"  download>Grade Calculator Download</a>
 - TA Appointments
-    - <a href="https://calendar.app.google/g3YA83Ph2EcwE17p7" target="_blank">Sebastian</a> 
-    - <a href="https://calendar.app.google/ThQoGMDDQoA7YqfdA" target="_blank">Macen</a> 
+    - <a href="" target="_blank">Sebastian</a> 
+    - <a href="" target="_blank">Macen</a> 
     - TA Appointments are 15 minutes so please plan accordingly
 
 ## Homework
@@ -18,7 +17,7 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 
 ## Exams
 - [Midterm 2](exams/midterm2.md)  
-- [Final](exams/final.md)
+<!-- - [Final](exams/final.md) -->
 
 ## Grading Criteria 
 - [Fortnightly Vulnerability Reports](gradingTables/reports.md)  
@@ -92,18 +91,3 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 - [Team Lab 1 - Set up Practice](labInstructions/teamLab1.md)  
 - [Team Lab 2 - Red Team Practice](labInstructions/teamLab2.md)  
 - <a href="labInstructions/Team Member Evaluation.docx" download>Team Member Evaluation Download</a>
-
-## Homework Answer Keys
-
-- [Homework 1 – Basic Networking](homework/Homework-1.md)  
-- [Homework 2 – OS Structure](homework/Homework-2.md)  
-- [Homework 3 - SSH](homework/Homework-3.md)  
-- [Homework 4 – FTP](homework/Homework-4.md)  
-- [Homework 5 - DNS](homework/homework-5.md)  
-- [Homework 6 – Routers & Firewalls ](homework/Homework-6.md)  
-- [Homework 7 – Database Server](homework/Homework-7.md)  
-- [Homework 8 – Web Servers ](homework/Homework-8.md)  
-- [Homework 9 – Hardening ](homework/Homework-9.md)  
-- [Homework 10 – CTF ](homework/Homework-10.md) 
-
-
