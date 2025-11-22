@@ -55,7 +55,7 @@ NOTE: Any instance of `<T>` represents your team number. For example, if you're 
 
 ### Router 
 
-The router should return an ICMP request on the external WAN IP of `172.18.10<T>.1`
+The router should return an ICMP request on the external WAN IP of `172.18.20<T>.1`
 
 ### WWW
 
