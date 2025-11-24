@@ -1,43 +1,44 @@
-# NCAE Cyber Games Tryouts
+# IT&C 515R - Applications of Cybersecurity Team Lab 1
 
 ## Introduction
 
-Welcome to the NCAE CyberGames Tryouts. This will give you an introduction to what the competition is like and give you practice in setting up and securing your assigned network.
-
-You will be assessed based on maintaining the availability, functionality, and security of services in your network and preparedness. There will be no red team, so this tryout focuses entirely on defense, debugging, and service availability.
+The purpose of this lab will be to test the skills you have developed over the semester by setting up and securing your network. There will be no red team for this assignment it will be a test in setting up debugging and securing your systems.
 
 ## Instructions
 
-To sum it up, you will get points when services are working as they should, and you won't get points when they are not working. 
+To sum up the lab, you will get points when services are working as they should, and you won't get points when they are not working. 
 
-During the tryouts, you will be working alone, but in the competition, you will be in teams of 10. There will be a scoreboard that will show the status of each service, which will update every minute. The scoreboard is located at [`172.18.0.3`](http://172.18.0.3/team-lab/1#) and is only accessible when you are connected to the VPN. 
+You will be working in teams of up to 5. There will be a scoreboard that will show the status of each service which will update every minute. The scoreboard is located at [`172.18.0.3`](http://172.18.0.3/team-lab/1#) and is only accessible when you are connected to the VPN. The assignment will start at 09:00 on February 22nd and end at 16:00 on February 22nd. There will be a 1 hour break between noon and 13:00 where scoring will pause, and so will VM access.
 
-You will not receive any help to debug your systems or set up any of your services. If you have a question about scoring, please talk to Sebastian or Macen.
+You will not receive any help to debug your systems or set up any of your services. If you have a question about scoring, you may message the black team over Slack.
 
 ## Rules
 
-1. Throughout the tryouts, black team members may occasionally need access to a team's system(s) for scoring, troubleshooting, etc. Participants must immediately allow access when requested.
-1. Participants are forbidden from collaborating with or communicating with other Participants in any way. All questions should be directed towards the Black Team.
-1. Participants must complete the tryout without "outside assistance" from the start of the tryout to the end of the lab. All private communications (calls, emails, chat, texting, directed emails, forum postings, conversations, requests for assistance, etc.) with others that would help the Participants gain an unfair advantage are not allowed.
-1. Participants are free to secure their systems, but no offensive activity against any system outside the Participants' assigned network(s), including those of other Participants, will be tolerated. Any Participant performing an offensive activity against any system outside the Participant's assigned network(s) will immediately fail the lab. If you have any questions or concerns during the tryout about whether specific actions can be considered offensive, please contact the Black Team before performing those actions.
-1. Participants are allowed to use active response mechanisms such as TCP resets when responding to suspicious/malicious activity. Any active mechanisms that interfere with the functionality of the scoring engine or manual scoring checks are exclusively the responsibility of the Participants. Any firewall rule, IDS, IPS, or defensive action that interferes with the functionality of the scoring engine or manual scoring checks is exclusively the responsibility of the Blue Team.
+### Lab Conduct
+
+1. Throughout the lab, black team members may occasionally need access to a team's system(s) for scoring, troubleshooting, etc. Teams must immediately allow access when requested.
+1. Team members are forbidden from entering or attempting to enter another team's lab workspace or room.
+1. Teams are forbidden from collaborating with or communicating with other teams in any way. All questions should be directed towards the Black Team.
+1. Teams must complete the lab without "outside assistance" from non-team members from the start of the lab to the end of the lab. All private communications (calls, emails, chat, texting, directed emails, forum postings, conversations, requests for assistance, etc.) with non-team members that would help the team gain an unfair advantage are not allowed.
+1. Teams are free to secure their systems, but no offensive activity against any system outside the team's assigned network(s), including those of other teams, will be tolerated. Any team performing offensive activity against any system outside the team's assigned network(s) will immediately fail the lab. If there are any questions or concerns during the lab about whether or not specific actions can be considered offensive, contact the Black Team before performing those actions.
+1. Teams are allowed to use active response mechanisms such as TCP resets when responding to suspicious/malicious activity. Any active mechanisms that interfere with the functionality of the scoring engine or manual scoring checks are exclusively the responsibility of the teams. Any firewall rule, IDS, IPS, or defensive action that interferes with the functionality of the scoring engine or manual scoring checks is exclusively the responsibility of the Blue Team.
 
 ### Internet Usage
 
-1. Public internet resources such as FAQs, how-to's, existing forums and responses, and company websites are completely valid to be used for the tryout, provided there is no fee required to access those resources and access to those resources has not been granted based on a previous membership, purchase, or fee.
+1. Public internet resources such as FAQs, how-to's, existing forums and responses, and company websites are completely valid to be used for the lab provided there is no fee required to access those resources and access to those resources has not been granted based on a previous membership, purchase, or fee.
 1. Only resources that could reasonably be available to all teams are permitted. For example, creating a personal public GitHub repository would be prohibited, as no other team would reasonably be able to access the repository.
-1. All Internet resources used during the tryout must be freely available to all other teams.
-1. If there are any questions or concerns during the tryout about whether or not specific materials are unauthorized, contact the Black Team immediately.
-1. All network activity that takes place on the tryout network may be logged and subject to release. We are not responsible for the security of any information, including login credentials, that students place on the tryout network.
+1. All Internet resources used during the lab must be freely available to all other teams.
+1. If there are any questions or concerns during the lab about whether or not specific materials are unauthorized, contact the Black Team immediately.
+1. All network activity that takes place on the lab network may be logged and subject to release. We are not responsible for the security of any information, including login credentials, that students place on the lab network.
 
 ### Questions, Disputes, and Disclosures
 
-1. Protests by any team must be presented in writing by the Participants as soon as possible. The Black Team will be the final arbitrators for any protests or questions arising before, during, or after the lab. Rulings by the Black Team are final.
+1. Protests by any team must be presented in writing by the Team Captain as soon as possible. The Black Team will be the final arbitrators for any protests or questions arising before, during, or after the lab. Rulings by the Black Team are final.
 
 ### Scoring
 
 1. Scoring will be based on keeping required services available and functional and controlling/preventing unauthorized access. Teams accumulate points by successfully maintaining services. 
-1. Any team action that interrupts the scoring system is exclusively the responsibility of that team and will result in a lower score. Any Participants that modifies a system or system component, with or without intent, to mislead the scoring engine into assessing a system or service as operational, when in fact it is not, may be disqualified and/or the team assessed penalties. Should any question arise about scoring, the scoring engine, or how scoring functions, the Team Captain should immediately contact the Black Team to address the issue.
+1. Any team action that interrupts the scoring system is exclusively the responsibility of that team and will result in a lower score. Any team member that modifies a system or system component, with or without intent, to mislead the scoring engine into assessing a system or service as operational, when in fact it is not, may be disqualified and/or the team assessed penalties. Should any question arise about scoring, the scoring engine, or how scoring functions, the Team Captain should immediately contact the Black Team to address the issue.
 1. Scoring will occur every 60 seconds, and machine statuses will update every 10 to 30 seconds
 
 ### Scoreboard Key
@@ -47,15 +48,16 @@ You will not receive any help to debug your systems or set up any of your servic
 
 ## Service Requirements
 
-NOTE: Any instance of `<T>` represents your team number. For example, if you're on Team 1, `172.18.200.<T>` translates to `172.18.200.1`If your Team Number is greater than 9, make sure to take off the extra 0 to leave yourself a valid IP. For example, if you are team 13 and the IP is listed as `172.18.20\<T>.1`, then the IP would be `172.18.213.1` and not `172.18.2013.1` 
+NOTE: Any instance of `<T>` represents your team number. For example, if you're on Team 1, `172.18.100.<T>` translates to `172.18.100.1`
 
 ## Network Diagram
 
 ![](./Network-Diagram-Blueteam.png)
 
+
 ### Router 
 
-The router should return an ICMP request on the external WAN IP of `172.18.20<T>.1`
+The router should return an ICMP request on the external WAN IP of `172.18.10<T>.1`
 
 ### WWW
 
@@ -113,8 +115,8 @@ To score points for SSH, all of the users in the table below must be able to acc
 
 ### DNS
 
-DNS should be available internally at `192.168.20<T>.2`
-DNS should be available externally at `172.18.20<T>.1`
+DNS should be available internally at `192.168.10<T>.2`
+DNS should be available externally at `172.18.10<T>.1`
 DNS Forward lookups for the following domain names point to the corresponding IP.
 DNS Reverse lookups for the following IP Addresses point to the corresponding domain name
 
@@ -122,13 +124,13 @@ DNS Reverse lookups for the following IP Addresses point to the corresponding do
 
 |DNS Address |  IP |    Description |
 | -- | ------- | ------ |
-| ns1.team\<T>.cyberjousting.org | 172.18.20\<T>.1 | Public DNS Nameserver |
-| www.team\<T>.cyberjousting.org | 172.18.20\<T>.1 | Public Web Nameserver |
-| shell.team\<T>.cyberjousting.org | 172.18.20\<T>.2 | Public SSH server |
-| files.team\<T>.cyberjousting.org | 172.18.20\<T>.2 | Public File Share |
-| ns1.team\<T>.net | 192.168.20\<T>.2 | Internal Alias for DNS Server |
-| www.team\<T>.net | 192.168.20\<T>.3 | Internal Alias for Web server |
-| db.team\<T>.net  | 192.168.20\<T>.4 | Internal Alias for MySQL server |
+| ns1.team\<T>.cyberjousting.org | 172.18.10\<T>.1 | Public DNS Nameserver |
+| www.team\<T>.cyberjousting.org | 172.18.10\<T>.1 | Public Web Nameserver |
+| shell.team\<T>.cyberjousting.org | 172.18.10\<T>.2 | Public SSH server |
+| files.team\<T>.cyberjousting.org | 172.18.10\<T>.2 | Public File Share |
+| ns1.team\<T>.net | 192.168.10\<T>.2 | Internal Alias for DNS Server |
+| www.team\<T>.net | 192.168.10\<T>.3 | Internal Alias for Web server |
+| db.team\<T>.net  | 192.168.10\<T>.4 | Internal Alias for MySQL server |
 
 The above addresses containing `.cyberjousting.org` should be publicly available and will be scored through the router and checked for both forward and reverse lookups.
 
@@ -202,7 +204,7 @@ The files are already located in `/mnt/files`
  
 #### Scoring Details
 
-The PostgreSQL services are scored from the internal team network, using the internal IP address of `192.168.20<T>.4`.
+The PostgreSQL services are scored from the internal team network, using the internal IP address of `192.168.10<T>.4`.
 
 - PostgreSQL scoring user: `bill_kaplan`
 - PostgreSQL scoring password: `b1ackjack!`
