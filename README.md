@@ -1,14 +1,14 @@
-# IT&C 515R - Applications of Cybersecurity
+# IT&C 492R - NCAE Cybergames Training
 
-This site is the central hub for all resources related to IT&C 515R - Applications of Cybersecurity. 
+This site is the central hub for all resources related to IT&C 492R - NCAE Cybergames Training. 
 
 ## Class Documents
 
 - [Syllabus](classDocs/syllabus.md) 
 
 ## CTF Practice
-- <a href="homework/Homework 10.pdf" download>CTF Practice 1</a>
-- [CTF Practice 2](exams/midterm2.md)  
+- [CTF Practice 1](ctf-practice\p1.md)  
+- [CTF Practice 2](ctf-practice\p2.md)  
 
 ## Individual Lab Instructions 
 
