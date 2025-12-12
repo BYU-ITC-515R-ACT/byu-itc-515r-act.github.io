@@ -25,18 +25,6 @@ There is no required textbook for this course but you are expected to read and r
 
 Students’ achievements in the course will be evaluated based on the following criteria:
 
-<style>
-    /* Define shading styles */
-    .even-row {
-        background-color: #f2f2f2 !important;
-    }
-    .odd-row {
-        background-color: #ffffff !important;
-    }
-    .no-wrap {
-        white-space: nowrap;
-    }
-</style>
 <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
     <thead>
         <tr class="even-row">
@@ -45,30 +33,8 @@ Students’ achievements in the course will be evaluated based on the following 
         </tr>
     </thead>
     <tbody>
-        <tr class="odd-row">
-            <td rowspan="7">Fortnightly Vulnerability Reports (7%)</td>
-            <td rowspan="1">Vulnerability Report 1</td>
-        </tr>
-        <tr class="odd-row">
-            <td rowspan="1">Vulnerability Report 2</td>
-        </tr>
-        <tr class="odd-row">
-            <td rowspan="1">Vulnerability Report 3</td>
-        </tr>
-        <tr class="odd-row">
-            <td rowspan="1">Vulnerability Report 4</td>
-        </tr>
-        <tr class="odd-row">
-            <td rowspan="1">Vulnerability Report 5</td>
-        </tr>
-        <tr class="odd-row">
-            <td rowspan="1">Vulnerability Report 6</td>
-        </tr>
-        <tr class="odd-row">
-            <td rowspan="1">Vulnerability Report 7</td>
-        </tr>
         <tr class="even-row">
-            <td rowspan="6">Memes (3%)</td>
+            <td rowspan="6">Memes (5%)</td>
             <td rowspan="1">Meme 1</td>
         </tr>
         <tr class="even-row">
@@ -86,39 +52,8 @@ Students’ achievements in the course will be evaluated based on the following 
         <tr class="even-row">
             <td rowspan="1">Meme 6</td>
         </tr>
-         <tr class="odd-row">
-            <td rowspan="10">Homework (20%)</td>
-            <td rowspan="1">Homework 1 - Basic Networking</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 2 - OS Structure</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 3 - Routers & Firewalls</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 4 - SSH</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 5 - FTP</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 6 - Database Servers</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 7 - Web Servers</td>
-        </tr>
-         <tr class="odd-row">
-          <td rowspan="1">Homework 8 - DNS</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 9 - Hardening & Threat Hunting</td>
-        </tr>
-         <tr class="odd-row">
-            <td rowspan="1">Homework 10 - CTF</td>
-        </tr>
         <tr class="even-row">
-            <td rowspan="10">Individual Labs (40%)</td>
+            <td rowspan="10">Individual Labs (65%)</td>
             <td rowspan="1">Lab 1 – CLI & Networking</td>
         </tr>
         <tr class="even-row">
@@ -149,101 +84,58 @@ Students’ achievements in the course will be evaluated based on the following 
             <td rowspan="1">Lab 10 – Script Writing </td>
         </tr>
         <tr class="odd-row">
-            <td rowspan="2">Team Labs (10%)</td>
+            <td rowspan="2">Team Labs (20%)</td>
             <td rowspan="1">Team Lab 1: Setup Practice</td>
         </tr>
         <tr class="odd-row">
             <td rowspan="1">Team Lab 2: Red Team Practice</td>
         </tr>
         <tr class="even-row">
-            <td rowspan="3">Exams (20%)</td>
-            <td rowspan="1">Midterm 1: Service Setup</td>
+            <td rowspan="3">CTF (10%)</td>
         </tr>
         <tr class="even-row">
-            <td rowspan="1">Midterm 2: CTF</td>
+            <td rowspan="1">CTF Practice</td>
         </tr>
-         <tr class="even-row">
-            <td rowspan="1">Final: Service Setup & CTF</td>
-        </tr>
+         
     </tbody>
 </table>
 
-## Fortnightly Vulnerability Reports
-
-These assignments will make up 7% of your grade. This assignment should be a single page, 12pt, Times New Roma double-spaced. Two options are available that will fulfill the requirement for the fortnightly reports:
-
-1. Recently discovered vulnerabilities or  
-1. New ways of defending a system or service  
-
-The vulnerability or new defense method must be less than 2 years old to be considered recent.
-
-While not directly related to the class content, it will help encourage you to stay updated with the rapidly evolving changes in cybersecurity. It will also help you as you develop your research skills in identifying credible sources and analyzing the latest information. If you do not achieve the desired grade on your first submission, you may resubmit the assignment **once**. All resubmissions are due within **7 days** of receiving your grade, by **11:59 PM**.
-
 ## Memes
 
-Incorporating memes into this class may seem unconventional, but it effectively helps you engage, simplifies complex concepts, and fosters creativity and critical thinking and will make up 3% of your overall grade. By creating and sharing memes, you can distill and communicate cybersecurity issues humorously and concisely, making the material more relatable and memorable. This approach leverages popular culture to help enhance your learning and provides a refreshing break from traditional coursework.  
+Incorporating memes into this class may seem unconventional, but it effectively helps you engage, simplifies complex concepts, and fosters creativity and critical thinking and will make up 5% of your overall grade. By creating and sharing memes, you can distill and communicate cybersecurity issues humorously and concisely, making the material more relatable and memorable. This approach leverages popular culture to help enhance your learning and provides a refreshing break from traditional coursework.  
 
-The memes should be Cybersecurity or technology-related in some way. You can use existing memes or create your own. All memes should be in line with BYU standards and the honor code. If you do not achieve the desired grade on your first submission, you may resubmit the assignment **once**. All resubmissions are due within **7 days** of receiving your grade, by **11:59 PM**.
+The memes should be Cybersecurity or technology-related in some way. You can use existing memes or create your own. All memes should be in line with BYU standards and the honor code.
 
-## Homework
-
-Homework assignments will make up 20% of your grade and be divided into 10 separate assignments. Homework questions will consist of a variety of questions and will be administered in a CTF-style format through CTFD. You will receive instructions on how to access the website during the first week of class. Homework will be due BEFORE the class period in which that topic will be discussed, the only exception will be Homework 10 which will be CTF practice and due the Thursday following the class period that covers the topic. Homework 10 will also be the only homework assignment the late policy will apply to.
 
 ## Individual Labs
 
-There will be 10 labs that make up 40% of your grade. Each lab will test you on a different technology and service, which are services that are very commonly used around the world. While we will cover the theoretical knowledge about the technologies in class the labs will be where you will learn the practical application of that knowledge. You will be expected to do research on your own and develop troubleshooting and debugging skills as part of this class. However, if you are really stuck the instructor and TA are there to help you learn.
+There will be 10 labs that make up 65% of your grade. Each lab will test you on a different technology and service, which are services that are very commonly used around the world. While we will cover the theoretical knowledge about the technologies in class the labs will be where you will learn the practical application of that knowledge. You will be expected to do research on your own and develop troubleshooting and debugging skills as part of this class. However, if you are really stuck the instructor and TA are there to help you learn.
 
 ## Team Labs
 
-There will be two team labs during the class. Each lab will make up 5% of your overall grade. Your score for these two assignments will consist of your performance in the lab as rated by your teammates and the overall score on the assignment.  
+There will be two team labs during the class. Each lab will make up 20% of your overall grade. Your score for these two assignments will consist of your performance in the lab as rated by your teammates and the overall score on the assignment.  
 
-Teams will consist of 5 people and have a time limit of 6 hours. These labs will be administered in class. Make-up assignments will not be given if you are unable to attend unless it is a university-excused absence. The labs will start promptly at 1:00 pm and end at 5:00 pm.
+Teams will consist of 10 people and have a time limit of 6 hours.
 
 These assignments are designed to help you prepare for the NCAE Cyber Games competition if you are participating and will also include some CTF challenges along with the systems setup and hardening that you will do.  
 
 To receive a grade for this assignment you must complete the assignment and submit a the group evaluation for each team lab.
 
-## Exams  
+## CTF Practice  
 
-There will be 3 exams and no make-up exams will be given. If you miss an exam due to an excused absence, a make-up exam will be given at the instructor's discretion. If any attempt to obtain answers from students who have already taken the exam is made, you will not be permitted to take the make-up exam regardless of the situation. If you require any accommodations, please let the instructor know at least 48 hours before the exam.  
+The CTF Practice will give you example problems to solve, similar to ones you might see on the day of the competition.
 
-The exams will consist of two midterms and one final. The exams will be practical assessments of your technical skills. Midterm 1 will select service(s) already covered before the exam and require you to set it up and secure it from attack. You will be given the full 4 hours to complete the exam. Midterm 2 will be administered as a CTF that will start during the class period. The midterm will remain open for 1 week.  
+## Due Dates
 
-The final will be the combination of the midterms where you are given services to set up and secure from attack and given several CTF problems to solve. However, unlike the midterms, the final will be taken in teams of 10. There will be a 7-hour block with a 1-hour lunch break during finals week in which the final will be administered. The exam will promptly start 5 minutes after class has begun, if you arrive after the exam has started you will not be permitted to take the exam. Once your team has achieved the desired score you may all leave together.
+This class will be largely self-guided with respect to deadlines. Because each student will be working on a specific service for the competition, the required labs will vary by student.
 
-All exams will be taken in person unless otherwise stated.  
+Before competing in the Regional Cyber Games, you must complete Labs 1 and 2, as well as the labs for your primary and backup services. You must also complete both team labs, the CTF practice, and all six memes.
 
-## Student Ratings
-
-Student ratings are a required assignment to pass this class.
-
-## Late work
-
-You will be given 4 grace days for the entire semester. Grace days may be used on the following assignments:
-
-- Fortnightly Reports
-- Memes
-- Individual Labs
-- Homework 10
-
-Grace days and may not be used on:
-
-- Homework assignments
-- Team labs
-- Exams
-
-If you run out of grace days or choose not to use them, the following late penalties will apply:
-
-- Assignments submitted up to **2 days late** will be capped at a **Merit** grade.  
-- Assignments submitted **more than 2 days late** will be capped at a **Pass** grade. 
-- Assignments submitted later than a week after it is due will not be accepted.
-- Sundays and holidays do **not** count as a late day. If an assignment is due on Friday and is submitted on Monday it would be counted as 2 days late, not 3.
-
-Late penalties apply only to assignments where grace days can be used. All other assignments will **not be accepted late**.
+All remaining labs must be completed by the last day of classes. 
 
 ## Grading Scale  
 
-Grades will be assigned on a three-tier system that will convert to A, B, C, or E. There will be no + or - grades. Note that receiving a 0 on an assignment will drop your overall score for that category to a 1. Receiving more than 2 0s in a category will drop the score for that category to a 0.
+Grades will be assigned on a three-tier system that will convert to A, B, C, or E. There will be no + or - grades.
 
 <table>
     <tbody>

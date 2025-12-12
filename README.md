@@ -5,37 +5,10 @@ This site is the central hub for all resources related to IT&C 515R - Applicatio
 ## Class Documents
 
 - [Syllabus](classDocs/syllabus.md) 
-- <a href="classDocs/gradeCalculator.xlsx"  download>Grade Calculator Download</a>
-- TA Appointments
-    - <a href="" target="_blank">Sebastian</a> 
-    - <a href="" target="_blank">Macen</a> 
-    - TA Appointments are 15 minutes so please plan accordingly
 
-## Homework
-- <a href="https://itc515r-act.ctfd.cyberjousting.com/" target="_blank">Class CTFd Instance</a>
-- <a href="homework/Homework 10.pdf" download>Homework 10 - CTF</a>
-
-## Exams
-- [Midterm 2](exams/midterm2.md)  
-<!-- - [Final](exams/final.md) -->
-
-## Grading Criteria 
-- [Fortnightly Vulnerability Reports](gradingTables/reports.md)  
-- [Memes](gradingTables/memes.md)  
-- [Homework](gradingTables/homework.md)  
-- [Lab 1 – CLI](gradingTables/lab1.md)  
-- [Lab 2 – Basic Networking](gradingTables/lab2.md)  
-- [Lab 3 – SSH & FTP](gradingTables/lab3.md)  
-- [Lab 4 – DNS](gradingTables/lab4.md)  
-- [Lab 5 – Routers & Firewall](gradingTables/lab5.md)  
-- [Lab 6 – Backups](gradingTables/lab6.md)  
-- [Lab 7 – Database Servers](gradingTables/lab7.md)  
-- [Lab 8 – Web Servers](gradingTables/lab8.md)  
-- [Lab 9 – Hardening](gradingTables/lab9.md)  
-- [Lab 10 – Script Writing](gradingTables/lab10.md)  
-- [Team Lab 1 - Set up Practice](gradingTables/teamLab1.md)  
-- [Team Lab 2 - Red Team Practice](gradingTables/teamLab2.md)  
-- [Final](gradingTables/final.md) 
+## CTF Practice
+- <a href="homework/Homework 10.pdf" download>CTF Practice 1</a>
+- [CTF Practice 2](exams/midterm2.md)  
 
 ## Individual Lab Instructions 
 
