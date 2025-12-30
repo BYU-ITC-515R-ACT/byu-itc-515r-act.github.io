@@ -7,8 +7,8 @@ This site is the central hub for all resources related to IT&C 492R - NCAE Cyber
 - [Syllabus](classDocs/syllabus.md) 
 
 ## CTF Practice
-- [CTF Practice 1](ctf-practice\p1.md)  
-- [CTF Practice 2](ctf-practice\p2.md)  
+- [CTF Practice 1](ctf-practice/p1.md)  
+- [CTF Practice 2](ctf-practice/p2.md)  
 
 ## Individual Lab Instructions 
 
