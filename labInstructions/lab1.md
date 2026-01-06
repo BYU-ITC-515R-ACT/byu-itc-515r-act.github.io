@@ -38,12 +38,6 @@ Your machine already has internet access set up and can be accessed through your
 
 You can hover over your specific arrow and a tooltip will appear with a hint on what is wrong or not working.
 
-#### Lab Time Estimates
-
-- **Pass** : 1.5 hours
-- **Merit**: 2.5 hours
-- **Distinction**: 4 hours
-
 #### **Credentials**  
 - All VMs have the same login credentials:  
   - **Username**: `blueteam`  
@@ -225,6 +219,3 @@ You will be asked two of these questions at random during your verbal pass-off.
 - **Pass**: All Pass criteria and verbal pass-off has been completed.
 - **Merit:** All **Pass** and **Merit** criteria completed.
 - **Distinction:** All **Pass**, **Merit**, and **Distinction** criteria completed.
-
-
-

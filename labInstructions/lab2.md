@@ -56,12 +56,6 @@ Since your machines do not currently have internet access, you will need to conf
 - **Green arrows** indicate that everything is working as intended.
 - **Red down arrows** indicate that something is not working.
 
-#### Lab Time Estimates
-
-- **Pass** : 45 Minutes
-- **Merit**: 50 Minutes
-- **Distinction**: 1 hour
-
 #### **Credentials**  
 - All VMs have the same login credentials:  
   - **Username**: `blueteam`  
