@@ -49,11 +49,6 @@ Since your machines do not currently have internet access, you will need to conf
 - **Orange Exclamation** indicates that something is partially working. 
 - **Red down arrows** indicate that something is not working.
 
-#### Lab Time Estimates
-
-- **Pass** :
-- **Merit**:
-- **Distinction**:
 
 #### **Credentials**  
 - All VMs have the same login credentials:  
