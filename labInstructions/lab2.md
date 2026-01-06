@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will configure network settings on three operating systems: Ubuntu 20.04, CentOS 7, and Kali Linux. This exercise is designed to help you understand and apply fundamental networking concepts such as IP address configuration, subnet masks, gateway settings, and DNS configuration. 
+In this lab, you will configure network settings on three operating systems: Ubuntu 20.04, Rocky 8, and Kali Linux. This exercise is designed to help you understand and apply fundamental networking concepts such as IP address configuration, subnet masks, gateway settings, and DNS configuration. 
 
 Resources to assist with the lab:  
 1. Homework Questions  
@@ -23,7 +23,7 @@ BYU’s focus on lifelong learning and service reminds us that the ability to in
 You will be working with:  
   - 1 Kali Linux Machine
   - 1 Ubuntu 20.04 Machine
-  - 1 CentOS 7 Machine
+  - 1 Rocky 8 Machine
 
 ### Network Configuration
 Since your machines do not currently have internet access, you will need to configure the network as follows:  
@@ -40,7 +40,7 @@ Since your machines do not currently have internet access, you will need to conf
     - Primary DNS: `172.18.0.1`
     - Secondary DNS: `8.8.8.8`
 
-1. **`Lab-2-centos-7` Machine**:  
+1. **`Lab-2-rocky-8` Machine**:  
     - IP: `172.18.<ID>.13/16`  
     - Gateway: `172.18.0.1`
     - Primary DNS: `172.18.0.1`
