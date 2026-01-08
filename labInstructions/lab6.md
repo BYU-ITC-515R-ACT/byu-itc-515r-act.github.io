@@ -9,7 +9,7 @@ In this lab, you'll focus on creating and managing backups for essential network
 #### Virtual Machines and Operating Systems
 You will be working with:  
 - 1 Ubuntu 20.04 Machine
-- 2 Rocky 7 Machines
+- 2 Rocky 8 Machines
 
 #### Network Configuration
 Since your machines do not currently have internet access, you will need to configure the network as follows:  
@@ -75,7 +75,7 @@ To complete `P3` `P1-P2` must have a green arrow before starting.
 
 ### M1: Backup Tool Installation and Configuration
 
-1. Automate the backup of sshd_config from `Lab-6-SSH-FTP` to `Lab-6-Backup` (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. Ensure that you preserve:
+1. Automate the backup of sshd_config from `Lab-6-SSH-FTP` to `Lab-6-Backup` (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. This will be manually graded by a TA. Ensure that you preserve:
   - file permissions
   - file owner(s)
   - timestamps
