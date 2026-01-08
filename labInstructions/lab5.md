@@ -8,7 +8,7 @@ In this lab, you’ll learn to set up, configure, and secure routers and firewal
 
 #### Virtual Machines and Operating Systems
 You will be working with:  
-- 1 CentOS 7 Machine
+- 1 MikroTik Machine
 - 2 Ubuntu 20.04 Machines 
 
 #### Network Configuration
