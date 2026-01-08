@@ -23,7 +23,7 @@ BYU’s focus on lifelong learning and service reminds us that the ability to in
 
 ### Virtual Machines and Operating Systems
 You will be working with:  
-  - 1 CentOS 7 Machine
+  - 1 Rocky 8 Machine
   - 1 Kali Linux Machine
 
 ### Network Configuration
