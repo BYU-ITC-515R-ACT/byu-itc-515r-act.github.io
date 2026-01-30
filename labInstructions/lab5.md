@@ -47,8 +47,8 @@ You can hover over each specific arrow, and a tooltip will appear with a hint on
 
 #### **Credentials**  
 - All VMs have the same login credentials:  
-  - **Username**: `blueteam`  
-  - **Password**: `abc123`  
+  - **Username**: `admin`  
+  - **Password**: Blank Password / No Password  
 
 #### **File Creation and Content**  
 - If a referenced file does not exist, you must create it.  
