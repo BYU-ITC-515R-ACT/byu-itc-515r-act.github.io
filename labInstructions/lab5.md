@@ -138,6 +138,8 @@ Implement your rules on the`Lab-5-router` machine.
 1. Port forward TCP traffic on ports `80` and `443` from the `Lab-5-router` to `Lab-5-website`
 1. Port forward UDP traffic on ports `53` from the `Lab-5-router` to `Lab-5-dns`
 
+You will need to pass this off manually with a TA.
+
 ## Distinction Criteria
 
 ### D1: Firewall Installation and Basic Configuration
