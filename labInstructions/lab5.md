@@ -66,7 +66,7 @@ Make sure the `VM Scoring` Arrow is green before continuing past this point.
 
 #### `Lab-5-website` Machine  
 1. Enable the `ufw` service
-1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P2/P2.txt` on the router.
+1. Check the status of the `ufw` service. Enter the line `ufw:<command>` into the file `/home/blueteam/P2/P2.txt` on the web server.
 
 Note: The dashboard will mark your VMs as not scoring until the `ssh` rules have been added in P3.
 
@@ -82,10 +82,10 @@ Note: The dashboard will mark your VMs as not scoring until the `ssh` rules have
 
 
 #### `Lab-5-website` Machine   
-1. List all the current firewall rules for `ufw`. Enter the line `ufw:<command>` into the file `/home/blueteam/P4/P4.txt` on the router.
+1. List all the current firewall rules for `ufw`. Enter the line `ufw:<command>` into the file `/home/blueteam/P4/P4.txt` on the web server.
 
 #### `Lab-5-dns` Machine  
-1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P4/P4.txt` on the router.
+1. List all the current firewall rules for `iptables`. Enter the line `iptables:<command>` into the file `/home/blueteam/P4/P4.txt` on the web server.
 
 ### P5: Logging and Monitoring Firewall Activity 
 
@@ -108,7 +108,7 @@ Firewalld also has 5 options:
 - Log denied multicast packets.
 
 1. On the `Lab-5-website` machine enable logging for all blocked packets and some allowed connections.
-1. Locate the `UFW` traffic logs on the machine. Enter the line `ufw-filepath:<Full Absolute Filepath>` into the file `/home/blueteam/P5/P5.txt` on the router. 
+1. Locate the `UFW` traffic logs on the machine. Enter the line `ufw-filepath:<Full Absolute Filepath>` into the file `/home/blueteam/P5/P5.txt` on the web server. 
 
 
 ### P6: Troubleshooting
@@ -131,7 +131,7 @@ Implement your rules on the `Lab-5-website` machine. Consider the order the rule
 
 ### M2: Securing Incoming and Outgoing Traffic 
 
-1. Using the logs on `Lab-5-router` and `Lab-5-website`. Identify the IP of the scoring engine. Enter the line `scoring:<IP>` into the file `/home/blueteam/M2/M2.txt` on the router.
+1. Using the logs on `Lab-5-router` and `Lab-5-website`. Identify the IP of the scoring engine. Enter the line `scoring:<IP>` into the file `/home/blueteam/M2/M2.txt` on the web server.
 
 ### M3: Routing and NAT Configuration
 Implement your rules on the`Lab-5-router` machine.
