@@ -3,7 +3,7 @@ source: docs
 title: BYU ACT
 description: Course materials for BYU Cybersecurity's Applications of Cybersecurity Training course
 baseurl: "" # the subpath of your site, e.g. /blog
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 url: https://byu-itc-515r-act.github.io
 
