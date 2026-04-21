@@ -20,5 +20,5 @@ nav_order: 1
 - <a href="https://www.youtube.com/watch?v=y2-w9m4yvqw" target="_blank">DNS Service Additional Zones</a>
 
 ### Downloads
-- <a href="/assets/downloads/lecture7-Bv9ARM.pdf" download>BIND 9 Administrator Reference Manual</a>
+- <a href="/docs/assets/downloads/lecture7-Bv9ARM.pdf" download>BIND 9 Administrator Reference Manual</a>
 

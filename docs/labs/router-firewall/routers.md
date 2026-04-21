@@ -19,4 +19,4 @@ nav_order: 1
 
 ### Downloads
 
-- <a href="/assets/downloads/lecture8-CentOS7_RouterSetup.pdf" download>CentOS 7 Router Setup Guide</a>
+- <a href="/docs/assets/downloads/lecture8-CentOS7_RouterSetup.pdf" download>CentOS 7 Router Setup Guide</a>

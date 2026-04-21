@@ -19,5 +19,5 @@ nav_order: 1
 
 ### Downloads
 
-- <a href="/assets/downloads/lecture13-Hunting_Tips.pdf" download>Threat Hunting Tips</a>
+- <a href="/docs/assets/downloads/lecture13-Hunting_Tips.pdf" download>Threat Hunting Tips</a>
 

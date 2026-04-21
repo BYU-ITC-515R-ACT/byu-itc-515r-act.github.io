@@ -6,4 +6,4 @@ nav_order: 2
 
 # SMB Slides
 
-- <a href="/assets/slides/ftp.pptx" download>FTP/SMB Slides</a>
+- <a href="/docs/assets/slides/ftp.pptx" download>FTP/SMB Slides</a>

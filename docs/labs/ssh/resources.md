@@ -19,4 +19,4 @@ nav_order: 1
 - <a href="https://www.youtube.com/watch?v=MBmWgXb73gE" target="_blank">SSH Service Passwordless Authentication</a>
 
 ### Downloads
-- <a href="/assets/downloads/lecture5-OpenSSH_quickref.pdf" download>SSH Config Quick Reference</a>
+- <a href="/docs/assets/downloads/lecture5-OpenSSH_quickref.pdf" download>SSH Config Quick Reference</a>

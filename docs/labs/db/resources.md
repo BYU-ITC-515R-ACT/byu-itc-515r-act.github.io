@@ -22,6 +22,6 @@ nav_order: 1
 
 ### Downloads
 
-- <a href="/assets/downloads/lecture10-postgres-cheatsheet.md" download>PostgreSQL Cheat Sheet</a>
-- <a href="/assets/downloads/lecture10-sql-cheatsheet.pdf" download>SQL Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture10-postgres-cheatsheet.md" download>PostgreSQL Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture10-sql-cheatsheet.pdf" download>SQL Cheat Sheet</a>
 

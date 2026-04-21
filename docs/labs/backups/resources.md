@@ -20,5 +20,5 @@ nav_order: 1
 
 ### Downloads
 
-- <a href="/assets/downloads/lecture11-rsync.pdf" download>Rsync Cheat Sheet</a>
-- <a href="/assets/downloads/lecture11-git-cheat-sheet-education.pdf" download>Rsync Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture11-rsync.pdf" download>Rsync Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture11-git-cheat-sheet-education.pdf" download>Rsync Cheat Sheet</a>

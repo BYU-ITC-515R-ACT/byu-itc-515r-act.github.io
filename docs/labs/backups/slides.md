@@ -6,4 +6,4 @@ nav_order: 2
 
 # Backups Slides
 
-- <a href="/assets/slides/backups.pptx" download>Backups Slides</a>
+- <a href="/docs/assets/slides/backups.pptx" download>Backups Slides</a>

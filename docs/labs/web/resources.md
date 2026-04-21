@@ -27,4 +27,4 @@ nav_order: 1
 
 ### Downloads
 
-- <a href="/assets/downloads/lecture12-systemd.md" download>Systemd example</a>
+- <a href="/docs/assets/downloads/lecture12-systemd.md" download>Systemd example</a>

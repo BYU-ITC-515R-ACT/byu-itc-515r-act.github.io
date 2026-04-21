@@ -22,6 +22,6 @@ nav_order: 2
 - <a href="https://www.youtube.com/watch?v=NNQSK9cnaWA" target="_blank">Linux firewalld config examples</a> 
 
 ### Downloads
-- <a href="/assets/downloads/lecture9-IPTABLES-CHEATSHEET.md" download>IP Tables Cheat Sheet</a>
-- <a href="/assets/downloads/lecture9-ufw.jpg" download>UFW Cheat Sheet</a>
-- <a href="/assets/downloads/lecture9-firewalld-cheatsheet.pdf" download>Firewalld Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture9-IPTABLES-CHEATSHEET.md" download>IP Tables Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture9-ufw.jpg" download>UFW Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture9-firewalld-cheatsheet.pdf" download>Firewalld Cheat Sheet</a>

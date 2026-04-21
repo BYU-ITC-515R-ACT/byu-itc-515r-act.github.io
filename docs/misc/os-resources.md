@@ -21,4 +21,4 @@
 
 
 ### Downloads
-- <a href="/assets/downloads/lecture4-Architecture-of-Linux-operating-system.pdf" download>Architecture of Linux operating system</a>
+- <a href="/docs/assets/downloads/lecture4-Architecture-of-Linux-operating-system.pdf" download>Architecture of Linux operating system</a>

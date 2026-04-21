@@ -19,5 +19,5 @@ nav_order: 1
 - <a href="https://www.youtube.com/watch?v=gtAH-GuPgZ8" target="_blank">Scripted IP Changer Low Sophistication</a> 
 
 ### Downloads
-- <a href="/assets/downloads/lecture16-BashScriptCheatSheets.pdf" download>Bash Scripting Cheat Sheet</a>
-- <a href="/assets/downloads/lecture16-beginners_python_cheat_sheet_pcc_all.pdf" download>Python  Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture16-BashScriptCheatSheets.pdf" download>Bash Scripting Cheat Sheet</a>
+- <a href="/docs/assets/downloads/lecture16-beginners_python_cheat_sheet_pcc_all.pdf" download>Python  Cheat Sheet</a>

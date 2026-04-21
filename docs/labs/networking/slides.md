@@ -6,4 +6,4 @@ nav_order: 2
 
 # Networking Slides
 
-- <a href="/assets/slides/networking.pptx" download>Networking Slides</a>
+- <a href="/docs/assets/slides/networking.pptx" download>Networking Slides</a>

@@ -6,4 +6,4 @@ nav_order: 2
 
 # CLI Slides
 
-- <a href="/assets/slides/cli.pptx" download>CLI Slides</a>
+- <a href="/docs/assets/slides/cli.pptx" download>CLI Slides</a>

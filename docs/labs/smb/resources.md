@@ -17,4 +17,4 @@ nav_order: 1
 
 
 ### Downloads
-- <a href="/assets/downloads/lecture6-ftp-vsftpd-conf.pdf" download>VSFTPD Example Config</a>
+- <a href="/docs/assets/downloads/lecture6-ftp-vsftpd-conf.pdf" download>VSFTPD Example Config</a>

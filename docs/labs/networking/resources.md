@@ -31,5 +31,5 @@ nav_order: 1
 
 
 ### Downloads
-- <a href="/assets/downloads/lecture3-0ifcfg-eth0" download>Centos Config Example</a><br>
-- <a href="/assets/downloads/lecture3-00-installer-config.yaml" download>Ubuntu Config Example</a><br>
+- <a href="/docs/assets/downloads/lecture3-0ifcfg-eth0" download>Centos Config Example</a><br>
+- <a href="/docs/assets/downloads/lecture3-00-installer-config.yaml" download>Ubuntu Config Example</a><br>
