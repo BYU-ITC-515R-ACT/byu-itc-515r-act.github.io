@@ -47,7 +47,10 @@ exclude:
   - spec/
   - tmp
   - .rspec
-  - docs/assets
+  - docs/assets/gradingTables
+  - docs/assets/downloads/lecture12-systemd.md
+  - docs/assets/downloads/lecture10-postgres-cheatsheet.md
+  - docs/assets/downloads/lecture9-IPTABLES-CHEATSHEET.md
   - docs/ctf/midterm2.md
   - docs/misc
   # TODO: figure out where these go and remove the exclusion
