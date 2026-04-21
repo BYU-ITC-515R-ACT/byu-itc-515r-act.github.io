@@ -58,7 +58,7 @@ NOTE: Any instance of `<T>` represents your team number. For example, if you're 
 
 ## Network Diagram
 
-![](/assets/Network-Diagram-Blueteam.png)
+![](/docs/assets/Network-Diagram-Blueteam.png)
 
 
 ### Router 
