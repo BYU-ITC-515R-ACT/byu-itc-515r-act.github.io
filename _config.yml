@@ -1,0 +1,53 @@
+source: docs
+
+title: BYU ACT
+description: Course materials for BYU Cybersecurity's Applications of Cybersecurity Training course
+baseurl: "" # the subpath of your site, e.g. /blog
+theme: just-the-docs
+
+url: https://byu-itc-515r-act.github.io
+
+# aux_links:
+#   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # specific to the theme website:
+  - bin/
+  - lib/
+  - "*.gemspec"
+  - "*.gem"
+  - LICENSE.txt
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - docker-compose.yml
+  - Dockerfile
+  # theme test code
+  - fixtures/
+  - spec/
+  - tmp
+  - .rspec
+  
+enable_copy_code_button: true
+
+nav_enabled: true

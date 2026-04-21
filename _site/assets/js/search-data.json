@@ -1,0 +1,1241 @@
+{"0": {
+    "doc": "CLI Resources",
+    "title": "CLI Training Resources",
+    "content": "Articles . | How to Use the Command Line Interface – for Beginners | Linux Commands Handbook | Ubuntu Command Line for Beginners | Linux Commands Cheat Sheet | vim Cheat Sheet (VIM is a command line text editor that is really powerful) | nano Cheat Sheet (NANO is a GUI-based text editor that is pretty standard in Linux) | More websites to learn Linux | Working with Linux Services | More on working with Linux Services | . Videos . | Linux Commands and File Structure | File System Navigation from the Terminal | Making Directories and Understanding File Paths | Moving and Copying | Removing Directories and Using the History | Creating and Reading Files | Editing with Nano or Vi | Creating Files with Editors and Deleting Files | Creating User Accounts | Managing Permissions and Sudo Users | Exploring Sudoers and Removing Users | Groups | Passwords and Shadow Hashes | Less Grep and Pipe | . Downloads . | Linux CLI Cheat Sheet | vim Cheat Sheet | nanoCheat Sheet | . Additional CLI Practice . | Over The Wire | . ",
+    "url": "/labs/cli/cli_resources.html#cli-training-resources",
+    
+    "relUrl": "/labs/cli/cli_resources.html#cli-training-resources"
+  },"1": {
+    "doc": "CLI Resources",
+    "title": "CLI Resources",
+    "content": " ",
+    "url": "/labs/cli/cli_resources.html",
+    
+    "relUrl": "/labs/cli/cli_resources.html"
+  },"2": {
+    "doc": "Firewall Resources",
+    "title": "Firewall Training Resources",
+    "content": "Articles . | Introduction of Firewall in Computer Network | What is a host-based firewall? | iptables Tutorial: A Beginner’s Guide to the Linux Firewall | UFW Essentials: Common Firewall Rules and Commands | UFW: Uncomplicated Firewall — Cheat Sheet | A beginner’s guide to firewalld in Linux | . Videos . | Introduction to Networking Part 18 | Network Basics for Beginners - Firewalls | Intro to Firewalls with UFW | Computer Networking Tutorial - 40 - iptables Firewall Rules | Linux firewalld config examples | . Downloads . | IP Tables Cheat Sheet | UFW Cheat Sheet | Firewalld Cheat Sheet | . ",
+    "url": "/labs/router-firewall/firewalls.html#firewall-training-resources",
+    
+    "relUrl": "/labs/router-firewall/firewalls.html#firewall-training-resources"
+  },"3": {
+    "doc": "Firewall Resources",
+    "title": "Firewall Resources",
+    "content": " ",
+    "url": "/labs/router-firewall/firewalls.html",
+    
+    "relUrl": "/labs/router-firewall/firewalls.html"
+  },"4": {
+    "doc": "CLI",
+    "title": "Lab 1: Command Line Interface (CLI)",
+    "content": " ",
+    "url": "/labs/cli/#lab-1-command-line-interface-cli",
+    
+    "relUrl": "/labs/cli/#lab-1-command-line-interface-cli"
+  },"5": {
+    "doc": "CLI",
+    "title": "Introduction",
+    "content": "In this lab assignment, you will explore the Linux CLI, which is essential for effective system administration and development tasks. The assignment is designed to enhance your command-line skills through hands-on practice with various operations related to files, directories, permissions, text editing, user management, networking, process management, and package management. You will work through a series of tasks categorized by levels of mastery: Pass, Merit, and Distinction. Resources to assist with the lab: . | Homework Questions | Class Resources | Classmates/Teammates | Internet Resources | Teaching Assistants | . Please reach out to the TAs only after making a genuine effort to resolve the issue independently. While they are available to provide guidance and support, their role is to assist you in developing your understanding rather than providing immediate solutions. You are encouraged to approach challenges proactively, fostering problem-solving skills and critical thinking in the process. Developing problem-solving skills and critical thinking is fundamental to your education and growth. These skills are emphasized as part of the Aims of a BYU Education, which seek to cultivate individuals of faith, intellect, and character. Problem-solving and critical thinking are essential components of sound reasoning, effective communication, and intellectual depth — qualities that prepare you to succeed in both academic and real-world challenges. BYU’s focus on lifelong learning and service reminds us that the ability to independently approach, analyze, and resolve complex issues is just as important as mastering technical skills. These capabilities not only build competence but also instill the confidence to contribute meaningfully to the world and continue learning throughout life. ",
+    "url": "/labs/cli/#introduction",
+    
+    "relUrl": "/labs/cli/#introduction"
+  },"6": {
+    "doc": "CLI",
+    "title": "Configuration Instructions",
+    "content": "Virtual Machines and Operating Systems . You will be working with: . | 1 Ubuntu 20.04 Machine | . Network Configuration . Your machine already has internet access set up and can be accessed through your Proxmox instance. In future labs, you will practice setting the network settings but for this lab, it has been done for you. Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To track your progress, visit the scoreboard. | You need to be connected to the VPN to access the scoreboard and your Proxmox instance. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange Exclamation indicates that something is partially working. | Red down arrows indicate that something is not working. | . You can hover over your specific arrow and a tooltip will appear with a hint on what is wrong or not working. Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . ",
+    "url": "/labs/cli/#configuration-instructions",
+    
+    "relUrl": "/labs/cli/#configuration-instructions"
+  },"7": {
+    "doc": "CLI",
+    "title": "Connecting to Proxmox",
+    "content": ". | Install OpenVPN on your computer: . | Download the installer here. | After installation, import the VPN profile that was emailed to your BYU email address. | Connect to the VPN. | . | Access Proxmox: . | In your browser, navigate to the Proxmox URL from the email (e.g., https://172.18.&lt;ID&gt;.100:8006, where ‘ID’ is your user ID). | You will see a warning when the page loads. This is expected due to Proxmox’s self-signed TLS certificate. Click Advanced, then Proceed to.... | . | Login to Proxmox: . | Username: student | Password: Use the password sent to you via email. | Change the Realm from Linux PAM standard authentication to Proxmox VE authentication server. | Click Login. | You should see the Lab1 VMs in the panel on the left-hand side. You may have to expand the node button (It has the green checkmark next to it) to see them. | . | . Scoring Advice . There may be a way to achieve a criteria that we have not accounted for. If you believe your method meets the criteria but is not being scored please reach out to a TA. ",
+    "url": "/labs/cli/#connecting-to-proxmox",
+    
+    "relUrl": "/labs/cli/#connecting-to-proxmox"
+  },"8": {
+    "doc": "CLI",
+    "title": "Pass Criteria",
+    "content": "P1: File and Directory Operations . | Create a directory called P1 in /home/blueteam/. | Change the directory you’re in to the P1 directory you just created. | Use touch to create a file called P1.txt | Display the full path of your current directory. Enter the line path:&lt;command&gt; into the file /home/blueteam/P1/P1.txt | Use tail to view file changes in /var/log/auth.log in real-time. Enter the line live-tail:&lt;command&gt; into the file /home/blueteam/P1/P1.txt | View the first 10 lines of /var/log/auth.log using head. Enter the line head:&lt;command&gt; into the file /home/blueteam/P1/P1.txt | View the last 10 lines of /var/log/auth.log using tail. Enter the line tail:&lt;command&gt; into the file /home/blueteam/P1/P1.txt | Delete the directory /home/blueteam/P1-delete-me | Move and rename the file in a single command /home/blueteam/P1-move-me.txt to /home/blueteam/P1/moved.txt. | Copy the file /home/blueteam/P1-copy-me.txt to /home/blueteam/P1/P1-copy-me.txt | . P2: Text Editor Basics . | Create /home/blueteam/P2/P2.txt using nano and put the line nano is too easy as the first line | Open the file /home/blueteam/P2/P2-2.txt and use the find and replace to change every instance of Vim to Nano | . P3: Permissions and Ownership . | View file permissions and ownership using ls. | List all files (including hidden ones) contained in /home/blueteam/P3/. Enter the line hidden:&lt;command&gt; into the file /home/blueteam/P3/P3.txt. Run the command from inside of the P3 directory. | List all files (including hidden ones) and use the long list format on the file in /home/blueteam/P3/. Enter the line hidden-long:&lt;command&gt; into the file /home/blueteam/P3/P3.txt. Run the command using the absolute file path. | . | Modify file and folder permissions using chmod. | Change the permissions on the hidden file in /home/blueteam/P3 to be read only by the file owner and no permissions to anyone else | Change the permissions on the file /home/blueteam/P3/P3-3.txt to be read and write by the owner and read only by others in the group and all others | . | Change file owners and groups using chown. | Change the owner of the hidden file to blueteam and the group to sudo | Change the owner of the file /home/blueteam/P3/P3-4.txt to root | Change the group of the file /home/blueteam/P3/P3-2.txt to blueteam | . | . P4: User and Group Management . | Add users with/without login shells, home directories, and passwords using useradd or adduser . | Create a user called no-shell that does not have a shell or password they can log in with but does have a home directory. It should say /usr/sbin/nologin or /bin/false for the user in /etc/passwd after the user has been created | Create a user called shell that has a shell and password they can use to log in, but no home directory | Create a user called no-password that has a shell, but no password they can log in with, and no home directory | Create a user called login with a login shell, home directory, and a password they can log in with | . | Modify groups that a user belongs to using usermod and view group info using groups . | Add the login user to the sudo group | Remove the backup user from the redteam group | . | . P5: Archiving and Compression . | Create compressed files using zip. Compress the directory /home/blueteam/P5/ and all of its contents into a zip called P5.zip and put it in /home/blueteam | Extract compressed files using zip. Extract the zip /home/blueteam/P5-unzip.zip. Make sure the directory that contains all the extracted files is located at /home/blueteam/P5-unzip/ | . P6: Networking . | Check network configuration. Enter the line network:&lt;command&gt; into the file /home/blueteam/P6/P6.txt | Test connectivity to google.com using an ICMP-based check. Enter the line ping:&lt;command&gt; into the file /home/blueteam/P6/P6.txt | Download the google.com homepage from the internet. Enter the line download:&lt;command&gt; into the file /home/blueteam/P6/P6.txt. Make sure you get the homepage and not a redirect page. | . P7: Process Management . | List running processes using ps that displays processes for all users in a user-oriented format that includes processes without a terminal. Enter the line ps:&lt;command&gt; into the file /home/blueteam/P7/P7.txt and enter the flags in alphabetical order | View CPU and memory usage using top that displays only the processes for the blueteam user. Enter the line top:&lt;command&gt;into the file /home/blueteam/P7/P7.txt | . P8: Disk Usage and Filesystem Management . | Check how much space is left on the disk using the df command and a flag to make the data human readable. Enter the line df:&lt;command&gt;into the file /home/blueteam/P8/P8.txt | Check how large the /opt/ directory is using the du command and display the size in K. Enter the line du:&lt;command&gt; into the file /home/blueteam/P8/P8.txt | . P9: Package Management . | Install the package net-tools using apt | Completely remove and purge the package nmap using apt | . Merit Criteria: . M1: File and Directory Operations . | Count words, lines, and characters. Use the file /home/blueteam/M1/Never-Gonna-Give-You-Up.txt and put your answers in /home/blueteam/M1/M1.txt . | Count the number of words in the file and enter the line word-count:&lt;command&gt;,&lt;number of words&gt; into the /home/blueteam/M1/M1.txt file. Ensure that the only number your command returns is the word count. | Count the number of lines in the file and enter the line lines:&lt;command&gt;,&lt;number of lines&gt; into the /home/blueteam/M1/M1.txt file | Count the number of characters in the file and enter the line char:&lt;command&gt;,&lt;number of characters&gt; into the /home/blueteam/M1/M1.txt file | Count the number of times Never appears in the file and enter the line never:&lt;number of times&gt; into the /home/blueteam/M1/M1.txt file | . | Use sed to replace the word “Always” with “Never” in the file /home/blueteam/M1/Never-Gonna-Give-You-Up-sed.txt. Enter the line sed:&lt;command&gt;into the /home/blueteam/M1/M1.txt file | Combine the commands cowsay and fortune to make the cow say a fortune. Enter the line cowsay:&lt;command&gt;into the /home/blueteam/M1/M1.txt file | Create a hard link to /home/blueteam/M1-hardlink.txt called M1-hardlink.txt in /home/blueteam/M1/: | Create a symbolic link to /home/blueteam/M1-symlink.txt called M1-symlink.txt in /home/blueteam/M1/: | . M2: Text Editor Basics . | Open the file /home/blueteam/M2/WeLoveVim.md using VIM and add the line I &lt;3 VIM as the last line of the file | Using the same file as above use VIM to find and replace every instance of Nano to Vim | . M3: Permissions and Ownership . | Using recursion change the owner of all files and directories in /home/blueteam/M3 to blueteam:sudo | Using recursion change the file (not folder) permissions of all files in /home/blueteam/M3 to 640 | . M4: Networking . | Display all tcp and udp connections using netstat. Enter the line tcp-udp:&lt;command&gt; into the /home/blueteam/M4/M4.txt file | Display all connections. Enter the line all:&lt;command&gt; into the /home/blueteam/M4/M4.txt file | Display all listening sockets. Enter the line listening:&lt;command&gt; into the /home/blueteam/M4/M4.txt file | Display all TCP and UDP connections that are listening and show the numerical addresses instead of resolving the hostnames. Enter the line everything:&lt;command&gt; into the /home/blueteam/M4/M4.txt file. Order the flags in alphabetical order. | . M5: Process Management . | Create a cronjob for the blueteam account that will execute /home/blueteam/M5/cronScript.py every 5 minutes. The cronjob should be placed in your user’s crontab | Terminate the process that is running pleasekillme.py and remove the cronjob that is enabling it to be persistent but do not remove the script. | . You can remove scripts that point to blackteam but do not remove the scripts themselves. Note that the redteam may use accounts that seem to be out of scope to maintain persistence in your system. M6: Disk Usage and Filesystem Management . | Partition the drive sdb to use xfs and mount the directory /mnt/M6-mount to sdb | Unmount the drive mounted to /mnt/M6-unmount | . M7: Package Management . | Update and upgrade all packages | Verify the integrity of system binaries and repair any binaries that do not match | . ",
+    "url": "/labs/cli/#pass-criteria",
+    
+    "relUrl": "/labs/cli/#pass-criteria"
+  },"9": {
+    "doc": "CLI",
+    "title": "Distinction Criteria:",
+    "content": "D1: File and Directory Operations . | Copy the directory /home/blueteam/D1 and all of its contents to /home/blueteam/D1-copy using recursion. Enter the line copy:&lt;command&gt; into the /home/blueteam/D1/D1.txt file.Use the full filepath in the command. | Count the number of files in the directory /home/blueteam/D1 using recursion. Enter the line count:&lt;count&gt; into the /home/blueteam/D1/D1.txt file. | Remove all files and subdirectories from /home/blueteam/D1-copy using recursion. Enter the line remove:&lt;command&gt; into the /home/blueteam/D1/D1.txt file. Use the full filepath in the command. | Locate files by name, type, modification date, and file size. | Locate all files with game in the name. Enter the line game:&lt;command&gt; into the /home/blueteam/D1/D1.txt file | Locate all python files on the system. Enter the line python:&lt;command&gt; into the /home/blueteam/D1/D1.txt file | Locate all files that are larger than 1GB. Enter the line 1GB:&lt;command&gt; into the /home/blueteam/D1/D1.txt file | Locate all files with the Set User ID permissions set. Enter the line SUID:&lt;command&gt; into the /home/blueteam/D1/D1.txt file | . | Add the Set User ID permission to the file /home/blueteam/D1/script.py | . D2: Networking . | Something is listening on port 1337. Find the PID of the process. Enter the line sus:&lt;filepath&gt; (with the filepath of the file that is running in the process) into the /home/blueteam/D2/D2.txt file | Kill the process you identified and stop it from respawning. | . D3: Process Management . | List all open files. Enter the line all-files:&lt;command&gt; into the /home/blueteam/D3/D3.txt file | List all open files for the root user. Enter the line root-files:&lt;command&gt; into the /home/blueteam/D3/D3.txt file | List all open files for SSH for your current SSH session. Enter the line ssh-files:&lt;command&gt; into the /home/blueteam/D3/D3.txt file | . ",
+    "url": "/labs/cli/#distinction-criteria",
+    
+    "relUrl": "/labs/cli/#distinction-criteria"
+  },"10": {
+    "doc": "CLI",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/cli/#submission",
+    
+    "relUrl": "/labs/cli/#submission"
+  },"11": {
+    "doc": "CLI",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | What is the purpose of creating directories and files in Linux, and how does it help in organizing system resources? | Why might it be important to view the full path of your current directory, especially when working with scripts or configuration files? | What are some reasons you might want to monitor log files like /var/log/auth.log in real-time, and how could this benefit system security? | In what scenarios would it be useful to view the first or last few lines of a file with commands like head and tail? | How can the find and replace feature be useful in text editors when updating configuration files or scripts? | What does listing hidden files and viewing permissions reveal about the security and access control of a directory? | Why is it essential to set specific permissions on files, and what could happen if permissions are too open or too restrictive? | What is the significance of file ownership in Linux, and why would you change a file’s owner to root in certain cases? | Why might you create a user without a login shell or password, and in what scenarios could this type of user account be necessary? | What is the role of groups in Linux, and how does adding a user to the sudo group affect their system privileges? | Why is compressing files and directories useful in Linux, and how does it impact storage and file transfers? | Why would you want to download a web page from the internet using a command, and what are some examples of how this is used in system administration? | What information does the ps command provide about processes, and how does viewing processes for all users improve system monitoring? | Why might you filter processes in top to show only those for a specific user, and how does this assist in resource management? | What are the advantages of using human-readable formatting when checking disk usage, and what critical information can this reveal? | What role does package management play in Linux, and why is it crucial to verify that a package is fully installed or completely removed? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/cli/#pass-off-questions",
+    
+    "relUrl": "/labs/cli/#pass-off-questions"
+  },"12": {
+    "doc": "CLI",
+    "title": "CLI",
+    "content": " ",
+    "url": "/labs/cli/",
+    
+    "relUrl": "/labs/cli/"
+  },"13": {
+    "doc": "Networking",
+    "title": "Lab 2: Basic Networking",
+    "content": " ",
+    "url": "/labs/networking/#lab-2-basic-networking",
+    
+    "relUrl": "/labs/networking/#lab-2-basic-networking"
+  },"14": {
+    "doc": "Networking",
+    "title": "Introduction",
+    "content": "In this lab, you will configure network settings on three operating systems: Ubuntu 20.04, Rocky 8, and Kali Linux. This exercise is designed to help you understand and apply fundamental networking concepts such as IP address configuration, subnet masks, gateway settings, and DNS configuration. Resources to assist with the lab: . | Homework Questions | Class Resources | Classmates/Teammates | Internet Resources | Teaching Assistants | . Please reach out to the TAs only after making a genuine effort to resolve the issue independently. While they are available to provide guidance and support, their role is to assist you in developing your understanding rather than providing immediate solutions. You are encouraged to approach challenges proactively, fostering problem-solving skills and critical thinking in the process. Developing problem-solving skills and critical thinking is fundamental to your education and growth. These skills are emphasized as part of the Aims of a BYU Education, which seek to cultivate individuals of faith, intellect, and character. Problem-solving and critical thinking are essential components of sound reasoning, effective communication, and intellectual depth — qualities that prepare you to succeed in both academic and real-world challenges. BYU’s focus on lifelong learning and service reminds us that the ability to independently approach, analyze, and resolve complex issues is just as important as mastering technical skills. These capabilities not only build competence but also instill the confidence to contribute meaningfully to the world and continue learning throughout life. ",
+    "url": "/labs/networking/#introduction",
+    
+    "relUrl": "/labs/networking/#introduction"
+  },"15": {
+    "doc": "Networking",
+    "title": "Configuration Instructions",
+    "content": "Virtual Machines and Operating Systems . You will be working with: . | 1 Kali Linux Machine | 1 Ubuntu 20.04 Machine | 1 Rocky 8 Machine | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-2-kali Machine: . | IP: 172.18.&lt;ID&gt;.11/16 | Gateway: 172.18.0.1 | Primary DNS: 172.18.0.1 | Secondary DNS: 8.8.8.8 | . | Lab-2-ubuntu-20.04 Machine: . | IP: 172.18.&lt;ID&gt;.12/16 | Gateway: 172.18.0.1 | Primary DNS: 172.18.0.1 | Secondary DNS: 8.8.8.8 | . | Lab-2-rocky-8 Machine: . | IP: 172.18.&lt;ID&gt;.13/16 | Gateway: 172.18.0.1 | Primary DNS: 172.18.0.1 | Secondary DNS: 8.8.8.8 | . | . Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To track your progress, visit the scoreboard. | You need to be connected to the VPN to access the scoreboard and your Proxmox instance. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Red down arrows indicate that something is not working. | . Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . Scoring Adivce . There may be a way to achieve a criteria that we have not accounted for. If you believe your method meets the criteria but is not being scored please reach out to a TA. ",
+    "url": "/labs/networking/#configuration-instructions",
+    
+    "relUrl": "/labs/networking/#configuration-instructions"
+  },"16": {
+    "doc": "Networking",
+    "title": "Pass Criteria",
+    "content": "P1: IP Address and Subnet Mask Configuration . | Assign a static IP address to each system in the range of IP addresses assigned to you (it must be the one listed in the specifications above to receive points) | Verify that all systems can ping each other and the gateway. | . P2: Subnet Mask Configuration . | Ensure that the subnet mask is correctly applied to each system using a /16 network. | . ",
+    "url": "/labs/networking/#pass-criteria",
+    
+    "relUrl": "/labs/networking/#pass-criteria"
+  },"17": {
+    "doc": "Networking",
+    "title": "Merit Criteria",
+    "content": "M1: Gateway Configuration . | Set the default gateway on each system to 172.18.0.1. | Verify that each system can ping a public IP address. | . ",
+    "url": "/labs/networking/#merit-criteria",
+    
+    "relUrl": "/labs/networking/#merit-criteria"
+  },"18": {
+    "doc": "Networking",
+    "title": "Distinction Criteria",
+    "content": "D1: DNS Configuration . | Set a primary and backup DNS server on each system. | Verify that the systems can resolve a domain name and successfully ping it. | . ",
+    "url": "/labs/networking/#distinction-criteria",
+    
+    "relUrl": "/labs/networking/#distinction-criteria"
+  },"19": {
+    "doc": "Networking",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/networking/#submission",
+    
+    "relUrl": "/labs/networking/#submission"
+  },"20": {
+    "doc": "Networking",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass off. | What is the difference between static and dynamic IP addresses, and why might you choose one over the other in a lab environment? | What is the purpose of a subnet mask, and how does it affect communication between devices on the same or different networks? | Explain what a /16 subnet mask means in terms of available IP addresses and network segmentation. | Why is it important for all systems to be able to ping each other, and what does this verify about network configuration? | Why might pinging the gateway be a crucial step in testing network connectivity? | What is the role of a default gateway, and how does it assist in inter-network communication? | Why should each system’s default gateway be set consistently, and what issues could arise if it’s misconfigured? | What is the significance of being able to ping a public IP address, and what does this confirm about the network configuration? | Why is DNS configuration necessary, and how does it simplify network communication for users and applications? | Explain why having both a primary and backup DNS server configured is essential for network resilience. | What are some ways you can verify that DNS is correctly configured on a system, and what signs indicate potential DNS issues? | Why is it useful to ping a resolved domain name as part of testing your DNS configuration? | What are some common troubleshooting steps if a system cannot communicate with another device on the same subnet? | What potential errors might occur if subnet masks aren’t configured correctly, and how would this impact network communication? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/networking/#pass-off-questions",
+    
+    "relUrl": "/labs/networking/#pass-off-questions"
+  },"21": {
+    "doc": "Networking",
+    "title": "Networking",
+    "content": " ",
+    "url": "/labs/networking/",
+    
+    "relUrl": "/labs/networking/"
+  },"22": {
+    "doc": "Hardening",
+    "title": "Lab 9: Hardening",
+    "content": " ",
+    "url": "/labs/hardening/#lab-9-hardening",
+    
+    "relUrl": "/labs/hardening/#lab-9-hardening"
+  },"23": {
+    "doc": "Hardening",
+    "title": "Scenario",
+    "content": "Welcome to Apex Innovations! We are a leading provider of advanced cybersecurity solutions and digital transformation services for businesses worldwide. Our mission is to protect organizations from evolving cyber threats while enabling them to innovate and grow in a secure environment. With a dynamic team of experts and cutting-edge technologies, Apex Innovations empowers clients to stay one step ahead in an increasingly complex digital landscape. As a newly hired Security Analyst, you’ve been assigned to secure our flagship project server, which will serve as the backbone for our ongoing development efforts. This server will host critical information for both our internal teams and high-profile clients. Due to recent security breaches, there’s a possibility that the server has been compromised by malicious actors. Your predecessor left under mysterious circumstances, and it’s unclear whether the system was fully cleared of any threats. It’s now your responsibility to identify and eliminate any hidden vulnerabilities, malware, or unauthorized access points that may remain, ensuring that no sensitive client or corporate data is put at risk. The stakes are high as Apex Innovations’ reputation is on the line. The breach could be the work of a competitor trying to sabotage the company or a former insider seeking revenge. With advanced tools and persistent attackers out there, you must act swiftly to secure the system. Your job is to restore confidence in the integrity of the server, keep an eye out for any signs of further compromise, and ensure that everything is locked down before transferring any high-value data. Be vigilant—every move counts and the attackers may be closer than you think! . ",
+    "url": "/labs/hardening/#scenario",
+    
+    "relUrl": "/labs/hardening/#scenario"
+  },"24": {
+    "doc": "Hardening",
+    "title": "Rules",
+    "content": ". | Do not block port 2222, this port is used by the blackteam to score your machine. | Do not remove the Proxmox user agent which is called qemu-guest-agent | To receive points for the lab, your VM must be powered on and still scorable after the lab. | Any attempt to manipulate or gain access to the scoring machines will be considered cheating. | Attempting to access the scoring engine from your competition VM is out of scope. | This assignment is graded on an individual basis; however, you may collaborate in a group of 2 to 3 people to help bounce ideas off each other. Do not share details of the lab outside your group. | Inform TAs who you are working with. No daisy chaining of groups! | . | You are not allowed to make any attempt to access other students’ VMs or the scoring engine, doing so will be considered cheating and also result in failing the assignment. | Do not do anything to the blackteam account. This includes but is not limited to . | changing the password | removing the SSH key | removing its admin privileges | Modifying the account will likely lock you out and the scoring engine, resulting in no points. | . | Do not disable any scripts or services labeled with blackteam or that are being run by the blackteam account. | You are not permitted to perform any major version upgrades on the virtual machines. | Do not change the IP address of your VM. | If your VM becomes unusable or corrupted beyond recovery, a TA can reset it to its original state. However, this will reset your points to 0, and no additional time will be granted for the assignment. Resets are only available during TA hours (9:00 a.m. to 5:00 p.m.). | The first reset is penalty-free, but each subsequent reset will incur a 10-point penalty. This includes any situation where a TA must intervene to restore access. Avoid contacting TAs outside their designated hours. | Your VM must be powered on and scorable after the lab to obtain points. We will not be performing resets for you the night it is due. | . ",
+    "url": "/labs/hardening/#rules",
+    
+    "relUrl": "/labs/hardening/#rules"
+  },"25": {
+    "doc": "Hardening",
+    "title": "Users",
+    "content": "Controlling who can access a system and what they can do with that access is crucial to security. We don’t want any former employees logging in and we also don’t want users with admin access when they don’t need it. You will need to add any users that should be there and then modify and delete any if needed. When adding users, make their username firstnamelastname. For example, if you were creating an account for John Smith the username would be johnsmith. Capital letters are not permitted in usernames. We also want our user’s passwords to be secure. Authorized Users . | Ethan Brooks | Olivia Carter | Mason Davis | Ava Johnson | Lucas Miller | Sophia Martinez | James Wilson | Isabella Taylor | William Anderson | Mia Thomas | blueteam | blackteam | . ",
+    "url": "/labs/hardening/#users",
+    
+    "relUrl": "/labs/hardening/#users"
+  },"26": {
+    "doc": "Hardening",
+    "title": "Services",
+    "content": "If these services are working, you will receive points for it, but if it goes down, you will lose those points until it works again. FTP . All FTP scoring users must be able to log in, read, and write files. The files must keep the same file hash to be considered correct. The hash for the users is $6$mWgVY9GDGccWAPPX$v7kDifzlJyTiqrHycaZyLw3u7NAmR.UZMG/x5ZuoiOC60sE6AyWuI3gEzA8zAjvqCOcLADGqXSFjyTyRGLlls0. | FTP - Users must be able to log in using their password. | FTP Write - Users must be able to write/upload files to the FTP server in the /FTP directory. | FTP Read - The user must be able to read/download files from the server with the correct content. | . ",
+    "url": "/labs/hardening/#services",
+    
+    "relUrl": "/labs/hardening/#services"
+  },"27": {
+    "doc": "Hardening",
+    "title": "SSH",
+    "content": ". | Only authorized users should be able to ssh in. | Only ssh keys can be used to log in - no passwords | Set other security settings that are reasonable. | . ",
+    "url": "/labs/hardening/#ssh",
+    
+    "relUrl": "/labs/hardening/#ssh"
+  },"28": {
+    "doc": "Hardening",
+    "title": "UFW",
+    "content": ". | Firewall rules should reflect the other critical services that are allowed. | . ",
+    "url": "/labs/hardening/#ufw",
+    
+    "relUrl": "/labs/hardening/#ufw"
+  },"29": {
+    "doc": "Hardening",
+    "title": "Guidelines",
+    "content": ". | Authorized user passwords were correct at the time the lab started, but this is not guaranteed to remain the case. | You can check your current score in the Details tab. | Read all the requirements for the VM carefully, it will direct you on what to do. It does not specifically tell you everything you need to do to receive points, but it is a good start. Threat hunting will be required. | The overall goal of the lab is to find and fix as many security, configuration, or policy issues as possible. However, you may make a change that could fix an issue that is not scored or do it in a way that is not recognized by the scoring engine. If you did not receive points for something you believe you should wait at least 5 minutes and then contact a TA. | . ",
+    "url": "/labs/hardening/#guidelines",
+    
+    "relUrl": "/labs/hardening/#guidelines"
+  },"30": {
+    "doc": "Hardening",
+    "title": "Grading Table",
+    "content": "| Criteria | Pass | Merit | Distinction | . | System Commands | P1: Restore basic user-level system commands to correct functionality. | M1: Restore system-level binaries to correct functionality. | D1: Fully restore all command functions. | . | Scheduled Tasks | P2: Review and remove obvious malicious scheduled tasks. | M2: Identify and remove condition-based automated tasks. | D2: Review and remove deeply embedded malicious system tasks. | . | Update and Package Management | P3: Update and upgrade packages. | M3: Remove restrictions on firewall installation. |   | . | Firewall and Network Security |   | M4: Install a firewall and configure it to block malicious traffic. |   | . | User and Group Management | P4: Remove obvious malicious users and secure legitimate users. | M5: Identify and remove hidden malicious users. | D3: Implement secure user password and hashing policies. | . | SSH Security | P5: Configure secure SSH settings, allowing legitimate users to use their SSH keys. | M6: Remove malicious SSH settings and configurations. | D4: Terminate and block malicious SSH sessions. | . | Malicious Programs and Software | P6: Remove any bind or reverse shells. | M7: Identify and remove password loggers. | D5: Find the rest of the malicious threats. | . | Folder and File Permissions | P7: Ensure critical files have correct permissions. |   |   | . | FTP Security | P8: Configure secure FTP settings and allow users to access the FTP server | M8: Restrict access to users or groups. |   | . | Verbal Pass Off | P9: Successfully answer two pass-off questions chosen by the TA. |   |   | . ",
+    "url": "/labs/hardening/#grading-table",
+    
+    "relUrl": "/labs/hardening/#grading-table"
+  },"31": {
+    "doc": "Hardening",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | What steps did you take to restore basic user-level system commands? | How did you identify and restore system-level binaries to their correct functionality? | What process did you follow to ensure all command functions were fully restored? | What criteria did you use to identify and remove obvious malicious scheduled tasks? | How did you detect and remove condition-based automated tasks from the system? | What approach did you use to identify and remove deeply embedded malicious system tasks? | What steps did you take to update and upgrade the system packages? | How did you address restrictions preventing firewall installation? | What firewall configurations did you implement to block malicious traffic? | How did you identify and remove malicious users from the system? | What methods did you use to ensure legitimate users were properly secured? | How did you identify hidden malicious users on the system, and how were they removed? | What password and hashing policies did you implement to secure user accounts? | How did you configure secure SSH settings to allow legitimate users to use their SSH keys? | What malicious SSH settings did you remove from the system, and how? | How did you terminate and block malicious SSH sessions on the server? | What steps did you take to identify and remove bind or reverse shells from the system? | How did you identify and remove password loggers from the server? | What malicious threats did you find and remove from the system? | How did you ensure that critical files had the correct folder and file permissions? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/hardening/#pass-off-questions",
+    
+    "relUrl": "/labs/hardening/#pass-off-questions"
+  },"32": {
+    "doc": "Hardening",
+    "title": "Hardening",
+    "content": " ",
+    "url": "/labs/hardening/",
+    
+    "relUrl": "/labs/hardening/"
+  },"33": {
+    "doc": "Logs",
+    "title": "Logs",
+    "content": "idk . ",
+    "url": "/labs/logs/",
+    
+    "relUrl": "/labs/logs/"
+  },"34": {
+    "doc": "Scripting",
+    "title": "Lab 10: Script Writing",
+    "content": " ",
+    "url": "/labs/scripting/#lab-10-script-writing",
+    
+    "relUrl": "/labs/scripting/#lab-10-script-writing"
+  },"35": {
+    "doc": "Scripting",
+    "title": "Introduction",
+    "content": "Resources to assist with the lab: . | Homework Questions | Class Resources Repository | Classmates/Teammates | Internet Resources | Teaching Assistants | . Please reach out to the TAs only after making a genuine effort to resolve the issue independently. While they are available to provide guidance and support, their role is to assist you in developing your understanding rather than providing immediate solutions. You are encouraged to approach challenges proactively, fostering problem-solving skills and critical thinking in the process. Developing problem-solving skills and critical thinking is fundamental to your education and growth. These skills are emphasized as part of the Aims of a BYU Education, which seek to cultivate individuals of faith, intellect, and character. Problem-solving and critical thinking are essential components of sound reasoning, effective communication, and intellectual depth — qualities that prepare you to succeed in both academic and real-world challenges. BYU’s focus on lifelong learning and service reminds us that the ability to independently approach, analyze, and resolve complex issues is just as important as mastering technical skills. These capabilities not only build competence but also instill the confidence to contribute meaningfully to the world and continue learning throughout life. ",
+    "url": "/labs/scripting/#introduction",
+    
+    "relUrl": "/labs/scripting/#introduction"
+  },"36": {
+    "doc": "Scripting",
+    "title": "Configuration Instructions",
+    "content": "Virtual Machines and Operating Systems . You will be working with: . | 1 Rocky 7 Machine | 1 Ubuntu 20.04 | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network. You can use any IPs in your assigned range for the VMs. Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | There will be no scoreboard for this lab. A full pass-off with a TA will need to be completed. | You need to be connected to the VPN to access your Proxmox instance. | . Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . ",
+    "url": "/labs/scripting/#configuration-instructions",
+    
+    "relUrl": "/labs/scripting/#configuration-instructions"
+  },"37": {
+    "doc": "Scripting",
+    "title": "Pass Criteria",
+    "content": "P1: Script Approval . | Before you begin creating your script the professor or TA must approve the idea to ensure it meets the minimum requirements. Your script must work on both Ubuntu 20.04 and Rocky 8. | Here are some ideas that you could use: . | Automated Firewall Configuration | Checksum Integrity Verifier | Database Security Checker | Database Setup | DNS Setup | FTP Security Checker | Log File Analyzer | Open Port Enumerator | Process Monitor for Suspicious Activity | Sensitive File Scanner | SSH Security Checker | Suspicious Network Activity Logger | User Account Monitoring | Web Setup | . | . P2: Script Creation . | Create a basic script using one of the following options (Bash or Python are recommended): . | Bash | Python | Perl | Ruby | . | Include detailed code comments | . P3: Security and Permissions . | Ensure the script has the correct file permissions and runs with the appropriate user privileges to execute all functionality properly. | . ",
+    "url": "/labs/scripting/#pass-criteria",
+    
+    "relUrl": "/labs/scripting/#pass-criteria"
+  },"38": {
+    "doc": "Scripting",
+    "title": "Merit Criteria",
+    "content": "M1: Script Creation . | Include functionality that: . | Accepts user input. | Uses conditional statements to perform actions based on the input. | Uses loops to iterate over files or data. | . | . M2: Error Handling and Logging . | Include basic error handling in your script to display error messages when something goes wrong. | . ",
+    "url": "/labs/scripting/#merit-criteria",
+    
+    "relUrl": "/labs/scripting/#merit-criteria"
+  },"39": {
+    "doc": "Scripting",
+    "title": "Distinction Criteria",
+    "content": "D1: Script Creation . | Include functions to modularize tasks and error-handling mechanisms to ensure reliability. | . D2: Error Handling and Logging . | Use advanced error handling to manage exceptions, log errors, and gracefully exit when the script encounters an issue. | . D3: Security and Permissions . | Include permission checks within the script to ensure it is being run by the correct user/group and with the correct permissions. | . ",
+    "url": "/labs/scripting/#distinction-criteria",
+    
+    "relUrl": "/labs/scripting/#distinction-criteria"
+  },"40": {
+    "doc": "Scripting",
+    "title": "Submission",
+    "content": "You will need to submit your script for this lab. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/scripting/#submission",
+    
+    "relUrl": "/labs/scripting/#submission"
+  },"41": {
+    "doc": "Scripting",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | Can you describe the purpose of the script you created and how it meets the requirements of the assignment? | How does your script accept user input, and how does it handle different types of input? | Can you explain the conditional statements used in your script and how they determine the flow of execution? | What is the purpose of the loop in your script, and how does it iterate over files or data? | How does your script behave when the user provides invalid input or when an error occurs? | How does your script handle the case where a required file or resource is missing? | How does your script check and validate that it is being run by the correct user or group? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/scripting/#pass-off-questions",
+    
+    "relUrl": "/labs/scripting/#pass-off-questions"
+  },"42": {
+    "doc": "Scripting",
+    "title": "Scripting",
+    "content": " ",
+    "url": "/labs/scripting/",
+    
+    "relUrl": "/labs/scripting/"
+  },"43": {
+    "doc": "SSH",
+    "title": "Lab 3: Secure Shell (SSH) &amp; File Transfer Protocol (FTP)",
+    "content": " ",
+    "url": "/labs/ssh/#lab-3-secure-shell-ssh--file-transfer-protocol-ftp",
+    
+    "relUrl": "/labs/ssh/#lab-3-secure-shell-ssh--file-transfer-protocol-ftp"
+  },"44": {
+    "doc": "SSH",
+    "title": "Introduction",
+    "content": "In this lab, you’ll learn to set up, configure, and secure two essential network protocols: SSH (Secure Shell) and FTP (File Transfer Protocol). SSH is widely used for secure remote administration of servers, enabling encrypted connections that protect data during transmission. You’ll explore the configuration and hardening of SSH to prevent unauthorized access, including setting up key-based authentication, restricting login privileges, and enabling multi-factor authentication (MFA) for enhanced security. The second half of this lab covers FTP, a protocol traditionally used for transferring files between clients and servers. You’ll configure an FTP server, create and manage FTP-specific user accounts, and explore methods for securing FTP access through user restrictions and access controls. Resources to assist with the lab: . | Homework Questions | Class Resources | Classmates/Teammates | Internet Resources | Teaching Assistants | . Please reach out to the TAs only after making a genuine effort to resolve the issue independently. While they are available to provide guidance and support, their role is to assist you in developing your understanding rather than providing immediate solutions. You are encouraged to approach challenges proactively, fostering problem-solving skills and critical thinking in the process. Developing problem-solving skills and critical thinking is fundamental to your education and growth. These skills are emphasized as part of the Aims of a BYU Education, which seek to cultivate individuals of faith, intellect, and character. Problem-solving and critical thinking are essential components of sound reasoning, effective communication, and intellectual depth — qualities that prepare you to succeed in both academic and real-world challenges. BYU’s focus on lifelong learning and service reminds us that the ability to independently approach, analyze, and resolve complex issues is just as important as mastering technical skills. These capabilities not only build competence but also instill the confidence to contribute meaningfully to the world and continue learning throughout life. ",
+    "url": "/labs/ssh/#introduction",
+    
+    "relUrl": "/labs/ssh/#introduction"
+  },"45": {
+    "doc": "SSH",
+    "title": "Configuration Instructions",
+    "content": "Virtual Machines and Operating Systems . You will be working with: . | 1 Rocky 8 Machine | 1 Kali Linux Machine | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-3-ssh-ftp Machine: . | IP: 172.18.&lt;ID&gt;.3/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | Lab-3-kali Machine: . | IP: 172.18.&lt;ID&gt;.4/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | . Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To track your progress, visit the scoreboard. | You need to be connected to the VPN to access the scoreboard and your Proxmox instance. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange Exclamation indicates that something is partially working. | Red down arrows indicate that something is not working. | . Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . ",
+    "url": "/labs/ssh/#configuration-instructions",
+    
+    "relUrl": "/labs/ssh/#configuration-instructions"
+  },"46": {
+    "doc": "SSH",
+    "title": "Pass Criteria",
+    "content": "P1: SSH Installation and Configuration . | Install SSH on the server by installing the openssh-server package | . P2: SSH Key Generation and Management . | Generate an SSH key on your lab-3-kali machine. | Copy the public key over to your server to the blueteam account. | Connect to the server using the key instead of the password. | . P3: SSH Hardening . | Limit the number of failed login attempts to 3. | Set the timeout (for an idle session) to be 1 minute. | Set the maximum number of concurrent sessions to be 10 | . P4: SSH File Transfers . | Copy the file ssh-file.txt from your lab-3-kali machine Documents directory to your server. Place it in /home/blueteam/P4/. | . P5: Logging and Monitoring SSH Activity . Use the file /root/secure for the questions in P5 . | View the SSH logs and answer the following questions . | How many failed login attempts are there for the user bob? Enter the line bob-failed:&lt;count&gt; into the file /home/blueteam/P5/P5.txt. | How many successful logins are there for the user redteam? Enter the line redteam-successful:&lt;count&gt; into the file /home/blueteam/P5/P5.txt. | How many successful password logins are there for the user bob? Enter the line bob-password:&lt;count&gt; into the file /home/blueteam/P5/P5.txt. | How many of the successful logins for the readteam used an ssh key? Enter the line redteam-key:&lt;count&gt; into the file /home/blueteam/P5/P5.txt. | . | . P6: Troubleshooting . To complete P6 P1-5 must have a green arrow before starting . | Fix the errors in the ssh config files to allow the service to restart. | Restart the service. | . P7: FTP Installation, Configuration, and User Management . | Install an FTP server by installing vsftpd | Restrict ftp users to their home directories | . P8: FTP Security . | Disable anonymous login to the FTP server. | . P9: Troubleshooting . To complete P9 P1-8 must have a green arrow before starting . | Fix the errors in the FTP config files to allow the service to function. | Restart the service. | . ",
+    "url": "/labs/ssh/#pass-criteria",
+    
+    "relUrl": "/labs/ssh/#pass-criteria"
+  },"47": {
+    "doc": "SSH",
+    "title": "Merit Criteria",
+    "content": "M1: SSH Installation and Configuration . | Modify the ssh port to also use port 2222. Make sure it is still also running on port 22. | Disable root account login via ssh | Disable password authentication and only allow key authentication | Disable empty passwords from being used for ssh | . M2: SSH Key Generation and Management . Note: Do not change the passwords of any users. | On the lab-3-kali machine generate ssh keys for the users ssh1, ssh2, ftpuser, bob and use their key to login to each of their accounts. | . M3: Logging and Monitoring SSH Activity . Using logs (use the logs with postfixes of -date rather than the normal ones) answer the following questions: . | What IP address is the redteam account using to access your machine? Enter the line ip:&lt;ip&gt; into the file /home/blueteam/M3/M3.txt. | What file did the redteam account attempt to view? Enter the line filepath:&lt;filepath&gt; into the file /home/blueteam/M3/M3.txt. | . M4: Troubleshooting . To complete M4 P1-P9 and M1-M3 must have a green arrow before starting . The users ssh3 and ssh4 are having issues using their ssh keys. Troubleshoot the problems and allow them to access their accounts again. M5: FTP Installation, Configuration, and User Management . | Create the directory /shared-ftp | Allow read, write and execute access to /shared-ftp for the owner and group | Set the owner of /shared-ftp to ftpuser and set the group to ftp | Place all users in the /shared-ftp directory when they log in and do not allow them to exit the directory. | . M6: FTP Security . | Block the user ssh3 from accessing the ftp server but still allow ssh access | Set the default file upload permissions to be 644 | Ensure that users in the ftp group and read and write over ftp to the /shared-ftp directory and that users not in the ftp group cannot read or write over ftp to the /shared-ftp directory | . M7: Troubleshooting . To complete M7 P1-9 and M1-6 must have a green arrow before starting. | The ftp server seems to have gone down. Let’s see if you can fix it. | . ",
+    "url": "/labs/ssh/#merit-criteria",
+    
+    "relUrl": "/labs/ssh/#merit-criteria"
+  },"48": {
+    "doc": "SSH",
+    "title": "Distinction Criteria",
+    "content": "D1: SSH Installation and Configuration . | Allow the users ssh3, blueteam and blackteam to ssh into the server | Allow the user ssh4 to ssh into the server but only from 172.18.0.3 | . D2: Logging and Monitoring SSH Activity . | Use a tool to automatically block an IP after 5 failed login attempts for 10 minutes. | This will be graded manually by a TA | . ",
+    "url": "/labs/ssh/#distinction-criteria",
+    
+    "relUrl": "/labs/ssh/#distinction-criteria"
+  },"49": {
+    "doc": "SSH",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/ssh/#submission",
+    
+    "relUrl": "/labs/ssh/#submission"
+  },"50": {
+    "doc": "SSH",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | What is the purpose of SSH, and how does it enhance the security of remote connections? | How does changing the default SSH port improve security, and what risks are associated with leaving it unchanged? | Why is it beneficial to disable root login for SSH, and how does this impact server security? | What are the advantages of using key-based authentication over password-based authentication in SSH? | What are the benefits of restricting SSH access to specific IP addresses or user groups and the pros and cons of both approaches? | Explain the process of generating SSH key pairs and how they facilitate secure remote connections. | How would you manage SSH keys for multiple users on the same system, and why might this be necessary? | What purpose does limiting failed login attempts serve in SSH, and how does it protect the server? | Why is logging SSH activity essential, and what information can SSH logs provide for security monitoring? | What are the advantages of monitoring SSH connections in real-time, especially in a high-security environment? | What are common issues with SSH key-based authentication, and how would you troubleshoot them? | What is FTP, and how does it differ from SSH in terms of function and security? | How does restricting FTP users to their home directories improve security and privacy on a multi-user system.? | What is the benefit of disabling anonymous FTP login, and what risks might anonymous access present? | Why is SFTP recommended over standard FTP, and how does it improve data security? | What are the key differences between active and passive FTP modes, and when would each be used? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/ssh/#pass-off-questions",
+    
+    "relUrl": "/labs/ssh/#pass-off-questions"
+  },"51": {
+    "doc": "SSH",
+    "title": "SSH",
+    "content": " ",
+    "url": "/labs/ssh/",
+    
+    "relUrl": "/labs/ssh/"
+  },"52": {
+    "doc": "SMB",
+    "title": "SMB",
+    "content": "todo: split that up . ",
+    "url": "/labs/smb/",
+    
+    "relUrl": "/labs/smb/"
+  },"53": {
+    "doc": "DNS",
+    "title": "Lab 4: Domain Name System (DNS)",
+    "content": " ",
+    "url": "/labs/dns/#lab-4-domain-name-system-dns",
+    
+    "relUrl": "/labs/dns/#lab-4-domain-name-system-dns"
+  },"54": {
+    "doc": "DNS",
+    "title": "Introduction",
+    "content": "In this lab, you’ll learn to set up, configure, and secure DNS. It is a critical service for translating domain names into IP addresses, enabling users to access network resources using human-readable names. You’ll explore DNS configuration, including creating forward and reverse lookup zones, setting up A and PTR records, and implementing DNS security measures to prevent unauthorized modifications. Resources to assist with the lab: . | Homework Questions | Class Resources | Classmates/Teammates | Internet Resources | Teaching Assistants | . Please reach out to the TAs only after making a genuine effort to resolve the issue independently. While they are available to provide guidance and support, their role is to assist you in developing your understanding rather than providing immediate solutions. You are encouraged to approach challenges proactively, fostering problem-solving skills and critical thinking in the process. Developing problem-solving skills and critical thinking is fundamental to your education and growth. These skills are emphasized as part of the Aims of a BYU Education, which seek to cultivate individuals of faith, intellect, and character. Problem-solving and critical thinking are essential components of sound reasoning, effective communication, and intellectual depth — qualities that prepare you to succeed in both academic and real-world challenges. BYU’s focus on lifelong learning and service reminds us that the ability to independently approach, analyze, and resolve complex issues is just as important as mastering technical skills. These capabilities not only build competence but also instill the confidence to contribute meaningfully to the world and continue learning throughout life. Configuration Instructions . Virtual Machines and Operating Systems . You will be working with: . | 2 Ubuntu 20.04 Machines | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-4-DNS Machine: . | WAN (ens18 interface): . | IP: 172.18.x.5/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | LAN (ens19 interface): . | IP: 192.168.x.10/16 | No gateway required | . | . | Lab-4-Internal Machine: . | LAN (ens18 interface): . | IP: 192.168.x.11/16 | No gateway required | DNS: 192.168.x.10 | . | . | . The internal machine will not have internet access even after the network has been configured but it should be able to reach the LAN IP of the DNS server. Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To monitor your progress, visit: http://172.18.0.3/lab/4. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange exclamation marks indicate that something is partially working. | Red down arrows indicate that something is not working. | . You can hover over each specific arrow, and a tooltip will appear with a hint on what is wrong or not working. Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . File Creation and Content . | If a referenced file does not exist, you must create it. | For any questions requiring files to contain specific content, use the Lab-4-DNS machine. | . ",
+    "url": "/labs/dns/#introduction",
+    
+    "relUrl": "/labs/dns/#introduction"
+  },"55": {
+    "doc": "DNS",
+    "title": "Domains",
+    "content": "Internal Domains . | Service | Domain Name | Record Types | Resolving IP | . | DNS | ns.friedchicken.local | NS, A, PTR | 192.168.X.10 | . | Intranet | intranet.friedchicken.local | A, PTR | 192.168.X.30 | . | HR System | hr.friedchicken.local | A, PTR | 192.168.X.31 | . | Finance | finance.friedchicken.local | A, PTR | 192.168.X.32 | . | Development | dev.friedchicken.local | A, PTR | 192.168.X.33 | . | QA/Test | qa.friedchicken.local | A, PTR | 192.168.X.34 | . | Helpdesk | helpdesk.friedchicken.local | A, PTR | 192.168.X.35 | . | Inventory | inventory.friedchicken.local | A, PTR | 192.168.X.36 | . | Wiki | wiki.friedchicken.local | A, PTR | 192.168.X.37 | . External Domains . | Service | Domain Name | Record Types | Resolving IP | . | DNS | ns.friedchicken.com | NS, PTR | 172.18.X.5 | . | Website | friedchicken.com | A, PTR | 172.18.X.6 | . | Website | www.friedchicken.com | CNAME, PTR | 172.18.X.6 | . | APIs | api.friedchicken.com | A, PTR | 172.18.X.6 | . | Status Page | status.friedchicken.com | A, PTR | 172.18.X.7 | . | E-commerce | shop.friedchicken.com | A, PTR | 172.18.X.8 | . | Blog | blog.friedchicken.com | A, PTR | 172.18.X.9 | . For forward lookups, the A, NS or CNAME records must resolve and for a reverse lookup, the PTR record must resolve. Forward lookups resolve a domain to an IP address. A reverse lookup does the opposite and resolves an IP to a domain name. ",
+    "url": "/labs/dns/#domains",
+    
+    "relUrl": "/labs/dns/#domains"
+  },"56": {
+    "doc": "DNS",
+    "title": "Pass Criteria",
+    "content": "P1: DNS Installation and Configuration . | Install DNS on the server by installing the bind9 package | . P2: DNS Installation and Configuration . | Configure a forward lookup zone for all the domains with A records in the Internal Domains table | Configure a reverse lookup zone for all the domains with PTR records in the Internal Domains table . | You should be able to resolve the domain names from your Lab-4-Internal machine when the records have been created. | . | . P3: Troubleshooting . To complete P3 P1-P2 must have a green arrow before starting. | Fix the errors in the DNS config files to allow the service to restart. | Restart the service. | . ",
+    "url": "/labs/dns/#pass-criteria",
+    
+    "relUrl": "/labs/dns/#pass-criteria"
+  },"57": {
+    "doc": "DNS",
+    "title": "Merit Criteria",
+    "content": "M1: DNS Installation and Configuration . | Configure a forward lookup zone for all the domains in the External Domains table. | Configure a reverse lookup zone for all the domains with PTR records in the External Domains table. | . M2: DNS Security . To complete M2 P1-3 and M1 must have a green arrow before starting. | Limit queries to any domain or IP in the Internal Domains table to 192.168.0.0/16. | Limit queries to any domain or IP in the External Domains table to 172.18.0.0/16. | . M3: Troubleshooting . To complete M3 P1-3 and M1-2 must have a green arrow before starting. | Some of the domains are having issues resolving. Fix the issues. | . ",
+    "url": "/labs/dns/#merit-criteria",
+    
+    "relUrl": "/labs/dns/#merit-criteria"
+  },"58": {
+    "doc": "DNS",
+    "title": "Distinction Criteria",
+    "content": "D1: DNS Installation and Configuration . | Resolve public domains using your Lab-4-DNS machine as the recursive resolver for internal IPs only. You should be able to look up public domains from your Lab-4-Internal machine but you should not be able to look up public domains from your 172.18.X.X address. | . D2: DNS Security . | Disable zone transfers. | . ",
+    "url": "/labs/dns/#distinction-criteria",
+    
+    "relUrl": "/labs/dns/#distinction-criteria"
+  },"59": {
+    "doc": "DNS",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/dns/#submission",
+    
+    "relUrl": "/labs/dns/#submission"
+  },"60": {
+    "doc": "DNS",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | What command did you use to install the DNS server? | Describe the purpose of a forward lookup zone and the types of records you would typically find in one. | What is the function of a reverse lookup zone, and which DNS records are involved in reverse lookups? | Explain the difference between an A record and a C record. | How does the DNS service you configured translate domain names into IP addresses? | What file did you use to define the forward lookup zones for the internal domains, and what were the contents of this file? | How can you verify that forward lookups are working correctly? | What command did you use to check the status of the bind9 service, and where did you store the output? | When you encountered errors in the DNS configuration, what steps did you take to troubleshoot and resolve them? | Why is it important to limit query access to the internal and external domains, and how did you configure these restrictions? | Why are zone transfers a potential security risk, and how did you disable them? | What does a recursive query in DNS mean, and how did you limit recursive queries to internal IP addresses? | What are the differences between an NS record and an A record, and how did you configure the NS records for this lab? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/dns/#pass-off-questions",
+    
+    "relUrl": "/labs/dns/#pass-off-questions"
+  },"61": {
+    "doc": "DNS",
+    "title": "DNS",
+    "content": " ",
+    "url": "/labs/dns/",
+    
+    "relUrl": "/labs/dns/"
+  },"62": {
+    "doc": "Routers & Firewalls",
+    "title": "Lab 5: Routers &amp; Firewalls",
+    "content": " ",
+    "url": "/labs/router-firewall/#lab-5-routers--firewalls",
+    
+    "relUrl": "/labs/router-firewall/#lab-5-routers--firewalls"
+  },"63": {
+    "doc": "Routers & Firewalls",
+    "title": "Introduction",
+    "content": "In this lab, you’ll learn to set up, configure, and secure routers and firewalls, essential components for managing and protecting network traffic. You’ll explore firewall configuration, including creating and applying rules to control access, assigning network interfaces to zones, and optimizing traffic policies for three different firewalls, UFW, iptables, and Firewalld. Additionally, you’ll configure routers to enable communication between multiple networks, set up NAT for internet access, and implement security measures to block malicious traffic and prevent network attacks. Configuration Instructions . Virtual Machines and Operating Systems . You will be working with: . | 1 MikroTik Machine | 2 Ubuntu 20.04 Machines | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-5-router Machine: . | WAN (ether3 interface): . | IP: 172.18.x.6/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | LAN (ether4 interface): . | IP: 192.168.x.1/16 | . | . | Lab-5-website Machine: . | IP: 192.168.x.2/16 | Gateway: 192.168.x.1 | DNS1: 192.168.x.3 | DNS2: 172.18.0.1 | . | Lab-5-dns Machine: . | IP: 192.168.x.3/16 | Gateway: 192.168.x.1 | DNS1: 172.18.0.1 | DNS2: 8.8.8.8 | . | . Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To monitor your progress, visit: http://172.18.0.3/lab/5. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange exclamation marks indicate that something is partially working. | Red down arrows indicate that something is not working. | . You can hover over each specific arrow, and a tooltip will appear with a hint on what is wrong or not working. Credentials . | All VMs have the same login credentials: . | Username: admin | Password: Blank Password / No Password | . | . File Creation and Content . | If a referenced file does not exist, you must create it. | For any questions requiring files to contain specific content, use the Lab-5-website machine. | . ",
+    "url": "/labs/router-firewall/#introduction",
+    
+    "relUrl": "/labs/router-firewall/#introduction"
+  },"64": {
+    "doc": "Routers & Firewalls",
+    "title": "Pass Criteria",
+    "content": "Make sure the VM Scoring Arrow is green before continuing past this point. P1: Router Installation and Basic Configuration . | Using the Lab-5-router machine set it up as a router. When it is properly configured the internal machines should be able to access the internet. | Use the MikroTik Router and Mini Hack Completion video to help you with the setup. | . P2: Firewall Installation and Basic Configuration . Lab-5-website Machine . | Enable the ufw service | Check the status of the ufw service. Enter the line ufw:&lt;command&gt; into the file /home/blueteam/P2/P2.txt on the web server. | . Note: The dashboard will mark your VMs as not scoring until the ssh rules have been added in P3. P3: Securing Incoming and Outgoing Traffic . | Set all default policies to deny incoming and allow outgoing for all machines and applicable zones | Remove any other inbound rules for the WAN interface | Allow SSH traffic over TCP IN on Lab-5-website | Allow HTTP traffic over TCP IN on Lab-5-website | Allow HTTPS traffic over TCP IN on Lab-5-website | . P4: Configuring Ports and Services . Lab-5-website Machine . | List all the current firewall rules for ufw. Enter the line ufw:&lt;command&gt; into the file /home/blueteam/P4/P4.txt on the web server. | . Lab-5-dns Machine . | List all the current firewall rules for iptables. Enter the line iptables:&lt;command&gt; into the file /home/blueteam/P4/P4.txt on the web server. | . P5: Logging and Monitoring Firewall Activity . By default, some firewalls may not log traffic. UFW has 5 options for log levels . | No logs | All blocked packets (default). | All blocked packets and some allowed connections. | All blocked and allowed packets, including detailed packet headers. | All possible logging for detailed debugging. | . Firewalld also has 5 options: . | Disable logging for denied packets (default). | Log all denied packets. | Log denied unicast packets. | Log denied broadcast packets. | Log denied multicast packets. | . | On the Lab-5-website machine enable logging for all blocked packets and some allowed connections. | Locate the UFW traffic logs on the machine. Enter the line ufw-filepath:&lt;Full Absolute Filepath&gt; into the file /home/blueteam/P5/P5.txt on the web server. | . P6: Troubleshooting . To complete P5 P1-P4 must have a green arrow before starting. | There seems to be some problems with the firewalls and router. Troubleshoot the errors and restore proper network connections to the network. | . ",
+    "url": "/labs/router-firewall/#pass-criteria",
+    
+    "relUrl": "/labs/router-firewall/#pass-criteria"
+  },"65": {
+    "doc": "Routers & Firewalls",
+    "title": "Merit Criteria",
+    "content": "M1: Firewall Installation and Basic Configuration . Implement your rules on the Lab-5-website machine. Consider the order the rules will need to be in to be effective. You may have to alter or remove existing rules. | Allow all incoming traffic on the 192.168.0.0/16 network that has the destination ports for SSH, HTTP, and HTTPS traffic. | Ensure that the correct transport layer protocol is applied to the rules as well. If the service is only used over TCP then UDP should not be allowed and vice versa. | Block traffic from 192.168.0.15 for HTTP and HTTPS traffic | Block traffic from 172.18.0.16 for HTTP and HTTPS traffic | Block traffic from 192.168.99.0/24 for SSH traffic | Allow all incoming traffic on the 172.18.0.0/16 network that has the destination ports for, HTTP, and HTTPS traffic. | Deny all other incoming traffic | . M2: Securing Incoming and Outgoing Traffic . | Using the logs on Lab-5-router and Lab-5-website. Identify the IP of the scoring engine. Enter the line scoring:&lt;IP&gt; into the file /home/blueteam/M2/M2.txt on the web server. | . M3: Routing and NAT Configuration . Implement your rules on theLab-5-router machine. | Port forward TCP traffic on ports 80 and 443 from the Lab-5-router to Lab-5-website | Port forward UDP traffic on ports 53 from the Lab-5-router to Lab-5-dns | . You will need to pass this off manually with a TA. ",
+    "url": "/labs/router-firewall/#merit-criteria",
+    
+    "relUrl": "/labs/router-firewall/#merit-criteria"
+  },"66": {
+    "doc": "Routers & Firewalls",
+    "title": "Distinction Criteria",
+    "content": "D1: Firewall Installation and Basic Configuration . | Someone has removed the firewall from the Lab-5-dns machine. Install iptables and configure it. | Set all default policies to deny incoming and allow outgoing for the Lab-5-dns machine. | Allow SSH traffic over TCP IN from anywhere on Lab-5-dns | Allow DNS traffic over UDP IN from anywhere on Lab-5-dns | Ensure that you can still access the internet | . ",
+    "url": "/labs/router-firewall/#distinction-criteria",
+    
+    "relUrl": "/labs/router-firewall/#distinction-criteria"
+  },"67": {
+    "doc": "Routers & Firewalls",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/router-firewall/#submission",
+    
+    "relUrl": "/labs/router-firewall/#submission"
+  },"68": {
+    "doc": "Routers & Firewalls",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | Describe the purpose of firewall zones in firewalld, and how you assigned a network interface to a specific zone. | Explain the difference between a permanent and temporary rule in firewalld. | How does a firewall determine which rules to apply to incoming traffic? | What are the differences between firewalld, ufw and iptables? | What role does a firewall play in protecting a network, and how does it help control traffic? | How does a firewall decide which incoming and outgoing connections should be allowed or blocked? | What are the main differences between stateless and stateful firewalls? | How does Network Address Translation (NAT) help in conserving IP addresses and improving security? | Why is it important to assign network interfaces to firewall zones, and how do zones affect traffic handling? | Why is logging dropped or accepted packets an important part of firewall operations? | How do firewalls handle traffic from unknown or unexpected sources, such as new or unrecognized IP addresses? | How does the concept of “least privilege” apply when configuring firewall rules for specific services? | What is the significance of setting up a default deny policy in a firewall, and how does it enhance security? | How does stateful inspection in firewalls differ from simple packet filtering, and why is it considered more secure? | What is the difference between a network firewall and a host firewall, and when would each type be used? | How does a host firewall protect an individual device, and what are some advantages of using host-based firewalls in addition to network firewalls? | Why might you configure a host firewall to block all incoming traffic by default and allow only specific applications or services? | What are the potential limitations of using host firewalls alone to secure a network, and how can these limitations be addressed with network firewalls? | How can you configure both network and host firewalls to complement each other, creating a layered defense strategy for a more secure network environment? | . Grading: . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/router-firewall/#pass-off-questions",
+    
+    "relUrl": "/labs/router-firewall/#pass-off-questions"
+  },"69": {
+    "doc": "Routers & Firewalls",
+    "title": "Routers & Firewalls",
+    "content": " ",
+    "url": "/labs/router-firewall/",
+    
+    "relUrl": "/labs/router-firewall/"
+  },"70": {
+    "doc": "Backups",
+    "title": "Lab 6: Backups",
+    "content": " ",
+    "url": "/labs/backups/#lab-6-backups",
+    
+    "relUrl": "/labs/backups/#lab-6-backups"
+  },"71": {
+    "doc": "Backups",
+    "title": "Introduction",
+    "content": "In this lab, you’ll focus on creating and managing backups for essential network services and systems to ensure data integrity and quick recovery in case of failure or redteam activities. You’ll practice configuring automated and secure backup strategies. Configuration Instructions . Virtual Machines and Operating Systems . You will be working with: . | 1 Ubuntu 20.04 Machine | 2 Rocky 8 Machines | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-6-SSH-FTP Machine: . | WAN (ens18 interface): . | IP: 172.18.&lt;ID&gt;.7/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | . | Lab-6-DNS Machine: . | LAN (ens18 interface): . | IP: 172.18.&lt;ID&gt;.8/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | . | Lab-6-Backup Machine: . | LAN (ens18 interface): . | IP: 172.18.&lt;ID&gt;.9/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | . | . Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To monitor your progress, visit: http://172.18.0.3/lab/6. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange exclamation marks indicate that something is partially working. | Red down arrows indicate that something is not working. | . You can hover over each specific arrow, and a tooltip will appear with a hint on what is wrong or not working. Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . File Creation and Content . | If a referenced file does not exist, you must create it. | For any questions requiring files to contain specific content, use the Lab-6-backup machine. | . ",
+    "url": "/labs/backups/#introduction",
+    
+    "relUrl": "/labs/backups/#introduction"
+  },"72": {
+    "doc": "Backups",
+    "title": "Pass Criteria",
+    "content": "P1: Backup Tool Installation and Configuration . Install a backup tool. Verify installation by running a test backup. | Install rsync onto each machine. | Using rsync backup the file /etc/ssh/sshd_config from the Lab-6-SSH-FTP machine to the Lab-6-Backup machine. Place the backup file in the /backups/ssh-ftp directory. | . P2: Backup Verification . | Compare the MD5 file hash of the original file and the backup. Enter the lines original:&lt;filehash&gt; and backup:&lt;filehash&gt; into the file /home/blueteam/P2/P2.txt on the Lab-6-Backup machine. | The file hashes should be the same. If they are not the file has been changed. | . P3: Backup Restoration . To complete P3 P1-P2 must have a green arrow before starting. | Check the hashes again. This time they should be different. | Use rsync to restore the backup file from Lab-6-Backup to Lab-6-SSH-FTP. | . ",
+    "url": "/labs/backups/#pass-criteria",
+    
+    "relUrl": "/labs/backups/#pass-criteria"
+  },"73": {
+    "doc": "Backups",
+    "title": "Merit Criteria",
+    "content": "M1: Backup Tool Installation and Configuration . | Automate the backup of sshd_config from Lab-6-SSH-FTP to Lab-6-Backup (using the blueteam crontab) to run every 2 minutes and only backup files that have been changed since the last backup. This will be manually graded by a TA. Ensure that you preserve: . | file permissions | file owner(s) | timestamps | . | Back up the following files and directories: . | Lab-6-SSH-FTP . | /etc/ssh/sshd_config | /etc/vsftpd.conf | /etc/shadow | /etc/passwd | . | . | . | Lab-6-DNS . | /etc/ssh/sshd_config | /etc/named.conf | /etc/shadow | /etc/passwd | . | Place the backups in /backups/ssh-ftp and /backups/dns respectively on the Lab-6-Backup machine. | . M2: Cloud Backups . | Choose an offsite solution to back up 3 of the files outlined in M1. Some options include Google Drive, Dropbox, OneDrive, GitHub etc. We would advise against using your personal accounts for this, especially during the competition, as the redteam may compromise your real account credentials if you use them. Note: If you back up valid and secure configuration files of various places to a public github repo, you can use those during the NCAE competition either to reset your service configuration or to reference as you secure it :) . | This will need to be passed off manually with a TA. | . ",
+    "url": "/labs/backups/#merit-criteria",
+    
+    "relUrl": "/labs/backups/#merit-criteria"
+  },"74": {
+    "doc": "Backups",
+    "title": "Distinction Criteria",
+    "content": "D1: Backup Restoration . To complete D1 P1-P3 and M1 must have a green arrow before starting. | It appears that some of your files have been maliciously altered since you backed them up. Using rsync restore all the files from the Lab-6-Backup machine to their original machine, only if the file has changed. | . ",
+    "url": "/labs/backups/#distinction-criteria",
+    
+    "relUrl": "/labs/backups/#distinction-criteria"
+  },"75": {
+    "doc": "Backups",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/backups/#submission",
+    
+    "relUrl": "/labs/backups/#submission"
+  },"76": {
+    "doc": "Backups",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | Why would you want to back up files? | What strengths does rsync have to other backup solutions? | What are some risks of automating backups / restores? | What would YOU do in a competition setting for backups? | . Grading . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/backups/#pass-off-questions",
+    
+    "relUrl": "/labs/backups/#pass-off-questions"
+  },"77": {
+    "doc": "Backups",
+    "title": "Backups",
+    "content": " ",
+    "url": "/labs/backups/",
+    
+    "relUrl": "/labs/backups/"
+  },"78": {
+    "doc": "Database",
+    "title": "Lab 7: Database Servers",
+    "content": " ",
+    "url": "/labs/db/#lab-7-database-servers",
+    
+    "relUrl": "/labs/db/#lab-7-database-servers"
+  },"79": {
+    "doc": "Database",
+    "title": "Introduction",
+    "content": "In this lab, you will configure and secure a PostgreSQL database. Your goal is to set up the database, implement access controls, enforce security policies, and manage backups while ensuring the system remains functional and protected. Configuration Instructions . Virtual Machines and Operating Systems . You will be working with: . | 1 Ubuntu 20.04 Machine | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-7-database Machine: . | WAN (ens18 interface): . | IP: 172.18.&lt;ID&gt;.14/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | . | . Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To monitor your progress, visit: scoreboard. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange exclamation marks indicate that something is partially working. | Red down arrows indicate that something is not working. | . You can hover over each specific arrow, and a tooltip will appear with a hint on what is wrong or not working. Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . File Creation and Content . | If a referenced file does not exist, you must create it. | For any questions requiring files to contain specific content, use the Lab-7-database machine. | . ",
+    "url": "/labs/db/#introduction",
+    
+    "relUrl": "/labs/db/#introduction"
+  },"80": {
+    "doc": "Database",
+    "title": "Pass Criteria",
+    "content": "P1: Database Installation and Setup . | Log into postgres using the postgres account. Enter the line login:&lt;command&gt; into /home/blueteam/P1/P1.txt | Set the password for the postgres user to be unwell-easter-broadly in the db. | Create a database called etechacademy | Switch to use the etechacademy database | Import the file /home/blueteam/database.sql into the etechacademy database. | Exit the database. | . P2: Database User Management . | Create a backup user with the superuser role, name the user admin and set the password to stream-regroup-childhood. | Create another user called website with the password labored-contend-probation and allow it to only SELECT, UPDATE, DELETE and INSERT permissions on the etechacademy database. | In order for this step to score, these users must be able to log in to the database | Additional Note: you don’t need this to score this step, but you will need to grant usage and insert on sequences to score on P4 (you can test it with and without in trying to insert into the table and you’ll see why). We’ll leave the implementation of this to you. | . | . P3: Database Security . | Force all local users except the blackteam user to use their password when logging into the database from the machine . | You do not need to add or remove any lines from the config file. Modify the existing lines. | . | Stop the postgres user from logging into the database by locking/disabling the account. | Make sure you restart the service to have the changes take effect | Remove any unnecessary or malicious users and databases. | Allow remote connections to the database. | . P4: Database Hardening . | Restrict the website user to only login from 172.18.0.3. | No other user should be able to login remotely. | . ",
+    "url": "/labs/db/#pass-criteria",
+    
+    "relUrl": "/labs/db/#pass-criteria"
+  },"81": {
+    "doc": "Database",
+    "title": "Merit Criteria",
+    "content": "M1: Database Security . To complete M1 P1-P4 must have a green arrow before starting. | The database currently uses MD5 for it’s password hashing. Change it to use scram-sha-256. | Make the change permanent | . | You will need to also change all the user’s passwords to use the new hashing algorithm. | Use the same passwords for the accounts when changing them. | The accounts to update are admin, postgres and website | . | . M2: Database Backup and Recovery . | Backup the etechacademy database to the directory /backups/ . | Call the file backup.sql | Don’t use any special formatting or include blobs | When you look at the file you should see a list of SQL queries. | . | Enter the command you would use to restore the backup into the file /home/blueteam/M2/M2.txt as restore:&lt;command&gt; . | Use the admin user | Use an a full apsolute filepath | . | . M3: Database Monitoring and Logging . | Enable logging for Postgres with the following specifications . | Logging should be enabled | Connections and disconnections should be logged | Log all SQL statements executed by clients | Minimum error should be set to error | Log all SQL queries that take more than 200ms | . | . M4 Troubleshooting . To complete M4 P1-P4 and M1-M3 must have a green arrow before starting. | The database is having issues, find and fix them. | The criteria for a working database are: . | The Postgres service is running | You can connect locally with DB users and remotely with any users that need it | The database should maintain its integrity | Database users have the correct permissions | . | . Distinction Criteria . D1: Database Hardening . | Using UFW and the system logs block any malicious traffic to the machine. | Ensure that all of your deny rules are first | Traffic should be blocked from the IP(s) to anywhere and for both TCP and UDP in one rule per IP | After all the deny rules you should have a default allow for SSH and Postgres | . | . ",
+    "url": "/labs/db/#merit-criteria",
+    
+    "relUrl": "/labs/db/#merit-criteria"
+  },"82": {
+    "doc": "Database",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab you will have to do a verbal pass off with a TA. ",
+    "url": "/labs/db/#submission",
+    
+    "relUrl": "/labs/db/#submission"
+  },"83": {
+    "doc": "Database",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | What is a relational database? | What does SQL stand for, and what is it used for? | How do you create a new database in PostgreSQL? | What is the purpose of a primary key in a table? | How do you list all databases in PostgreSQL using the psql command-line tool? | What is a foreign key, and why is it important? | What command would you use to update a user’s password in a PostgreSQL table? | How do you create a new user in PostgreSQL with a password? | How can you back up a PostgreSQL database? Provide the command. | Why is role-based access control important in PostgreSQL security? | What is the purpose of the listen_addresses directive? | . Grading . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/db/#pass-off-questions",
+    
+    "relUrl": "/labs/db/#pass-off-questions"
+  },"84": {
+    "doc": "Database",
+    "title": "Database",
+    "content": " ",
+    "url": "/labs/db/",
+    
+    "relUrl": "/labs/db/"
+  },"85": {
+    "doc": "Web",
+    "title": "Lab 8: Web Servers",
+    "content": " ",
+    "url": "/labs/web/#lab-8-web-servers",
+    
+    "relUrl": "/labs/web/#lab-8-web-servers"
+  },"86": {
+    "doc": "Web",
+    "title": "Introduction",
+    "content": "In this lab, you will install and configure Nginx as a web server, set up a reverse proxy to route traffic to a Flask application and implement security hardening measures. You will also learn how to manage firewall rules, monitor server activity through logs, and mitigate common web application vulnerabilities. Configuration Instructions . Virtual Machines and Operating Systems . You will be working with: . | 1 Ubuntu 20.04 Machine | . Network Configuration . Since your machines do not currently have internet access, you will need to configure the network as follows: . | Lab-8-webserver Machine: . | WAN (ens18 interface): . | IP: 172.18.&lt;ID&gt;.15/16 | Gateway: 172.18.0.1 | DNS: 172.18.0.1 | . | . | . Accessing the Virtual Machines . | The VMs can be accessed through your Proxmox instance. | To monitor your progress, visit: scoreboard. | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange exclamation marks indicate that something is partially working. | Red down arrows indicate that something is not working. | . You can hover over each specific arrow, and a tooltip will appear with a hint on what is wrong or not working. Credentials . | All VMs have the same login credentials: . | Username: blueteam | Password: abc123 | . | . File Creation and Content . | If a referenced file does not exist, you must create it. | For any questions requiring files to contain specific content, use the Lab-8-webserver machine. | . ",
+    "url": "/labs/web/#introduction",
+    
+    "relUrl": "/labs/web/#introduction"
+  },"87": {
+    "doc": "Web",
+    "title": "Pass Criteria",
+    "content": "P1: Web Server Installation and Configuration . | Install Nginx | Verify that it is running | . P2: Security Hardening . | Set the correct file and directory permissions for the website located in /var/lib/etechacademy | All files should be owned by the user and group www-data. | Directories should allow the owner full permissions, the group, and all others read and execute. | Files should allow the owner to read and write and be read only for the group and all others. | The .env file should only be readable and writable by the owner. | . P3: Logging and Monitoring Web Activity . | Find where the http access and error logs are stored. Enter the file location into /home/blueteam/P3/P3.txt as access:&lt;filepath to access log file&gt; and error:&lt;filepath to error log file&gt; | . P4: Firewall and Access Controls . | Allow ssh from only 172.18.0.3 over TCP | Allow http traffic from 172.18.0.0/16 over TCP | Allow https traffic from 172.18.0.0/16 over TCP | Ensure that the default rules are to DENY incoming and ALLOW outgoing. | . ",
+    "url": "/labs/web/#pass-criteria",
+    
+    "relUrl": "/labs/web/#pass-criteria"
+  },"88": {
+    "doc": "Web",
+    "title": "Merit Criteria",
+    "content": "M1: Web Server Installation and Configuration . | Set up a reverse proxy to forward traffic from port 80 to port 5000 | . M2: Web Server Installation and Configuration . | Set up the website located in /var/lib/etechacademy | Install any needed packages and dependencies | When creating the .env file copy the .env.example file | Use the database server you set up in lab 7 as the database for the website. The website user should already have the correct permissions for the website, but you will need to add the IP of the lab-8-webserver machine to the allowed list of IPs on your lab-7-database machine. | The website should function without any errors and be available on the 172.18.&lt;ID&gt;.15. | You will also need to find a way to run the application in the background as a system process. | . ",
+    "url": "/labs/web/#merit-criteria",
+    
+    "relUrl": "/labs/web/#merit-criteria"
+  },"89": {
+    "doc": "Web",
+    "title": "Distinction Criteria",
+    "content": "D1: Security Hardening . | Find and fix 5 vulnerabilities in the code with at least 3 of them being different types of vulnerabilities This will need to be passed off with a TA. | Use the lecture slides and other common web vulnerabilities to get you started. | . D2: Firewall and Access Controls . | Using the system logs, locate any malicious traffic and block the offending IP address. | The rules in P4 should still apply after any blocked traffic | Blocked IPs should be blocked on all ports and protocols in a single rule | . ",
+    "url": "/labs/web/#distinction-criteria",
+    
+    "relUrl": "/labs/web/#distinction-criteria"
+  },"90": {
+    "doc": "Web",
+    "title": "Submission",
+    "content": "You don’t need to submit anything for this lab. All of the above criteria will be auto-graded unless stated otherwise. Once you have finished the lab, you will have to do a verbal pass-off with a TA. ",
+    "url": "/labs/web/#submission",
+    
+    "relUrl": "/labs/web/#submission"
+  },"91": {
+    "doc": "Web",
+    "title": "Pass Off Questions",
+    "content": "You will be asked two of these questions at random during your verbal pass-off. | How do you install Nginx on a Linux system? | What is the purpose of a reverse proxy in a web server architecture? | What logs does Nginx generate, and where can you find them? | How can you test your Nginx configuration before reloading it? | What is CSRF (Cross-Site Request Forgery), and how can you mitigate it in a Flask application? | How do you secure your Flask application by enabling HTTPS? | What are common input validation vulnerabilities in Flask, and how can they be mitigated? | How do you prevent SQL injection attacks in Flask applications using SQLAlchemy? | How can you prevent Cross-Site Scripting (XSS) attacks in Flask applications? | What is the werkzeug library, and what security vulnerabilities are associated with it in Flask applications? | What is the potential risk of using eval() and exec() in Flask, and how can these be mitigated? | How can you configure Flask to avoid directory traversal vulnerabilities when handling file uploads? | . Grading . | Pass: All Pass criteria and verbal pass-off has been completed. | Merit: All Pass and Merit criteria completed. | Distinction: All Pass, Merit, and Distinction criteria completed. | . ",
+    "url": "/labs/web/#pass-off-questions",
+    
+    "relUrl": "/labs/web/#pass-off-questions"
+  },"92": {
+    "doc": "Web",
+    "title": "Web",
+    "content": " ",
+    "url": "/labs/web/",
+    
+    "relUrl": "/labs/web/"
+  },"93": {
+    "doc": "Team Labs",
+    "title": "Team Labs",
+    "content": " ",
+    "url": "/team-labs/",
+    
+    "relUrl": "/team-labs/"
+  },"94": {
+    "doc": "Syllabus",
+    "title": "IT&amp;C 515R – Applications of Cybersecurity Training",
+    "content": "This syllabus is a comprehensive guide for this course, outlining what is expected of you as a student during the semester and what is expected of me as the instructor. It outlines the course objectives, materials, schedule, and policies, providing you with a clear understanding of what to expect throughout the term. This syllabus is subject to change at any time at the discretion of the instructor. ",
+    "url": "/#itc-515r--applications-of-cybersecurity-training",
+    
+    "relUrl": "/#itc-515r--applications-of-cybersecurity-training"
+  },"95": {
+    "doc": "Syllabus",
+    "title": "Prerequisites",
+    "content": "None. However, IT&amp;C 101 and IT&amp;C 247 would be advantageous. ",
+    "url": "/#prerequisites",
+    
+    "relUrl": "/#prerequisites"
+  },"96": {
+    "doc": "Syllabus",
+    "title": "Textbook",
+    "content": "There is no required textbook for this course but you are expected to read and review the materials found under Lecture Slides, Resources &amp; Readings on the class GitHub website. ",
+    "url": "/#textbook",
+    
+    "relUrl": "/#textbook"
+  },"97": {
+    "doc": "Syllabus",
+    "title": "Learning Outcomes",
+    "content": ". | Deploy: Securely configure and debug errors in common services and systems such as SSH, FTP, DNS, Web servers, Database servers, Backup Servers, Routers &amp; Firewalls | Troubleshoot: Develop methodical approaches to diagnose and solve complex problems | Mitigate: Apply best practices to identify and mitigate common vulnerabilities and implement defensive measures at the host and network levels | Detect: Monitor systems for signs of compromise through log analysis, configuration validation, and observing network traffic | Defend: Demonstrate sound practices for preventing and responding to malicious programs, configurations, and/or users in a competitive environment | Teamwork: Collaborate effectively as part of a security team and clearly communicate essential tasks, findings, and recommendations in a constrained environment | Automate: Use standard tools and custom scripts to perform basic security automation tasks such as user creation, modification &amp; auditing of configurations, and general threat hunting. | . ",
+    "url": "/#learning-outcomes",
+    
+    "relUrl": "/#learning-outcomes"
+  },"98": {
+    "doc": "Syllabus",
+    "title": "Grading Assessment and Policy",
+    "content": "Students’ achievements in the course will be evaluated based on the following criteria: . | Category (Weight) | Assignment | . | Memes (5%) | Meme 1 | . | Meme 2 | . | Meme 3 | . | Meme 4 | . | Meme 5 | . | Meme 6 | . | Individual Labs (65%) | Lab 1 – CLI &amp; Networking | . | Lab 2 – Routers &amp; Firewall | . | Lab 3 – SSH &amp; FTP | . | Lab 4 – Database Servers | . | Lab 5 – Web Servers | . | Lab 6 – DNS | . | Lab 7 – Backups | . | Lab 8 – Hardening &amp; Threat Hunting | . | Lab 9 – SIEM | . | Lab 10 – Script Writing | . | Team Labs (20%) | Team Lab 1: Setup Practice | . | Team Lab 2: Red Team Practice | . | CTF (10%) | . | CTF Practice | . ",
+    "url": "/#grading-assessment-and-policy",
+    
+    "relUrl": "/#grading-assessment-and-policy"
+  },"99": {
+    "doc": "Syllabus",
+    "title": "Memes",
+    "content": "Incorporating memes into this class may seem unconventional, but it effectively helps you engage, simplifies complex concepts, and fosters creativity and critical thinking and will make up 5% of your overall grade. By creating and sharing memes, you can distill and communicate cybersecurity issues humorously and concisely, making the material more relatable and memorable. This approach leverages popular culture to help enhance your learning and provides a refreshing break from traditional coursework. The memes should be Cybersecurity or technology-related in some way. You can use existing memes or create your own. All memes should be in line with BYU standards and the honor code. ",
+    "url": "/#memes",
+    
+    "relUrl": "/#memes"
+  },"100": {
+    "doc": "Syllabus",
+    "title": "Individual Labs",
+    "content": "There will be 10 labs that make up 65% of your grade. Each lab will test you on a different technology and service, which are services that are very commonly used around the world. While we will cover the theoretical knowledge about the technologies in class the labs will be where you will learn the practical application of that knowledge. You will be expected to do research on your own and develop troubleshooting and debugging skills as part of this class. However, if you are really stuck the instructor and TA are there to help you learn. ",
+    "url": "/#individual-labs",
+    
+    "relUrl": "/#individual-labs"
+  },"101": {
+    "doc": "Syllabus",
+    "title": "Team Labs",
+    "content": "There will be two team labs during the class. Each lab will make up 20% of your overall grade. Your score for these two assignments will consist of your performance in the lab as rated by your teammates and the overall score on the assignment. Teams will consist of 10 people and have a time limit of 6 hours. These assignments are designed to help you prepare for the NCAE Cyber Games competition if you are participating and will also include some CTF challenges along with the systems setup and hardening that you will do. To receive a grade for this assignment you must complete the assignment and submit a the group evaluation for each team lab. ",
+    "url": "/#team-labs",
+    
+    "relUrl": "/#team-labs"
+  },"102": {
+    "doc": "Syllabus",
+    "title": "CTF Practice",
+    "content": "The CTF Practice will give you example problems to solve, similar to ones you might see on the day of the competition. ",
+    "url": "/#ctf-practice",
+    
+    "relUrl": "/#ctf-practice"
+  },"103": {
+    "doc": "Syllabus",
+    "title": "Due Dates",
+    "content": "This class will be largely self-guided with respect to deadlines. Because each student will be working on a specific service for the competition, the required labs will vary by student. Before competing in the Regional Cyber Games, you must complete Labs 1 and 2, as well as the labs for your primary and backup services. You must also complete both team labs, the CTF practice, and all six memes. All remaining labs must be completed by the last day of classes. ",
+    "url": "/#due-dates",
+    
+    "relUrl": "/#due-dates"
+  },"104": {
+    "doc": "Syllabus",
+    "title": "Grading Scale",
+    "content": "Grades will be assigned on a three-tier system that will convert to A, B, C, or E. There will be no + or - grades. | A | Distinction | . | B | Merit | . | C | Pass | . | E | Fail | . At the end of the semester, your grade will be assigned to you in a strictly objective manner empirically based on your aggregated scores on all course assignments and requirements. Grades, therefore, are never available for negotiation, and any attempt by the student to enter a discussion in this regard will be viewed as disrespectful to the instructor and the University. ",
+    "url": "/#grading-scale",
+    
+    "relUrl": "/#grading-scale"
+  },"105": {
+    "doc": "Syllabus",
+    "title": "Course Policies",
+    "content": "The proper classroom climate and expectation of professionalism in-class behavior and activities will assist students in developing the habits and etiquette that contribute to their career success. Therefore, these classroom policies that promote and maintain a professional atmosphere of learning in the classroom are created and maintained. Classroom &amp; Computer Lab Behavior . It is expected that: . | Students will arrive for class on time | Students will keep their cellphones and devices in silent mode during class | Students will refrain from engaging in non-class related conversations during class | Students will refrain from reading non-class related material during class | Students will refrain from sleeping in class | Students will always conduct themselves in a courteous and professional manner | . Absence Policy . Regular attendance is expected for the full class time. A student’s presence and participation in class are critical factors towards the completion of the work for the class and achievement of success in the course. A student who is absent from class, if possible, and as a matter of courtesy, should inform the instructor in advance of the absence. If absences occur, it is the student’s responsibility to contact the instructor regarding making up the work missed. Permission to make up course assignments will be granted solely at the discretion of the instructor. Honor Code . In keeping with the principles of the BYU Honor Code, students are expected to be honest in all of their academic work. Academic honesty means, most fundamentally, that any work you present as your own must be your own work and not that of another. Violations of this principle may result in a failing grade in the course and additional disciplinary action by the university. Students are also expected to adhere to the Dress and Grooming Standards. Adherence demonstrates respect for yourself and others and ensures an effective learning and working environment. It is the university’s expectation, and every instructor’s expectation in class, that each student will abide by all Honor Code standards. Please call the Honor Code Office at 422-2847 if you have questions about those standards. Preventing &amp; Responding to Sexual Misconduct . The health and well-being of students is of paramount importance at Brigham Young University. If you or someone you know has experienced sexual harassment (including sexual violence), there are many resources available for assistance. In accordance with Title IX of the Education Amendments of 1972, BYU prohibits unlawful sex discrimination, including sexual harassment, against any participant in its education programs or activities. The university also prohibits sexual harassment by its personnel and students. Sexual harassment occurs when a person is subjected to unwelcome sexual speech or conduct so severe, pervasive, and offensive that it effectively denies their ability to access any BYU education program or activity; any aid, benefit, or service of BYU is conditioned on a person’s participation in unwelcome sexual conduct; or a person suffers sexual assault, dating violence, domestic violence, or stalking on the basis of sex. University policy requires all faculty members to promptly report incidents of sexual harassment that come to their attention in any way, including through face-to-face conversations, a written class assignment or paper, class discussion, email, text, or social media post. Incidents of sexual harassment should be reported to the Title IX Coordinator at t9coordinator@byu.edu or (801) 422-8692 or 1085 WSC. Reports may also be submitted online at https://titleix.byu.edu/report or 1-888-238-1062 (24 hours a day). BYU offers confidential resources for those affected by sexual harassment, including the university’s Sexual Assault Survivor Advocate, as well as a number of non-confidential resources and services that may be helpful. Additional information about Title IX, the university’s Sexual Harassment Policy, reporting requirements, and resources can be found at http://titleix.byu.edu or by contacting the university’s Title IX Coordinator. Student Disability . Brigham Young University is committed to providing a working and learning atmosphere that reasonably accommodates qualified persons with disabilities. A disability is a physical or mental impairment that substantially limits one or more major life activities. Whether an impairment is substantially limiting depends on its nature and severity, its duration or expected duration, and its permanent or expected permanent or long-term impact. Examples include vision or hearing impairments, physical disabilities, chronic illnesses, emotional disorders (e.g., depression, anxiety), learning disorders, and attention disorders (e.g., ADHD). If you have a disability that impairs your ability to complete this course successfully, please contact the University Accessibility Center (UAC), 2170 WSC, or 801-422-2767 to request a reasonable accommodation. The UAC can also assess students for learning, attention, and emotional concerns. If you feel you have been unlawfully discriminated against on the basis of disability, please contact the Equal Opportunity Office at 801-422-5895, eo_manager@byu.edu, or visit https://hrs.byu.edu/equal-opportunity for help. Diversity and Inclusion in the Classroom . “Because we feel the depth of God’s love for His children, we care deeply about every child of God, regardless of age, personal circumstances, gender, sexual orientation, or other unique challenges” (President Russell M. Nelson, “The Love and Laws of God,” September 2019). As a university community, we strive to foster an educational environment that promotes the personal dignity of every student and accepts individual responsibility to eliminate racism, sexism, and nationalism. Our course participation reflects our understanding that every individual is a child of Heavenly Parents. We create learning environments in which every individual is motivated to express their opinions and perspectives and ask questions to augment discussions and learning. We listen to, learn from, and strive to consider thoughtfully the opinions of others. We use language that is polite, considerate, and courteous—even when we strongly disagree. Inappropriate Use of Course Materials . All course materials (e.g., outlines, handouts, syllabi, exams, quizzes, PowerPoint presentations, lectures, audio and video recordings, etc.) are proprietary. Students are prohibited from posting or selling any such course materials without the express written permission of the professor teaching this course. To do so is a violation of the Brigham Young University Honor Code. It is also unethical to post your own work (study sheets, papers) from the course on file-sharing websites as you are encouraging others to engage in plagiarism. These policies continue indefinitely (not limited to the duration of the semester or term you take this course). Respectful Environment . “Sadly, from time to time, we do hear reports of those who are at best insensitive and at worst insulting in their comments to and about others… We hear derogatory and sometimes even defamatory comments about those with different political, athletic, or ethnic views or experiences. Such behavior is completely out of place at BYU, and I enlist the aid of all to monitor carefully and, if necessary, correct any such that might occur here, however inadvertent or unintentional. “I worry particularly about demeaning comments made about the career or major choices of women or men either directly or about members of the BYU community generally. We must remember that personal agency is a fundamental principle and that none of us has the right or option to criticize the lawful choices of another.” President Cecil O. Samuelson, Annual University Conference, August 24, 2010 “Occasionally, we … hear reports that our female faculty feel disrespected, especially by students, for choosing to work at BYU, even though each one has been approved by the BYU Board of Trustees. Brothers and sisters, these things ought not to be. Not here. Not at a university that shares a constitution with the School of the Prophets.” Vice President John S. Tanner, Annual University Conference, August 24, 2010 . If disrespectful comments are made towards the instructor or other students, you will be asked to leave the classroom to help maintain the respectful nature of the class and its learning environment. Mental Health . Mental health concerns and stressful life events can affect students’ academic performance and quality of life. BYU Counseling and Psychological Services (CAPS, 1500 WSC, 801-422-3035, caps.byu.edu) provides individual, couples, and group counseling, as well as stress management services. These services are confidential and are provided by the university at no cost for full-time students. For general information please visit https://caps.byu.edu; for more immediate concerns please visit http://help.byu.edu. Academic Honesty . The first injunction of the Honor Code is the call to “be honest.” Students come to the university not only to improve their minds, gain knowledge, and develop skills that will assist them in their life’s work, but also to build character. “President David O. McKay taught that character is the highest aim of education” (The Aims of a BYU Education, p.6). It is the purpose of the BYU Academic Honesty Policy to assist in fulfilling that aim. BYU students should seek to be totally honest in their dealings with others. They should complete their own work and be evaluated based upon that work. They should avoid academic dishonesty and misconduct in all its forms, including but not limited to plagiarism, fabrication or falsification, cheating, and other academic misconduct. They should complete their own work and be evaluated based on that work. They should avoid academic dishonesty and misconduct in all its forms, including but not limited to artificial intelligence apps (like ChatGPT, GPT-3 program, or any other AI program), plagiarism, fabrication or falsification, cheating, and other academic misconduct. ChatGPT and other AI programs can be used as tools and a guide with assignments and class work. Attempting to submit any AI-generated content as your own is considered to be academically dishonest. It is to be used as a tool to help you with your work not do it for you. If you use AI to complete assignments or class work the instructor reserves the right to deal with the situation as he/she sees fit. Plagiarism . Intentional plagiarism is a form of intellectual theft that violates widely recognized principles of academic integrity as well as the Honor Code. Such plagiarism may subject the student to appropriate disciplinary action administered through the university Honor Code Office, in addition to academic sanctions that may be applied by an instructor. Inadvertent plagiarism, which may not be a violation of the Honor Code, is nevertheless a form of intellectual carelessness that is unacceptable in the academic community. Plagiarism of any kind is completely contrary to the established practices of higher education where all members of the university are expected to acknowledge the original intellectual work of others that is included in their own work. In some cases, plagiarism may also involve violations of copyright law. Intentional Plagiarism-Intentional plagiarism is the deliberate act of representing the words, ideas, or data of another as one’s own without providing proper attribution to the author through quotation, reference, or footnote. Inadvertent Plagiarism-Inadvertent plagiarism involves the inappropriate, but non-deliberate, use of another’s words, ideas, or data without proper attribution. Inadvertent plagiarism usually results from an ignorant failure to follow established rules for documenting sources or from simply not being sufficiently careful in research and writing. Although not a violation of the Honor Code, inadvertent plagiarism is a form of academic misconduct for which an instructor can impose appropriate academic sanctions. Students who are in doubt as to whether they are providing proper attribution have the responsibility to consult with their instructor and obtain guidance. Examples of plagiarism include: Direct Plagiarism-The verbatim copying of an original source without acknowledging the source. Paraphrased Plagiarism-The paraphrasing, without acknowledgment, of ideas from another that the reader might mistake for the author’s own. Plagiarism The borrowing of words, ideas, or data from an original source and blending this original material with one’s own without acknowledging the source. Insufficient Acknowledgement-The partial or incomplete attribution of words, ideas, or data from an original source. Plagiarism may occur with respect to unpublished as well as published material. Copying another student’s work and submitting it as one’s own individual work without proper attribution is a serious form of plagiarism. Deliberation Guidelines . To facilitate productive and open discussions about sensitive topics about which there are differing opinions, members of the BYU community should: . | Remember that we are each responsible for enabling a productive, respectful dialogue. (2)To enable time for everyone to speak, strive to be concise with your thoughts. | Respect all speakers by listening actively. | Treat others with the respect that you would like them to treat you with, regardless of your differences. | Do not interrupt others. | Always try to understand what is being said before you respond. | Ask for clarification instead of making assumptions. | When countering an idea, or making one initially, demonstrate that you are listening to what is being said by others. Try to validate other positions as you assert your own, which aids in dialogue, versus attack. | Under no circumstances should an argument continue out of the classroom when someone does not want it to. Extending these conversations beyond class can be productive, but we must agree to do so respectfully, ethically, and with attention to individuals’ requests for confidentiality and discretion. | Remember that exposing yourself to different perspectives helps you to evaluate your own beliefs more clearly and learn new information. | Remember that just because you do not agree with a person’s statements, it does not mean that you cannot get along with that person. | Speak with your professor privately if you feel that the classroom environment has become hostile, biased, or intimidating. Adapted from the Deliberation Guidelines published by The Center for Democratic Deliberation. | . Compliance Hotline and BYU Policies . If you have questions about university policies, including those discussed in this syllabus, please visit https://policy.byu.edu. If you observe any non-emergency dangerous, illegal, or suspicious activity occurring on campus or by a member of the BYU community, please report it through the BYU Compliance Hotline at https://hotline.byu.edu. Emergencies and ongoing criminal activity should be reported directly to BYU Police at 801-422-2911. ",
+    "url": "/#course-policies",
+    
+    "relUrl": "/#course-policies"
+  },"106": {
+    "doc": "Syllabus",
+    "title": "Electrical &amp; Computer Engineering Policy for the Use of Artificial Intelligence in Coursework",
+    "content": "IT&amp;C Faculty, April 4, 2023 . As professionals in the fields of Electrical &amp; Computer Engineering and Cybersecurity, it is essential to gain experience using Artificial Intelligence (AI) technologies, which have improved dramatically in recent decades. At the same time, using AI in some educational contexts can undermine educational goals and intellectual growth. This policy is intended to add clarity concerning the use of AI in EC EN and IT&amp;C classes at BYU. It should be treated as the default policy for all such classes unless it is superseded by the instructor of a course who specifically provides exceptions or exclusions for particular assignments. If an instructor does not provide any specific guidance related to the use of AI in their class, then this policy will be in effect. Guiding Principles . | Artificial Intelligence is a tool, like many others, that can be used for good and bad. As BYU students, we should focus our attention on how we can ethically use AI to accomplish worthwhile goals. | Using AI effectively (e.g., generating useful AI prompts) is an important skill that should be developed. Understanding the limitations of AI including the potential for results to include false statements, bias, and copyright infringement is a critical part of using AI effectively. | Learning is a process wherein our minds and spirits are changed as we develop new understandings, attitudes, and skills through deep engagement with content and experiences. AI can be used to enhance or circumvent learning, depending on how it is used and the type of learning occurring. | . Rules regarding the inappropriate use of AI in EC EN and IT&amp;C coursework . | AI should never be used when an instructor explicitly asks students not to use it. | AI should not be used in any cases where an exam or assignment is “closed book” (i.e., they prohibit the use of resources such as textbooks, the Internet, talking to others, etc.). | When using AI for written work that is “open book” (e.g., papers, coding projects, lab reports, take-home exams), any AI content should be cited. For example, if you use AI-generated language it should be put into quotes and the AI engine and text prompt should be listed. If you are paraphrasing AI-generated content, then you should indicate that you are paraphrasing in a citation, similar to how you would if you were paraphrasing another published resource. If you are using an AI code-generation tool that recommends code blocks, then a code comment should be added that clarifies the significant portions of the code were AI-generated. | AI-generated answers should not be used when it will circumvent students’ learning. For example, submitting AI-generated personal reflections, book reports, lab reports, or other assignments intended to promote meta-cognition and engagement with content is not allowed. | If there is ever a question about whether AI should be used or not, the student should ask the instructor. | . Examples of appropriate use of AI in EC EN and IT&amp;C Coursework (for cases that do not violate the rules above) . | AI can be used to help brainstorm ideas. For example, a capstone team may use AI to help generate potential names for their project. | AI can be used to help understand code syntax and provide examples. For example, AI coding tools can give examples of CSS rules, which can then be integrated (as appropriate) into coding projects for a class. | AI can be used, with caution, to gain an overview of certain topics. For example, a student may create a prompt that gives an overview of a technology and use cases for it. Of course, you should treat it like most Internet content and validate what is provided, since it may have inaccuracies or misleading examples. | AI can be used to enhance class projects. For example, a UX designer may generate fake text and images that are used in a prototype of a new product. In such cases, the content source should be cited. | . Repercussions for violations of this policy . It is our hope that BYU students will strive to follow this policy and discuss potential gray areas with faculty. In cases where students have violated the policy, the instructor of the specific class will determine the appropriate response which may include: . | giving them a warning and making sure they understand the policy | reporting them to the honor code office | giving them a reduced grade on an assignment or in a class | . ",
+    "url": "/#electrical--computer-engineering-policy-for-the-use-of-artificial-intelligence-in-coursework",
+    
+    "relUrl": "/#electrical--computer-engineering-policy-for-the-use-of-artificial-intelligence-in-coursework"
+  },"107": {
+    "doc": "Syllabus",
+    "title": "Syllabus",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"108": {
+    "doc": "CTF Practice 1",
+    "title": "CTF Practice 1",
+    "content": "This homework is designed to give you additional experience with Capture the Flag (CTF) challenges, with an emphasis on very easy problems. In the NCAE CyberGames, a large number of points are available through the CTF. If you earn few or no CTF points, your chances of winning are very low. ",
+    "url": "/ctf/practice1.html",
+    
+    "relUrl": "/ctf/practice1.html"
+  },"109": {
+    "doc": "CTF Practice 1",
+    "title": "What Is a Jeopardy-Style CTF?",
+    "content": "A Jeopardy-style CTF is a competition format where participants are presented with a wide variety of challenges organized into categories, similar to the game Jeopardy. You choose which challenges to solve. Each challenge contains an intentionally introduced vulnerability. Your goal is to exploit that vulnerability to obtain a flag, which is a string you submit for points. In NCAE, all flags follow this format: . c2ctf{...} . Every flag starts with c2ctf and is enclosed in curly braces. ",
+    "url": "/ctf/practice1.html#what-is-a-jeopardy-style-ctf",
+    
+    "relUrl": "/ctf/practice1.html#what-is-a-jeopardy-style-ctf"
+  },"110": {
+    "doc": "CTF Practice 1",
+    "title": "Common CTF Categories",
+    "content": "Typical CTF categories include: . | Web Exploitation | Reverse Engineering (RE / Rev) | Forensics | Binary Exploitation (Pwn) | Cryptography | . Most challenges in these categories are out of scope for regionals, and any that do appear will be very basic. NCAE also includes several custom SIEM-related categories, which is why you will complete Splunk training as part of this assignment. ",
+    "url": "/ctf/practice1.html#common-ctf-categories",
+    
+    "relUrl": "/ctf/practice1.html#common-ctf-categories"
+  },"111": {
+    "doc": "CTF Practice 1",
+    "title": "Assignment Structure",
+    "content": "This lab is divided into multiple sections by category. For each category, you must submit one PDF containing screenshots showing completion of all three required tasks. This PDF should be uploaded to Learning Suite. ",
+    "url": "/ctf/practice1.html#assignment-structure",
+    
+    "relUrl": "/ctf/practice1.html#assignment-structure"
+  },"112": {
+    "doc": "CTF Practice 1",
+    "title": "Expectations",
+    "content": "If you have questions about the assignments: . | Look online | Google concepts | Use documentation | . During the actual CTF, you will not receive external help from instructors. You are expected to solve these challenges independently. Most challenges include helpful hints. ",
+    "url": "/ctf/practice1.html#expectations",
+    
+    "relUrl": "/ctf/practice1.html#expectations"
+  },"113": {
+    "doc": "CTF Practice 1",
+    "title": "Required Tasks",
+    "content": "Cryptography . | Go to CryptoHack | Create an account | Complete the course Introduction to CryptoHack | When finished, the course page will display a completion banner | Submit a screenshot of the completion banner | . Links: . | https://cryptohack.org/courses/ | https://cryptohack.org/courses/intro/course_details/ | . Web Exploitation . | Complete the Natas wargame on OverTheWire | Submit a screenshot showing you received the flag for: . | natas9 → natas10 (i.e., the password for natas10) | . | . Link: . | https://overthewire.org/wargames/natas/ | . SIEM . | Complete the Boss of the SOC – Splunk Website Defacement scenario | Requirements: . | At least 3 correct answers | At least 250 points | . | Submit a screenshot showing both conditions | You are encouraged to continue further if interested | . Link: . | https://bots.splunk.com/event/3oQ7sqI5bajOCP43o0svqT/detail | . ",
+    "url": "/ctf/practice1.html#required-tasks",
+    
+    "relUrl": "/ctf/practice1.html#required-tasks"
+  },"114": {
+    "doc": "CTF Practice 2",
+    "title": "CTF Practice 2",
+    "content": " ",
+    "url": "/ctf/practice2.html",
+    
+    "relUrl": "/ctf/practice2.html"
+  },"115": {
+    "doc": "CTF Practice 2",
+    "title": "Overview",
+    "content": "The practice consists of a series of Capture The Flag (CTF) challenges distributed across four main categories. These challenges will test your skills in web exploitation, cryptography, reverse engineering, and miscellaneous topics. Your objective is to solve as many challenges as possible to earn points, meeting the criteria for passing, merit, or distinction. ",
+    "url": "/ctf/practice2.html#overview",
+    
+    "relUrl": "/ctf/practice2.html#overview"
+  },"116": {
+    "doc": "CTF Practice 2",
+    "title": "Categories and Challenges",
+    "content": ". | Web Exploitation (4 challenges) | Cryptography (4 challenges) | Reverse Engineering (4 challenges) | Miscellaneous (3 challenges) | . ",
+    "url": "/ctf/practice2.html#categories-and-challenges",
+    
+    "relUrl": "/ctf/practice2.html#categories-and-challenges"
+  },"117": {
+    "doc": "CTF Practice 2",
+    "title": "Scoring Criteria",
+    "content": "Each challenge is worth 200 points. To achieve each grade level, you must meet the following requirements: . | Pass: Score at least 800 points. | Merit: Score at least 1,600 points. | Distinction: Score at least 2,800 points. | . ",
+    "url": "/ctf/practice2.html#scoring-criteria",
+    
+    "relUrl": "/ctf/practice2.html#scoring-criteria"
+  },"118": {
+    "doc": "CTF Practice 2",
+    "title": "CTF Guidelines",
+    "content": "Time Limit . | The practice will open on January 7th at 8:00 am and close on March 13th at 11:59 pm. You have the duration to complete the challenges. All submissions must be finalized by the end of the allocated time. | . Submission . | All challenges will be submitted through the CTFd platform. Points are awarded only for correct solutions. No partial credit for challenges will be given. | . Scoring Updates . | Your current score will be visible on the CTFd instance dashboard as you progress. | . Collaboration . | This is an individual practice. Collaboration with others is strictly prohibited and will result in a failing grade on the practice. | The practice is closed neighbor, meaning you may not discuss it with anyone nearby, but it is open book and open internet, allowing you to use personal notes, textbooks, and online resources. | Collaboration is defined as communicating with any individual in person or via any digital, written, audio, or video communication to seek hints, help, guidance, direction, or tips on any material related to the practice. This includes posting questions or problems on platforms such as Stack Overflow, Reddit, Discord, or similar forums. | . Flag Format . | Each challenge will use the flag format byuctf{flag}, unless specified otherwise in the challenge. Do not brute force the flag submission form or guess flag formats. | . Scope of Challenges . | Only interact with systems or services explicitly listed in the challenge scope. | Do not target the CTF platform or infrastructure (e.g., scoreboard, challenge hosting). | . Prohibited Behavior . | Do not perform denial-of-service (DoS) attacks on the platform or challenges. | Do not attempt to disrupt the CTF environment or hinder others’ participation. | . Rules for Brute Forcing . | Automated brute forcing of login forms, password fields, or any other authentication mechanisms or systems is only allowed if explicitly permitted by the challenge. | . Rules for Automated Scanning . | Use of automated tools (e.g., nmap, Burp Suite, Nikto) is allowed only if explicitly permitted by the challenge. | Limit scans to the systems explicitly stated in the challenge scope. | . Miscellaneous . | Challenge Integrity: Do not share or post solutions, hints, or flags publicly during or after the practice. | Bug Reporting: If you encounter a vulnerability in the CTF infrastructure not related to a challenge, report it to the TAs immediately. | . ",
+    "url": "/ctf/practice2.html#ctf-guidelines",
+    
+    "relUrl": "/ctf/practice2.html#ctf-guidelines"
+  },"119": {
+    "doc": "CTF Practice 2",
+    "title": "Grading",
+    "content": "Your final grade will be determined based on the total points earned: . | Pass: Achieve at least 800 points. | Merit: Achieve at least 1,600 points. | Distinction: Achieve at least 2,800 points. | . Good luck, and may your skills and determination guide you to success! . ",
+    "url": "/ctf/practice2.html#grading",
+    
+    "relUrl": "/ctf/practice2.html#grading"
+  },"120": {
+    "doc": "Networking Resources",
+    "title": "Networking Training Resources",
+    "content": "Articles . | Intro to Networks | Basic Computer Networking | Introduction to Computer Networks (open textbook) | What Is An IP Address? How Does It Work? | What Is Network Address Translation (NAT)? | Subnet Cheat Sheet: IPv4 Subnetting for Beginners | What Is Port Forwarding? - A Beginner’s Guide | Computer Networks Tutorials | . Videos . | Introduction to Networking | Different Types Of Networks | How IP Addresses Work | Exploring Networking Configuration | Static Configuration in Kali with Interfaces File | Static Configuration in CentOS with ifcfg Files | Static Configuration in Ubuntu with Netplan | Testing Connectivity with Ping | Temporary Permanent and Flushing IPs | . Downloads . | Centos Config Example | Ubuntu Config Example | . ",
+    "url": "/labs/networking/resources.html#networking-training-resources",
+    
+    "relUrl": "/labs/networking/resources.html#networking-training-resources"
+  },"121": {
+    "doc": "Networking Resources",
+    "title": "Networking Resources",
+    "content": " ",
+    "url": "/labs/networking/resources.html",
+    
+    "relUrl": "/labs/networking/resources.html"
+  },"122": {
+    "doc": "Hardening Resources",
+    "title": "Hardening Training Resources",
+    "content": "Articles . | Linux Server Hardening and Security Best Practices | Linux System Hardening: Top 10 Security Tips | Linux Hardening Checklist | 40 Linux Server Hardening Security Tips | . Videos . | Using Networking Service with Netcat | Cron Service Intro | Active Connection Defense | . Downloads . | Threat Hunting Tips | . ",
+    "url": "/labs/hardening/resources.html#hardening-training-resources",
+    
+    "relUrl": "/labs/hardening/resources.html#hardening-training-resources"
+  },"123": {
+    "doc": "Hardening Resources",
+    "title": "Hardening Resources",
+    "content": " ",
+    "url": "/labs/hardening/resources.html",
+    
+    "relUrl": "/labs/hardening/resources.html"
+  },"124": {
+    "doc": "Scripting Resources",
+    "title": "Script Writing Training Resources",
+    "content": "Articles . | How to Write and Run a Python Script | Bash Scripting – Introduction to Bash and Bash Scripting | . Videos . | Scripting Hello World | Variables and User Input | Scripts and File Paths | Scripting and Root Permissions | Scripted IP Changer Low Sophistication | . Downloads . | Bash Scripting Cheat Sheet | Python Cheat Sheet | . ",
+    "url": "/labs/scripting/resources.html#script-writing-training-resources",
+    
+    "relUrl": "/labs/scripting/resources.html#script-writing-training-resources"
+  },"125": {
+    "doc": "Scripting Resources",
+    "title": "Scripting Resources",
+    "content": " ",
+    "url": "/labs/scripting/resources.html",
+    
+    "relUrl": "/labs/scripting/resources.html"
+  },"126": {
+    "doc": "SSH Resources",
+    "title": "SSH Training Resources",
+    "content": "Articles . | SSH For Dummies | SSH Essentials: Working with SSH Servers, Clients, and Keys | SSH Cheat Sheet . | Understanding the SSH Encryption and Connection Process | . Videos . | SSH Service Basics | SSH Service Cryptographic Keys | SSH Service Passwordless Authentication | . Downloads . | SSH Config Quick Reference | . ",
+    "url": "/labs/ssh/resources.html#ssh-training-resources",
+    
+    "relUrl": "/labs/ssh/resources.html#ssh-training-resources"
+  },"127": {
+    "doc": "SSH Resources",
+    "title": "SSH Resources",
+    "content": " ",
+    "url": "/labs/ssh/resources.html",
+    
+    "relUrl": "/labs/ssh/resources.html"
+  },"128": {
+    "doc": "SMB Resources",
+    "title": "FTP Training Resources",
+    "content": "Articles . | A beginner’s intro to FTP | Network Administration: FTP Configuration | How to Setup FTP Server with VSFTPD | . Videos . | Introduction to FTP: File Transfer Protocol for beginners | EASY FTP/FTPS Server for Ubuntu/Linux | VSFTPD Full Guide | Quick Setup | . Downloads . | VSFTPD Example Config | . ",
+    "url": "/labs/smb/resources.html#ftp-training-resources",
+    
+    "relUrl": "/labs/smb/resources.html#ftp-training-resources"
+  },"129": {
+    "doc": "SMB Resources",
+    "title": "SMB Resources",
+    "content": " ",
+    "url": "/labs/smb/resources.html",
+    
+    "relUrl": "/labs/smb/resources.html"
+  },"130": {
+    "doc": "DNS Resources",
+    "title": "DNS Training Resources",
+    "content": "Articles . | What is DNS? Basics for Beginners | What is DNS? | How DNS works | Why use BIND 9? | Introduction to DNS and BIND 9 | Bind 9 Cheat Sheet | . Videos . | DNS Explained | DNS Service Basics | DNS Service Additional Zones | . Downloads . | BIND 9 Administrator Reference Manual | . ",
+    "url": "/labs/dns/resources.html#dns-training-resources",
+    
+    "relUrl": "/labs/dns/resources.html#dns-training-resources"
+  },"131": {
+    "doc": "DNS Resources",
+    "title": "DNS Resources",
+    "content": " ",
+    "url": "/labs/dns/resources.html",
+    
+    "relUrl": "/labs/dns/resources.html"
+  },"132": {
+    "doc": "Backups Resources",
+    "title": "Backups Training Resources",
+    "content": "Articles . | Types of Backup: Full, Incremental and Differential Backup | Linux Rsync Command Examples For Beginners | An Intro to Git and GitHub for Beginners | . Videos . | Rsync Service Basics | Cron Service Intro | Rsync and Cron Automatic Secure Backups | Git and GitHub Tutorial for Beginners | . Downloads . | Rsync Cheat Sheet | Rsync Cheat Sheet | . ",
+    "url": "/labs/backups/resources.html#backups-training-resources",
+    
+    "relUrl": "/labs/backups/resources.html#backups-training-resources"
+  },"133": {
+    "doc": "Backups Resources",
+    "title": "Backups Resources",
+    "content": " ",
+    "url": "/labs/backups/resources.html",
+    
+    "relUrl": "/labs/backups/resources.html"
+  },"134": {
+    "doc": "Database Resources",
+    "title": "Database Servers Training Resources",
+    "content": "Articles . | Relational Databases for Dummies | Install and configure PostgreSQL | SQL Tutorial | SQL Cheat Sheet ( Basic to Advanced) | . Videos . | What are Relational Databases for Beginners | SQL Tutorials | . Downloads . | PostgreSQL Cheat Sheet | SQL Cheat Sheet | . ",
+    "url": "/labs/db/resources.html#database-servers-training-resources",
+    
+    "relUrl": "/labs/db/resources.html#database-servers-training-resources"
+  },"135": {
+    "doc": "Database Resources",
+    "title": "Database Resources",
+    "content": " ",
+    "url": "/labs/db/resources.html",
+    
+    "relUrl": "/labs/db/resources.html"
+  },"136": {
+    "doc": "Web Resources",
+    "title": "Web Servers Training Resources",
+    "content": "Articles . | What is a web server? | Beginner’s Guide | The NGINX Handbook – Learn NGINX for Beginners | Flask Tutorial | OWASP Top Ten | OWASP Vulnerable Flask App | Best practices to protect your Flask applications | Advanced Nginx Cheatsheet | Configuring Flask on Nginx (this one might reallllllyyyyy come in handy, guys) | Intro to Web TryHackMe | . Videos . | Web Services with Apache | OWASP Top 10 in 10 Min! (Kinda) | . Downloads . | Systemd example | . ",
+    "url": "/labs/web/resources.html#web-servers-training-resources",
+    
+    "relUrl": "/labs/web/resources.html#web-servers-training-resources"
+  },"137": {
+    "doc": "Web Resources",
+    "title": "Web Resources",
+    "content": " ",
+    "url": "/labs/web/resources.html",
+    
+    "relUrl": "/labs/web/resources.html"
+  },"138": {
+    "doc": "CTF",
+    "title": "CTF Training Resources",
+    "content": "Articles . | CyberChef | dcode | Splunk Boss of the SOC | NetWitness CloudSIEM | CryptoHack introduction | Basics of Web Security | OWASP top 10 | SQL Injection | Cyber Security Web Application Attacks | What is Reverse Engineering Technique in Cybersecurity?/a&gt; | . Videos . | Introduction to reverse engineering CTF challenges | Beginner: Intro to Web Exploitation | TryHackMe Capture the Flag - lesson 1: Web Exploitations | Solving CTF Challenges: Cryptography | Introduction to Cryptography Challenges | . ",
+    "url": "/ctf/resources.html#ctf-training-resources",
+    
+    "relUrl": "/ctf/resources.html#ctf-training-resources"
+  },"139": {
+    "doc": "CTF",
+    "title": "CTF",
+    "content": " ",
+    "url": "/ctf/resources.html",
+    
+    "relUrl": "/ctf/resources.html"
+  },"140": {
+    "doc": "Router Resources",
+    "title": "Routers Training Resources",
+    "content": "Articles . | Introduction of a Router | CentOS 7: redirect port 80 to port 8080 | . Videos . | Router Configuration and Mini Hack Completion | Mini Hack Reconfiguration - Port forwarding | SSH Service Through The Router | DNS Service Through The Router | . Downloads . | CentOS 7 Router Setup Guide | . ",
+    "url": "/labs/router-firewall/routers.html#routers-training-resources",
+    
+    "relUrl": "/labs/router-firewall/routers.html#routers-training-resources"
+  },"141": {
+    "doc": "Router Resources",
+    "title": "Router Resources",
+    "content": " ",
+    "url": "/labs/router-firewall/routers.html",
+    
+    "relUrl": "/labs/router-firewall/routers.html"
+  },"142": {
+    "doc": "Slides",
+    "title": "CLI Slides",
+    "content": ". | CLI Slides | . ",
+    "url": "/labs/cli/slides.html#cli-slides",
+    
+    "relUrl": "/labs/cli/slides.html#cli-slides"
+  },"143": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/cli/slides.html",
+    
+    "relUrl": "/labs/cli/slides.html"
+  },"144": {
+    "doc": "Slides",
+    "title": "Networking Slides",
+    "content": ". | Networking Slides | . ",
+    "url": "/labs/networking/slides.html#networking-slides",
+    
+    "relUrl": "/labs/networking/slides.html#networking-slides"
+  },"145": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/networking/slides.html",
+    
+    "relUrl": "/labs/networking/slides.html"
+  },"146": {
+    "doc": "Slides",
+    "title": "Hardening Slides",
+    "content": ". | Hardening Slides | . ",
+    "url": "/labs/hardening/slides.html#hardening-slides",
+    
+    "relUrl": "/labs/hardening/slides.html#hardening-slides"
+  },"147": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/hardening/slides.html",
+    
+    "relUrl": "/labs/hardening/slides.html"
+  },"148": {
+    "doc": "Slides",
+    "title": "Scripting Slides",
+    "content": ". | Scripting Slides | . ",
+    "url": "/labs/scripting/slides.html#scripting-slides",
+    
+    "relUrl": "/labs/scripting/slides.html#scripting-slides"
+  },"149": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/scripting/slides.html",
+    
+    "relUrl": "/labs/scripting/slides.html"
+  },"150": {
+    "doc": "Slides",
+    "title": "SSH Slides",
+    "content": ". | SSH Slides | . ",
+    "url": "/labs/ssh/slides.html#ssh-slides",
+    
+    "relUrl": "/labs/ssh/slides.html#ssh-slides"
+  },"151": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/ssh/slides.html",
+    
+    "relUrl": "/labs/ssh/slides.html"
+  },"152": {
+    "doc": "Slides",
+    "title": "SMB Slides",
+    "content": ". | FTP/SMB Slides | . ",
+    "url": "/labs/smb/slides.html#smb-slides",
+    
+    "relUrl": "/labs/smb/slides.html#smb-slides"
+  },"153": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/smb/slides.html",
+    
+    "relUrl": "/labs/smb/slides.html"
+  },"154": {
+    "doc": "Slides",
+    "title": "DNS Slides",
+    "content": ". | DNS Slides | . ",
+    "url": "/labs/dns/slides.html#dns-slides",
+    
+    "relUrl": "/labs/dns/slides.html#dns-slides"
+  },"155": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/dns/slides.html",
+    
+    "relUrl": "/labs/dns/slides.html"
+  },"156": {
+    "doc": "Slides",
+    "title": "Routers &amp; Firewalls Slides",
+    "content": ". | Routers Slides | Firewalls Slides | . ",
+    "url": "/labs/router-firewall/slides.html#routers--firewalls-slides",
+    
+    "relUrl": "/labs/router-firewall/slides.html#routers--firewalls-slides"
+  },"157": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/router-firewall/slides.html",
+    
+    "relUrl": "/labs/router-firewall/slides.html"
+  },"158": {
+    "doc": "Slides",
+    "title": "Backups Slides",
+    "content": ". | Backups Slides | . ",
+    "url": "/labs/backups/slides.html#backups-slides",
+    
+    "relUrl": "/labs/backups/slides.html#backups-slides"
+  },"159": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/backups/slides.html",
+    
+    "relUrl": "/labs/backups/slides.html"
+  },"160": {
+    "doc": "Slides",
+    "title": "Database Slides",
+    "content": ". | Database Slides | . ",
+    "url": "/labs/db/slides.html#database-slides",
+    
+    "relUrl": "/labs/db/slides.html#database-slides"
+  },"161": {
+    "doc": "Slides",
+    "title": "Slides",
+    "content": " ",
+    "url": "/labs/db/slides.html",
+    
+    "relUrl": "/labs/db/slides.html"
+  },"162": {
+    "doc": "Team Lab 1",
+    "title": "IT&amp;C 515R - Applications of Cybersecurity Team Lab 1",
+    "content": " ",
+    "url": "/team-labs/teamLab1.html#itc-515r---applications-of-cybersecurity-team-lab-1",
+    
+    "relUrl": "/team-labs/teamLab1.html#itc-515r---applications-of-cybersecurity-team-lab-1"
+  },"163": {
+    "doc": "Team Lab 1",
+    "title": "Introduction",
+    "content": "The purpose of this lab will be to test the skills you have developed over the semester by setting up and securing your network. There will be no red team for this assignment it will be a test in setting up debugging and securing your systems. ",
+    "url": "/team-labs/teamLab1.html#introduction",
+    
+    "relUrl": "/team-labs/teamLab1.html#introduction"
+  },"164": {
+    "doc": "Team Lab 1",
+    "title": "Instructions",
+    "content": "To sum up the lab, you will get points when services are working as they should, and you won’t get points when they are not working. You will be working in teams of up to 10. There will be a scoreboard that will show the status of each service which will update every minute. The scoreboard is located at 172.18.0.3 and is only accessible when you are connected to the VPN. The assignment has a time limit of 6 hours, which will start as soon as the first VM is turned on. You will not receive any help to debug your systems or set up any of your services. If you have a question about scoring, you may message the black team over Slack. ",
+    "url": "/team-labs/teamLab1.html#instructions",
+    
+    "relUrl": "/team-labs/teamLab1.html#instructions"
+  },"165": {
+    "doc": "Team Lab 1",
+    "title": "Rules",
+    "content": "Lab Conduct . | Throughout the lab, black team members may occasionally need access to a team’s system(s) for scoring, troubleshooting, etc. Teams must immediately allow access when requested. | Team members are forbidden from entering or attempting to enter another team’s lab workspace or room. | Teams are forbidden from collaborating with or communicating with other teams in any way. All questions should be directed towards the Black Team. | Teams must complete the lab without “outside assistance” from non-team members from the start of the lab to the end of the lab. All private communications (calls, emails, chat, texting, directed emails, forum postings, conversations, requests for assistance, etc.) with non-team members that would help the team gain an unfair advantage are not allowed. | Teams are free to secure their systems, but no offensive activity against any system outside the team’s assigned network(s), including those of other teams, will be tolerated. Any team performing offensive activity against any system outside the team’s assigned network(s) will immediately fail the lab. If there are any questions or concerns during the lab about whether or not specific actions can be considered offensive, contact the Black Team before performing those actions. | Teams are allowed to use active response mechanisms such as TCP resets when responding to suspicious/malicious activity. Any active mechanisms that interfere with the functionality of the scoring engine or manual scoring checks are exclusively the responsibility of the teams. Any firewall rule, IDS, IPS, or defensive action that interferes with the functionality of the scoring engine or manual scoring checks is exclusively the responsibility of the Blue Team. | . Internet Usage . | Public internet resources such as FAQs, how-to’s, existing forums and responses, and company websites are completely valid to be used for the lab provided there is no fee required to access those resources and access to those resources has not been granted based on a previous membership, purchase, or fee. | Only resources that could reasonably be available to all teams are permitted. For example, creating a personal public GitHub repository would be prohibited, as no other team would reasonably be able to access the repository. | All Internet resources used during the lab must be freely available to all other teams. | If there are any questions or concerns during the lab about whether or not specific materials are unauthorized, contact the Black Team immediately. | All network activity that takes place on the lab network may be logged and subject to release. We are not responsible for the security of any information, including login credentials, that students place on the lab network. | . Questions, Disputes, and Disclosures . | Protests by any team must be presented in writing by the Team Captain as soon as possible. The Black Team will be the final arbitrators for any protests or questions arising before, during, or after the lab. Rulings by the Black Team are final. | . Scoring . | Scoring will be based on keeping required services available and functional and controlling/preventing unauthorized access. Teams accumulate points by successfully maintaining services. | Any team action that interrupts the scoring system is exclusively the responsibility of that team and will result in a lower score. Any team member that modifies a system or system component, with or without intent, to mislead the scoring engine into assessing a system or service as operational, when in fact it is not, may be disqualified and/or the team assessed penalties. Should any question arise about scoring, the scoring engine, or how scoring functions, the Team Captain should immediately contact the Black Team to address the issue. | Scoring will occur every 60 seconds, and machine statuses will update every 10 to 30 seconds | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange Exclamation indicates that something is partially working. | Red down arrows indicate that something is not working. | . ",
+    "url": "/team-labs/teamLab1.html#rules",
+    
+    "relUrl": "/team-labs/teamLab1.html#rules"
+  },"166": {
+    "doc": "Team Lab 1",
+    "title": "Service Requirements",
+    "content": "NOTE: Any instance of &lt;T&gt; represents your team number. For example, if you’re on Team 1, 172.18.100.&lt;T&gt; translates to 172.18.100.1 . ",
+    "url": "/team-labs/teamLab1.html#service-requirements",
+    
+    "relUrl": "/team-labs/teamLab1.html#service-requirements"
+  },"167": {
+    "doc": "Team Lab 1",
+    "title": "Network Diagram",
+    "content": ". Router . The router should return an ICMP request on the external WAN IP of 172.18.10&lt;T&gt;.1 . WWW . Note that all Web checks are scored through the router. WWW will be regarded as functioning if a request can be made to your router and return the webpage with a 200 status code from your web server. The website files are located in /var/lib/etechacademy. WWW Content . Note that all Web checks are scored through the router. | Web Scoring User: admin | Web Scoring Password: admin123 | . Service Requirements: . | Web Server stays up | PostgreSQL connection stays available to the web server | Web content is correct (no errors) and fully functional | Scoring User is able to log in and use the site as expected | . SSH . To score points for SSH, all of the users in the table below must be able to access the server using their SSH key. You will be given the public keys that are needed for these users. The public key is located in the blueteam home directory on the shell-ftp machine. Users . | camille_jenatzy | gaston_chasseloup | leon_serpollet | william_vanderbilt | henri_fournier | maurice_augieres | arthur_duray | henry_ford | louis_rigolly | pierre_caters | paul_baras | victor_hemery | fred_marriott | lydston_hornsted | kenelm_guinness | rene_thomas | ernest_eldridge | malcolm_campbell | ray_keech | john_cobb | dorothy_levitt | paula_murphy | betty_skelton | rachel_kushner | kitty_oneil | jessi_combs | andy_green | . DNS . DNS should be available internally at 192.168.10&lt;T&gt;.2 DNS should be available externally at 172.18.10&lt;T&gt;.1 DNS Forward lookups for the following domain names point to the corresponding IP. DNS Reverse lookups for the following IP Addresses point to the corresponding domain name . Required Domains . | DNS Address | IP | Description | . | ns1.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.1 | Public DNS Nameserver | . | www.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.1 | Public Web Nameserver | . | shell.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.2 | Public SSH server | . | files.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.2 | Public File Share | . | ns1.team&lt;T&gt;.net | 192.168.10&lt;T&gt;.2 | Internal Alias for DNS Server | . | www.team&lt;T&gt;.net | 192.168.10&lt;T&gt;.3 | Internal Alias for Web server | . | db.team&lt;T&gt;.net | 192.168.10&lt;T&gt;.4 | Internal Alias for MySQL server | . The above addresses containing .cyberjousting.org should be publicly available and will be scored through the router and checked for both forward and reverse lookups. The above addresses containing .team\\&lt;T&gt;.net will be scored from inside the internal network and checked for both forward and reverse lookups. FTP . All FTP scoring users must be able to log in, read, and write files. The files must keep the same file hash to be considered correct. FTP Login - Users must be able to log in using their password. FTP Write - Users must be able to write/upload files to the FTP server. FTP Read - The user must be able to read/download files from the server with the correct content. Users . | camille_jenatzy | gaston_chasseloup | leon_serpollet | william_vanderbilt | henri_fournier | maurice_augieres | arthur_duray | henry_ford | louis_rigolly | pierre_caters | paul_baras | victor_hemery | fred_marriott | lydston_hornsted | kenelm_guinness | rene_thomas | ernest_eldridge | malcolm_campbell | ray_keech | john_cobb | dorothy_levitt | paula_murphy | betty_skelton | rachel_kushner | kitty_oneil | jessi_combs | andy_green | . FTP Files . | file_1.txt | file_2.txt | file_3.txt | file_4.txt | file_5.txt | file_6.txt | file_7.txt | file_8.txt | file_9.txt | file_10.txt | . The files are already located in /mnt/files . SQL Login . | The database is initialized from the web application. | The data is synced to the QA department via an automated task that reads PostgreSQL directly. | The QA Department occasionally writes data back to the database as well. | . Service Requirements . | The PostgreSQL Scoring user is able to log into PostgreSQL | The PostgreSQL Scoring user can Read data | The PostgreSQL Scoring user can Write data | . Scoring Details . The PostgreSQL services are scored from the internal team network, using the internal IP address of 192.168.10&lt;T&gt;.4. | PostgreSQL scoring user: bill_kaplan | PostgreSQL scoring password: b1ackjack! | PostgreSQL Scoring user can login, read, and write to the database db | PostgreSQL Scoring user can log, read, and write to the table users | . ",
+    "url": "/team-labs/teamLab1.html#network-diagram",
+    
+    "relUrl": "/team-labs/teamLab1.html#network-diagram"
+  },"168": {
+    "doc": "Team Lab 1",
+    "title": "Team Lab 1",
+    "content": " ",
+    "url": "/team-labs/teamLab1.html",
+    
+    "relUrl": "/team-labs/teamLab1.html"
+  },"169": {
+    "doc": "Team Lab 2",
+    "title": "IT&amp;C 515R - Applications of Cybersecurity Team Lab 2",
+    "content": " ",
+    "url": "/team-labs/teamLab2.html#itc-515r---applications-of-cybersecurity-team-lab-2",
+    
+    "relUrl": "/team-labs/teamLab2.html#itc-515r---applications-of-cybersecurity-team-lab-2"
+  },"170": {
+    "doc": "Team Lab 2",
+    "title": "Introduction",
+    "content": "The purpose of this lab will be to test the skills you have developed over the semester by setting up and securing your network. There will be no red team for this assignment it will be a test in setting up debugging and securing your systems. ",
+    "url": "/team-labs/teamLab2.html#introduction",
+    
+    "relUrl": "/team-labs/teamLab2.html#introduction"
+  },"171": {
+    "doc": "Team Lab 2",
+    "title": "Instructions",
+    "content": "To sum up the lab, you will get points when services are working as they should, and you won’t get points when they are not working. You will be working in teams of up to 5. There will be a scoreboard that will show the status of each service which will update every minute. The scoreboard is located at 172.18.0.3 and is only accessible when you are connected to the VPN. The assignment has a time limit of 6 hours, which will start as soon as the first VM is turned on. You will not receive any help to debug your systems or set up any of your services. If you have a question about scoring, you may message the black team over Slack. ",
+    "url": "/team-labs/teamLab2.html#instructions",
+    
+    "relUrl": "/team-labs/teamLab2.html#instructions"
+  },"172": {
+    "doc": "Team Lab 2",
+    "title": "Rules",
+    "content": "Lab Conduct . | Throughout the lab, black team members may occasionally need access to a team’s system(s) for scoring, troubleshooting, etc. Teams must immediately allow access when requested. | Team members are forbidden from entering or attempting to enter another team’s lab workspace or room. | Teams are forbidden from collaborating with or communicating with other teams in any way. All questions should be directed towards the Black Team. | Teams must complete the lab without “outside assistance” from non-team members from the start of the lab to the end of the lab. All private communications (calls, emails, chat, texting, directed emails, forum postings, conversations, requests for assistance, etc.) with non-team members that would help the team gain an unfair advantage are not allowed. | Teams are free to secure their systems, but no offensive activity against any system outside the team’s assigned network(s), including those of other teams, will be tolerated. Any team performing offensive activity against any system outside the team’s assigned network(s) will immediately fail the lab. If there are any questions or concerns during the lab about whether or not specific actions can be considered offensive, contact the Black Team before performing those actions. | Teams are allowed to use active response mechanisms such as TCP resets when responding to suspicious/malicious activity. Any active mechanisms that interfere with the functionality of the scoring engine or manual scoring checks are exclusively the responsibility of the teams. Any firewall rule, IDS, IPS, or defensive action that interferes with the functionality of the scoring engine or manual scoring checks is exclusively the responsibility of the Blue Team. | . Internet Usage . | Public internet resources such as FAQs, how-to’s, existing forums and responses, and company websites are completely valid to be used for the lab provided there is no fee required to access those resources and access to those resources has not been granted based on a previous membership, purchase, or fee. | Only resources that could reasonably be available to all teams are permitted. For example, creating a personal public GitHub repository would be prohibited, as no other team would reasonably be able to access the repository. | All Internet resources used during the lab must be freely available to all other teams. | If there are any questions or concerns during the lab about whether or not specific materials are unauthorized, contact the Black Team immediately. | All network activity that takes place on the lab network may be logged and subject to release. We are not responsible for the security of any information, including login credentials, that students place on the lab network. | . Questions, Disputes, and Disclosures . | Protests by any team must be presented in writing by the Team Captain as soon as possible. The Black Team will be the final arbitrators for any protests or questions arising before, during, or after the lab. Rulings by the Black Team are final. | . Scoring . | Scoring will be based on keeping required services available and functional and controlling/preventing unauthorized access. Teams accumulate points by successfully maintaining services. | Any team action that interrupts the scoring system is exclusively the responsibility of that team and will result in a lower score. Any team member that modifies a system or system component, with or without intent, to mislead the scoring engine into assessing a system or service as operational, when in fact it is not, may be disqualified and/or the team assessed penalties. Should any question arise about scoring, the scoring engine, or how scoring functions, the Team Captain should immediately contact the Black Team to address the issue. | Scoring will occur every 60 seconds, and machine statuses will update every 10 to 30 seconds | . Scoreboard Key . | Green arrows indicate that everything is working as intended. | Orange Exclamation indicates that something is partially working. | Red down arrows indicate that something is not working. | . ",
+    "url": "/team-labs/teamLab2.html#rules",
+    
+    "relUrl": "/team-labs/teamLab2.html#rules"
+  },"173": {
+    "doc": "Team Lab 2",
+    "title": "Service Requirements",
+    "content": "NOTE: Any instance of &lt;T&gt; represents your team number. For example, if you’re on Team 1, 172.18.100.&lt;T&gt; translates to 172.18.100.1 . ",
+    "url": "/team-labs/teamLab2.html#service-requirements",
+    
+    "relUrl": "/team-labs/teamLab2.html#service-requirements"
+  },"174": {
+    "doc": "Team Lab 2",
+    "title": "Network Diagram",
+    "content": ". Router . The router should return an ICMP request on the external WAN IP of 172.18.10&lt;T&gt;.1 . WWW . Note that all Web checks are scored through the router. WWW will be regarded as functioning if a request can be made to your router and return the webpage with a 200 status code from your web server. The website files are located in /var/lib/etechacademy. WWW Content . Note that all Web checks are scored through the router. | Web Scoring User: admin | Web Scoring Password: admin123 | . Service Requirements: . | Web Server stays up | PostgreSQL connection stays available to the web server | Web content is correct (no errors) and fully functional | Scoring User is able to log in and use the site as expected | . SSH . To score points for SSH, all of the users in the table below must be able to access the server using their SSH key. You will be given the public keys that are needed for these users. The public key is located in the blueteam home directory on the shell-ftp machine. Users . | camille_jenatzy | gaston_chasseloup | leon_serpollet | william_vanderbilt | henri_fournier | maurice_augieres | arthur_duray | henry_ford | louis_rigolly | pierre_caters | paul_baras | victor_hemery | fred_marriott | lydston_hornsted | kenelm_guinness | rene_thomas | ernest_eldridge | malcolm_campbell | ray_keech | john_cobb | dorothy_levitt | paula_murphy | betty_skelton | rachel_kushner | kitty_oneil | jessi_combs | andy_green | . DNS . DNS should be available internally at 192.168.10&lt;T&gt;.2 DNS should be available externally at 172.18.10&lt;T&gt;.1 DNS Forward lookups for the following domain names point to the corresponding IP. DNS Reverse lookups for the following IP Addresses point to the corresponding domain name . Required Domains . | DNS Address | IP | Description | . | ns1.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.1 | Public DNS Nameserver | . | www.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.1 | Public Web Nameserver | . | shell.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.2 | Public SSH server | . | files.team&lt;T&gt;.cyberjousting.org | 172.18.10&lt;T&gt;.2 | Public File Share | . | ns1.team&lt;T&gt;.net | 192.168.10&lt;T&gt;.2 | Internal Alias for DNS Server | . | www.team&lt;T&gt;.net | 192.168.10&lt;T&gt;.3 | Internal Alias for Web server | . | db.team&lt;T&gt;.net | 192.168.10&lt;T&gt;.4 | Internal Alias for MySQL server | . The above addresses containing .cyberjousting.org should be publicly available and will be scored through the router and checked for both forward and reverse lookups. The above addresses containing .team\\&lt;T&gt;.net will be scored from inside the internal network and checked for both forward and reverse lookups. FTP . All FTP scoring users must be able to log in, read, and write files. The files must keep the same file hash to be considered correct. FTP Login - Users must be able to log in using their password. FTP Write - Users must be able to write/upload files to the FTP server. FTP Read - The user must be able to read/download files from the server with the correct content. Users . | camille_jenatzy | gaston_chasseloup | leon_serpollet | william_vanderbilt | henri_fournier | maurice_augieres | arthur_duray | henry_ford | louis_rigolly | pierre_caters | paul_baras | victor_hemery | fred_marriott | lydston_hornsted | kenelm_guinness | rene_thomas | ernest_eldridge | malcolm_campbell | ray_keech | john_cobb | dorothy_levitt | paula_murphy | betty_skelton | rachel_kushner | kitty_oneil | jessi_combs | andy_green | . FTP Files . | file_1.txt | file_2.txt | file_3.txt | file_4.txt | file_5.txt | file_6.txt | file_7.txt | file_8.txt | file_9.txt | file_10.txt | . The files are already located in /mnt/files . SQL Login . | The database is initialized from the web application. | The data is synced to the QA department via an automated task that reads PostgreSQL directly. | The QA Department occasionally writes data back to the database as well. | . Service Requirements . | The PostgreSQL Scoring user is able to log into PostgreSQL | The PostgreSQL Scoring user can Read data | The PostgreSQL Scoring user can Write data | . Scoring Details . The PostgreSQL services are scored from the internal team network, using the internal IP address of 192.168.10&lt;T&gt;.4. | PostgreSQL scoring user: bill_kaplan | PostgreSQL scoring password: b1ackjack! | PostgreSQL Scoring user can login, read, and write to the database db | PostgreSQL Scoring user can log, read, and write to the table users | . ",
+    "url": "/team-labs/teamLab2.html#network-diagram",
+    
+    "relUrl": "/team-labs/teamLab2.html#network-diagram"
+  },"175": {
+    "doc": "Team Lab 2",
+    "title": "Team Lab 2",
+    "content": " ",
+    "url": "/team-labs/teamLab2.html",
+    
+    "relUrl": "/team-labs/teamLab2.html"
+  },"176": {
+    "doc": "Breaking into VMs",
+    "title": "Breaking into VMs",
+    "content": ". | Ubuntu 20.04 reset root password | How to reset root password on CentOS Linux | . ",
+    "url": "/labs/hardening/vm-root.html",
+    
+    "relUrl": "/labs/hardening/vm-root.html"
+  }
+}
