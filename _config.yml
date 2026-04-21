@@ -5,7 +5,7 @@ description: Course materials for BYU Cybersecurity's Applications of Cybersecur
 baseurl: "" # the subpath of your site, e.g. /blog
 remote_theme: just-the-docs/just-the-docs
 
-url: https://byu-itc-515r-act.github.io
+url: https://byu-itc-515r-act.github.io/
 
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
