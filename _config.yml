@@ -12,7 +12,7 @@ url: https://byu-itc-515r-act.github.io
 
 defaults:
   - scope:
-      path: "docs" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
       type: "pages"
     values:
       layout: "default"
@@ -47,6 +47,7 @@ exclude:
   - spec/
   - tmp
   - .rspec
+  - docs/assets
   
 enable_copy_code_button: true
 
