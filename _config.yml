@@ -48,6 +48,9 @@ exclude:
   - tmp
   - .rspec
   - docs/assets
+  - docs/ctf/midterm2.md
+  - docs/misc
+  # TODO: figure out where these go and remove the exclusion
   
 enable_copy_code_button: true
 
