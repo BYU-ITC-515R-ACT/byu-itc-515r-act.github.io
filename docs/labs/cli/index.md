@@ -79,8 +79,8 @@ There may be a way to achieve a criteria that we have not accounted for. If you 
 1. Use `touch` to create a file called `P1.txt`
 1. Display the full path of your current directory. Enter the line `path:<command>` into the file `/home/blueteam/P1/P1.txt`
 1. Use `tail` to view file changes in `/var/log/auth.log` in real-time. Enter the line `live-tail:<command>` into the file `/home/blueteam/P1/P1.txt`
-1. View the first 10 lines of `/var/log/auth.log` using `head`. Enter the line `head:<command>` into the file `/home/blueteam/P1/P1.txt`
-1. View the last 10 lines of `/var/log/auth.log` using `tail`. Enter the line `tail:<command>` into the file `/home/blueteam/P1/P1.txt`
+1. View the first 15 lines of `/var/log/auth.log` using `head`. Enter the line `head:<command>` into the file `/home/blueteam/P1/P1.txt`
+1. View the last 15 lines of `/var/log/auth.log` using `tail`. Enter the line `tail:<command>` into the file `/home/blueteam/P1/P1.txt`
 1. Delete the directory `/home/blueteam/P1-delete-me`
 1. Move and rename the file in a single command `/home/blueteam/P1-move-me.txt` to `/home/blueteam/P1/moved.txt`.
 1. Copy the file  `/home/blueteam/P1-copy-me.txt` to `/home/blueteam/P1/P1-copy-me.txt`
