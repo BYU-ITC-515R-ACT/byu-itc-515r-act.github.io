@@ -8,7 +8,7 @@ The purpose of this lab will be to test the skills you have developed over the s
 
 To sum up the lab, you will get points when services are working as they should, and you won't get points when they are not working. 
 
-You will be working in teams of up to 5. There will be a scoreboard that will show the status of each service which will update every minute. The scoreboard is located at [`172.18.0.3`](http://172.18.0.3/team-lab/1#) and is only accessible when you are connected to the VPN. The assignment will start at 09:00 on February 22nd and end at 16:00 on February 22nd. There will be a 1 hour break between noon and 13:00 where scoring will pause, and so will VM access.
+You will be working in teams of up to 10. There will be a scoreboard that will show the status of each service which will update every minute. The scoreboard is located at [`172.18.0.3`](http://172.18.0.3/team-lab/1#) and is only accessible when you are connected to the VPN. The assignment has a time limit of 6 hours, which will start as soon as the first VM is turned on.
 
 You will not receive any help to debug your systems or set up any of your services. If you have a question about scoring, you may message the black team over Slack.
 
