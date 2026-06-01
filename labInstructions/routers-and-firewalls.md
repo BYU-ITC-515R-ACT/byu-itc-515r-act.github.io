@@ -1,4 +1,4 @@
-# Lab 5: Routers & Firewalls
+# Optional: Routers & Firewalls
 
 ## Introduction
 

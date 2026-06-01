@@ -1,4 +1,4 @@
-# Lab 1: Command Line Interface (CLI)
+# Required: Command Line Interface (CLI)
 
 ## Introduction
 In this lab assignment, you will explore the Linux CLI, which is essential for effective system administration and development tasks. The assignment is designed to enhance your command-line skills through hands-on practice with various operations related to files, directories, permissions, text editing, user management, networking, process management, and package management. You will work through a series of tasks categorized by levels of mastery: Pass, Merit, and Distinction.

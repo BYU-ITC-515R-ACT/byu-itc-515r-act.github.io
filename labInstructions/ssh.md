@@ -1,4 +1,4 @@
-# Lab 3: Secure Shell (SSH) & File Transfer Protocol (FTP)
+# Required: Secure Shell (SSH) & File Transfer Protocol (FTP)
 
 ## Introduction
 

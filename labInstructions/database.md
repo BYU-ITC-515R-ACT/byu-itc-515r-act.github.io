@@ -1,4 +1,4 @@
-# Lab 7: Database Servers
+# Optional: Database Servers
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 
-# Lab 4: Domain Name System (DNS) 
+# Optional: Domain Name System (DNS) 
 
 ## Introduction
 

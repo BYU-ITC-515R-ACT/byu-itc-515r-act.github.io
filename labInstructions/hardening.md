@@ -1,4 +1,4 @@
-# Lab 9: Hardening
+# Required: Hardening
 
 ## Scenario
 

@@ -1,4 +1,4 @@
-# Lab 8: Web Servers
+# Optional: Web Servers
 
 ## Introduction
 
